@@ -1,0 +1,13 @@
+แก้  user,pass,database เป็น server ตัวเอง (scan\sphp\connect.php)
+****ไม่อยากแก้ user : root  pass : 123456789  database : scan2557
+***ตารางมี 3 ตาราง datescan , scan2557 , user2557
+ฐานข้อมูลล่าสุดไฟล์ชื่อscan2563
+
+
+ตย.คิวรี่อิมพอทข้อมูล LOAD DATA LOCAL INFILE 'xx:\\xx\\xx\\xx.txt' INTO TABLE `scan2557` FIELDS TERMINATED BY ',' ENCLOSED BY '"' ESCAPED BY '"' LINES TERMINATED BY '\r\n'
+
+ตย.คิวรี่สร้างคอลัม ALTER TABLE `scan2557` ADD `chdate1` varCHAR(200) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL;
+
+สู้ๆนะค่าบบบบ ....
+
+..จากทีมพัฒนา 60

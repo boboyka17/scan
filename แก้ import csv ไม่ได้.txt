@@ -1,0 +1,21 @@
+มี 2 กรณีคือ 1 ขนาดไฟล์เกินกำหนดให้แก้ที่ php.ini อยู่ใน folder php7 หรือ php5 
+post_max_size = 80M
+upload_max_filesize = 200M
+memory_limit = 512M
+จากนั้นให้ทำการ restart service apache กับ mysql
+กรณี Error ตอน import 
+ERROR 1148: The used command is not allowed with this MySQL version
+
+ให้เปิดตัว cmd หรือ powershell
+mysql -u USERNAME -p *USERNAME คือตัว username ที่ login เข้าสู่หน้า phpmyadmin ค่าเริ่มต้น root
+จากนั้นมันจะให้ใส่ password ก็ใส่ไป
+จากนั้นพิมพ์
+SHOW VARIABLES LIKE 'local_infile';
+เช็คดูว่า loca_infile ค่าจะเป็น OFF
+
+ขั้นตอนต่อไปพิมพ์
+SET GLOBAL local_infile = 1;
+
+แล้วลอง import ข้อมูลเข้าดู
+
+*เขียนเมื่อวันที่ 14/11/2020 12:08 AM
