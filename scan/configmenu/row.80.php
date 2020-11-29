@@ -201,7 +201,7 @@ if (!isset($_SESSION['suser'])) {
 									</thead>
 									<?php
 									$cout = 1;
-									$query = "SELECT * FROM scan2557 WHERE level LIKE '%ตรี%' and (education LIKE '%ครุ%' or education LIKE '%ศิลปศาส%' or education LIKE '%ศิลปกรรม%' or education LIKE '%รัฐป%' or education LIKE '%พยาบาล%' or education LIKE '%วิท%' or education LIKE '%นิเทศ%' or education LIKE '%รัฐศ%' or education LIKE '%บริหาร' or education LIKE '%บัญชี%')and (`chdate32`!='' or 'chdate1'!='' or 'chdate2'!='' ) 
+									$query = "SELECT * FROM scan2557 WHERE level LIKE '%ตรี%' and (education LIKE '%ครุ%' or education LIKE '%ศิลปศาส%' or education LIKE '%ศิลปกรรม%' or education LIKE '%รัฐป%' or education LIKE '%พยาบาล%' or education LIKE '%วิท%' or education LIKE '%นิเทศ%' or education LIKE '%รัฐศ%' or education LIKE '%บริหาร' or education LIKE '%บัญชี%')and (`chdate32`!='' or 'chdate1'!='' or 'chdate2'!='' ) and type123!='1'
 ORDER BY `scan2557`.`count` ASC;";
 
 

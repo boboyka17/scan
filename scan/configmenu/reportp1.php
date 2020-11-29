@@ -206,6 +206,20 @@ if (!isset($_SESSION['suser'])) {
 									$query99 = $conn->query("select * from scan2557 where education like'%พยาบาลศาสตรบัณฑิต%' and status ='3' and type123='1';");
 									$total99 = $query99->num_rows;
 
+									$query10 = $conn->query("select * from scan2557 where education like'%นิเทศศาสตรบัณฑิต%' and status ='2' and type123='1';");
+									$total10 = $query10->num_rows;
+									$query1010 = $conn->query("select * from scan2557 where education like'%นิเทศศาสตรบัณฑิต%' and status ='3' and type123='1';");
+									$total1010 = $query1010->num_rows;
+
+									$query11 = $conn->query("select * from scan2557 where education like'%รัฐศาสตรบัณฑิต%' and status ='2' and type123='1';");
+									$total11 = $query11->num_rows;
+									$query1111 = $conn->query("select * from scan2557 where education like'%รัฐศาสตรบัณฑิต%' and status ='3' and type123='1';");
+									$total1111 = $query1111->num_rows;
+
+									$query12 = $conn->query("select * from scan2557 where education like'%บริการธุรกิจบัณฑิต%' and status ='2' and type123='1';");
+									$total12 = $query12->num_rows;
+									$query1212 = $conn->query("select * from scan2557 where education like'%บริการธุรกิจบัณฑิต%' and status ='3' and type123='1';");
+									$total1212 = $query1212->num_rows;
 									?>
 									<!-- 222222222222222222222222222222 -->
 									<tr class="warning">
@@ -218,8 +232,52 @@ if (!isset($_SESSION['suser'])) {
 										</td>
 									</tr>
 									<!-- End 2222222222222222222222 End -->
-
-									<!-- 111111111111111111111111111111 -->
+									<tr class="warning">
+										<td>นิเทศศาสตรบัณฑิต(...)</td>
+										<td><?php echo $total10; ?></td>
+										<td><?php echo $total1010; ?></td>
+										<td><?php echo ($total10 + $total1010); ?></td>
+										<td class="noPrint">
+											<center><a href="/scan//scan/configmenu/report1-1.php?status=2"><button type="button" class="btn btn-success btn-xs">รายละเอียด&nbsp;<span class="glyphicon glyphicon-new-window"></span></button></a></center>
+										</td>
+									</tr>
+									<tr class="warning">
+										<td>รัฐประศาสนศาสตรบัณฑิต(รป.บ.)</td>
+										<td><?php echo $total6; ?></td>
+										<td><?php echo $total66; ?></td>
+										<td><?php echo ($total6 + $total66); ?></td>
+										<td class="noPrint">
+											<center><a href="/scan//scan/configmenu/report1-1.php?status=4"><button type="button" class="btn btn-success btn-xs">รายละเอียด&nbsp;<span class="glyphicon glyphicon-new-window"></span></button></a></center>
+										</td>
+									</tr>
+									<tr class="warning">
+										<td>รัฐศาสตรบัณฑิต(...)</td>
+										<td><?php echo $total6; ?></td>
+										<td><?php echo $total66; ?></td>
+										<td><?php echo ($total6 + $total66); ?></td>
+										<td class="noPrint">
+											<center><a href="/scan//scan/configmenu/report1-1.php?status=4"><button type="button" class="btn btn-success btn-xs">รายละเอียด&nbsp;<span class="glyphicon glyphicon-new-window"></span></button></a></center>
+										</td>
+									</tr>
+									<tr class="warning">
+										<td>ศิลปกรรมศาสตรบัณฑิต(ศป.บ.)</td>
+										<td><?php echo $total2; ?></td>
+										<td><?php echo $total22; ?></td>
+										<td><?php echo ($total2 + $total22); ?></td>
+										<td class="noPrint">
+											<center><a href="/scan//scan/configmenu/report1-1.php?status=5"><button type="button" class="btn btn-success btn-xs">รายละเอียด&nbsp;<span class="glyphicon glyphicon-new-window"></span></button></a></center>
+										</td>
+									</tr>
+									<tr class="warning">
+										<td>บริหารธุนกิจบัณฑิต(...)</td>
+										<td><?php echo $total12; ?></td>
+										<td><?php echo $total1212; ?></td>
+										<td><?php echo ($total12 + $total1212); ?></td>
+										<td class="noPrint">
+											<center><a href="/scan//scan/configmenu/report1-1.php?status=5"><button type="button" class="btn btn-success btn-xs">รายละเอียด&nbsp;<span class="glyphicon glyphicon-new-window"></span></button></a></center>
+										</td>
+									</tr>
+									<!-- 11111111111111111 ้เอก โท 1111111111111 -->
 									<tr class="warning">
 										<td>ครุศาสตรบัณฑิต(ค.บ.)</td>
 										<td><?php echo $total3; ?></td>
@@ -244,32 +302,25 @@ if (!isset($_SESSION['suser'])) {
 											<center><a href="/scan//scan/configmenu/report1-1.php?status=3"><button type="button" class="btn btn-success btn-xs">รายละเอียด&nbsp;<span class="glyphicon glyphicon-new-window"></span></button></a></center>
 										</td>
 									</tr>
+									<tr class="warning">
+										<td>บัญชีบัณฑิต(บช.บ.)</td>
+										<td><?php echo $total8; ?></td>
+										<td><?php echo $total88; ?></td>
+										<td><?php echo ($total8 + $total88); ?></td>
+										<td class="noPrint">
+											<center><a href="/scan//scan/configmenu/report1-1.php?status=7"><button type="button" class="btn btn-success btn-xs">รายละเอียด&nbsp;<span class="glyphicon glyphicon-new-window"></span></button></a></center>
+										</td>
+									</tr>
 									<!-- End 3333333333333333333333 End -->
 
 
 									<!-- 444444444444444444444444444444 -->
-									<tr class="warning">
-										<td>รัฐประศาสนศาสตรบัณฑิต(รป.บ.)</td>
-										<td><?php echo $total6; ?></td>
-										<td><?php echo $total66; ?></td>
-										<td><?php echo ($total6 + $total66); ?></td>
-										<td class="noPrint">
-											<center><a href="/scan//scan/configmenu/report1-1.php?status=4"><button type="button" class="btn btn-success btn-xs">รายละเอียด&nbsp;<span class="glyphicon glyphicon-new-window"></span></button></a></center>
-										</td>
-									</tr>
+
 									<!-- End 4444444444444444444444 End -->
 
 
 									<!-- 555555555555555555555555555555 -->
-									<tr class="warning">
-										<td>ศิลปกรรมศาสตรบัณฑิต(ศป.บ.)</td>
-										<td><?php echo $total2; ?></td>
-										<td><?php echo $total22; ?></td>
-										<td><?php echo ($total2 + $total22); ?></td>
-										<td class="noPrint">
-											<center><a href="/scan//scan/configmenu/report1-1.php?status=5"><button type="button" class="btn btn-success btn-xs">รายละเอียด&nbsp;<span class="glyphicon glyphicon-new-window"></span></button></a></center>
-										</td>
-									</tr>
+
 									<!-- End 5555555555555555555555 End -->
 
 
@@ -287,15 +338,7 @@ if (!isset($_SESSION['suser'])) {
 
 
 									<!-- 777777777777777777777777777777 -->
-									<tr class="warning">
-										<td>บัญชีบัณฑิต(บช.บ.)</td>
-										<td><?php echo $total8; ?></td>
-										<td><?php echo $total88; ?></td>
-										<td><?php echo ($total8 + $total88); ?></td>
-										<td class="noPrint">
-											<center><a href="/scan//scan/configmenu/report1-1.php?status=7"><button type="button" class="btn btn-success btn-xs">รายละเอียด&nbsp;<span class="glyphicon glyphicon-new-window"></span></button></a></center>
-										</td>
-									</tr>
+
 									<!-- End 7777777777777777777777 End -->
 
 
