@@ -212,7 +212,6 @@ if (!isset($_SESSION['suser'])) {
         var name = $('input[name="name"]').val();
         var lastname = $('input[name="lastname"]').val();
         var edittext = $('#textarea').val();
-        console.log(edittext);
         $.ajax({
           url: 'update_bio.php',
           type: 'post',
@@ -224,12 +223,8 @@ if (!isset($_SESSION['suser'])) {
             edittext: edittext,
             std_id: std_id
           },
-          success: function(status) {
-            if (status) {
-              alert('success')
-            } else {
-              alert('fail')
-            }
+          success: function(result) {
+            alert('บันทึกข้อมูลสำเร็จ')
           }
         })
       })
