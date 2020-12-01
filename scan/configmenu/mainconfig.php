@@ -137,6 +137,12 @@ if (!isset($_SESSION['suser'])) {
 											</button>
 										</a>
 										<br /><br />
+										<a href="../configmenu/swip.php">
+											<button type="button" class="btn btn-success">
+												<span class="glyphicon glyphicon-cog" style="font-family: 'Kanit'"> สลับ</span>
+											</button>
+										</a>
+										<br /><br />
 									</div>
 
 									<div class="col-xs-4">
@@ -170,7 +176,7 @@ if (!isset($_SESSION['suser'])) {
 										<br /><br />
 										<a href="../configmenu/row.80.php">
 											<button type="button" class="btn btn-info">
-												<span class="glyphicon glyphicon-cog" style="font-family: 'Kanit'"> ตัดแถว</span>
+												<span class="glyphicon glyphicon-cog" style="font-family: 'Kanit'"> ตัดแถวเช้า</span>
 											</button>
 										</a>
 										<br /><br />
@@ -203,6 +209,12 @@ if (!isset($_SESSION['suser'])) {
 												</button>
 											</a>
 											<br /><br />
+											<a href="../configmenu/row80a.php">
+											<button type="button" class="btn btn-info">
+												<span class="glyphicon glyphicon-cog" style="font-family: 'Kanit'"> ตัดแถวบ่าย</span>
+											</button>
+										</a>
+										<br /><br />
 										<?php } ?>
 									</div>
 

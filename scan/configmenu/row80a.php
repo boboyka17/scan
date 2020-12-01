@@ -162,10 +162,10 @@ if (!isset($_SESSION['suser'])) {
 								?>
 								<?php $cc = 0;
 								$taw = 1;
-								$query = "SELECT * FROM scan2557 WHERE level LIKE '%ตรี%' and ( education LIKE '%ศิลปกรรม%' or education LIKE '%รัฐป%' or education LIKE '%วิท%' or education LIKE '%นิเทศ%' or education LIKE '%รัฐศ%' or education LIKE '%บริหาร%')and (`chdate32`!='' or 'chdate1'!='' or 'chdate2'!='' or `chdate3`!='' or 'chdate12'!='' or 'chdate22'!='' ) and type123!='1'ORDER BY `scan2557`.`count` ASC;";
+								$query =  "SELECT * FROM scan2557 WHERE level LIKE '%ตรี%' and ( education LIKE '%ครุ%' or education LIKE '%นิติ%' or education LIKE '%บัญชี%' or education LIKE '%เศรษฐ%' or education LIKE '%ศิลปศาส%' or education LIKE '%พยาบาล%')and (`chdate32`!='' or 'chdate1'!='' or 'chdate2'!='' or `chdate3`!='' or 'chdate12'!='' or 'chdate22'!='' ) and type123!='1'ORDER BY `scan2557`.`count` ASC;";
 								$result = $conn->query($query) or die($conn->error);
 								$tall=ceil($result->num_rows/$n);
-								echo "แถว " . $taw ."/".$tall. " (เช้า) อาจารย์คุมแถว....................................................................................................................";  ?>
+								echo "แถว " . $taw ."/".$tall. " (บ่าย) อาจารย์คุมแถว....................................................................................................................";  ?>
 								<table class="table table-bordered">
 									<thead>
 
@@ -290,7 +290,7 @@ if (!isset($_SESSION['suser'])) {
 								</table>
 								<?php
 												echo "<p class='breakhere'>";
-												echo "แถว " . $taw ."/".$tall. " (เช้า) อาจารย์คุมแถว....................................................................................................................";
+												echo "แถว " . $taw ."/".$tall. " (บ่าย) อาจารย์คุมแถว....................................................................................................................";
 
 								?>
 
