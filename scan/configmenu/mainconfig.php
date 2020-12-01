@@ -100,6 +100,19 @@ if (!isset($_SESSION['suser'])) {
 							<center>
 								<img src="admin.png" width="120" height="120">
 								<br /><br />
+								<button type="button" class="btn btn-danger" onclick="cf()">เครียข้อมูล</button>
+								<script>
+									function cf() {
+										var r = confirm("แน่ใจไหมที่จะเครียข้อมูล!");
+										if (r) {
+											location.href = "clear.php?clear";
+										} else {
+											console.log('cc');
+										}
+									}
+								</script>
+								<br>
+								<br>
 								<div class="row">
 
 									<div class="col-xs-4">
@@ -210,11 +223,11 @@ if (!isset($_SESSION['suser'])) {
 											</a>
 											<br /><br />
 											<a href="../configmenu/row80a.php">
-											<button type="button" class="btn btn-info">
-												<span class="glyphicon glyphicon-cog" style="font-family: 'Kanit'"> ตัดแถวบ่าย</span>
-											</button>
-										</a>
-										<br /><br />
+												<button type="button" class="btn btn-info">
+													<span class="glyphicon glyphicon-cog" style="font-family: 'Kanit'"> ตัดแถวบ่าย</span>
+												</button>
+											</a>
+											<br /><br />
 										<?php } ?>
 									</div>
 

@@ -165,18 +165,19 @@ if (!isset($_SESSION['suser'])) {
                 if (!empty($std_id)) {
                   if (!empty($std_id) and !empty($pre) and !empty($name) and !empty($lastname) and !empty($edittext)) {
                     //include('../sphp/conn.php');
-                    $c1 = sprintf("update scan2557 set std_id='" . $std_id . "' where std_id='" . $_GET['std_id'] . "' ;");
-                    $c2 = sprintf("update scan2557 set pre='" . $pre . "' where std_id='" . $_GET['std_id'] . "' ;");
-                    $c3 = sprintf("update scan2557 set name='" . $name . "' where std_id='" . $_GET['std_id'] . "' ;");
-                    $c4 = sprintf("update scan2557 set lastname='" . $lastname . "' where std_id='" . $_GET['std_id'] . "' ;");
-                    $c5 = sprintf("update scan2557 set statustext='" . $edittext . "' where std_id='" . $_GET['std_id'] . "' ;");
-                    include('../sphp/cconn.php');
-                    echo "<center><h4 style='color:green;'>System Update...</h4></center>";
-                    if ($conn->query($c1) === TRUE and $conn->query($c2) === TRUE and $conn->query($c3) === TRUE and $conn->query($c4) === TRUE and $conn->query($c5) === TRUE) {
-                      header('location:search.php');
-                    }
+                    print_r($_POST);
+                    // $c1 = sprintf("update scan2557 set std_id='" . $std_id . "' where std_id='" . $_GET['std_id'] . "' ;");
+                    // $c2 = sprintf("update scan2557 set pre='" . $pre . "' where std_id='" . $_GET['std_id'] . "' ;");
+                    // $c3 = sprintf("update scan2557 set name='" . $name . "' where std_id='" . $_GET['std_id'] . "' ;");
+                    // $c4 = sprintf("update scan2557 set lastname='" . $lastname . "' where std_id='" . $_GET['std_id'] . "' ;");
+                    // $c5 = sprintf("update scan2557 set statustext='" . $edittext . "' where std_id='" . $_GET['std_id'] . "' ;");
+                    // include('../sphp/cconn.php');
+                    // echo "<center><h4 style='color:green;'>System Update...</h4></center>";
+                    // if ($conn->query($c1) === TRUE and $conn->query($c2) === TRUE and $conn->query($c3) === TRUE and $conn->query($c4) === TRUE and $conn->query($c5) === TRUE) {
+                    //   header('location:search.php');
+                    // }
                   } else {
-                    echo "<center><h4 style='color:red;'>กรุณาป้อนข้อมูลให้ครบถ้วน!</h4></center>";
+                    // echo "<center><h4 style='color:red;'>กรุณาป้อนข้อมูลให้ครบถ้วน!</h4></center>";
                   }
                 } else {
                 }
