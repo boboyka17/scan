@@ -1,4 +1,5 @@
 <?php
+session_start();
 require_once("sphp/connect.php");
 require_once("sphp/conn.php");
 ?>
@@ -96,7 +97,7 @@ require_once("sphp/conn.php");
                         <center>
                             <?php
                             $chstatus = $conn->query("select * from user2557 where user='" . @$_SESSION['suser'] . "';");
-                            $showstatus = fetch_array($chstatus);
+                            $showstatus = $chstatus->fetch_array();
                             if ($showstatus['status'] == 1 or $showstatus['status'] == 9 or $showstatus['status'] == 0) {
                                 if (isset($_SESSION['suser'])) {
                             ?>
