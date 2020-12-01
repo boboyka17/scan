@@ -1,9 +1,9 @@
 <?php
 //echo ($_GET['statustext'].$_GET['id']);
 $statustext = (trim($_GET['statustext']));
+$type123 = $_GET["type123"];
 if (!empty($statustext)) {
 	//$statustext=$_GET['statustext'];
-	$type123 = $_GET["type123"];
 	date_default_timezone_set("Asia/Bangkok");
 	$date = file_GET_contents("date.txt", "w");
 	include('conn.php');
@@ -27,8 +27,8 @@ if (!empty($statustext)) {
 		echo "<meta http-equiv='refresh' content='0;url=../menu_1.php'>";
 	}
 	include('cconn.php');
-	echo "<center><h4>System Update...</h4></center>";
-	echo "<meta http-equiv='refresh' content='0;url=../menu_1.php'>";
+	//echo "<center><h4>System Update...</h4></center>";
+	//echo "<meta http-equiv='refresh' content='0;url=../menu_1.php'>";
 } else {
 	//$statustext=$_GET['statustext'];
 	date_default_timezone_set("Asia/Bangkok");
@@ -55,7 +55,7 @@ if (!empty($statustext)) {
 		echo "<meta http-equiv='refresh' content='0;url=../menu_1.php'>";
 	}
 	$conn->close();
-	echo "<center><h4>System Update...</h4></center>";
+	//echo "<center><h4>System Update...</h4></center>";
 	//echo "update scan2557 set ch".$date."='".date("Y-m-d | H:i:s")." | (ลา)',status='".$_GET['status']."',statustext=NULL where std_id='".$_GET['id']."';";
-	echo "<meta http-equiv='refresh' content='0;url=../menu_1.php'>";
+	//echo "<meta http-equiv='refresh' content='0;url=../menu_1.php'>";
 }
