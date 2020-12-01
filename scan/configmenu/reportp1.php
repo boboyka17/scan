@@ -144,82 +144,88 @@ if (!isset($_SESSION['suser'])) {
 
 
 									//ศิลปศาสตรบัณฑิต(ศศ.บ.)
-									$query1 = $conn->query("select * from scan2557 where education like'%ศิลปศาสตรบัณฑิต%' and status ='2' and type123='1';");
+									$query1 = $conn->query("select * from scan2557 where education like'%ศิลปศาสตรบัณฑิต%' and status ='2' and type123 IS NOT NULL;");
 									$total1 = $query1->num_rows;
 									//ศิลปศาสตรบัณฑิต(ศศ.บ.) กศ.บท.
-									$query11 = $conn->query("select * from scan2557 where education like'%ศิลปศาสตรบัณฑิต%' and status ='3' and type123='1';");
+									$query11 = $conn->query("select * from scan2557 where education like'%ศิลปศาสตรบัณฑิต%' and status ='3' and type123 IS NOT NULL;");
 									$total11 = $query11->num_rows;
 
 									//ศิลปกรรมศาสตรบัณฑิต(ศป.บ.)
-									$query2 = $conn->query("select * from scan2557 where education like'%ศิลปกรรมศาสตรบัณฑิต%' and status ='2' and type123='1';");
+									$query2 = $conn->query("select * from scan2557 where education like'%ศิลปกรรมศาสตรบัณฑิต%' and status ='2' and type123 IS NOT NULL;");
 									$total2 = $query2->num_rows;
 									//ศิลปกรรมศาสตรบัณฑิต(ศป.บ.) กศ.บท.
-									$query22 = $conn->query("select * from scan2557 where education like'%ศิลปกรรมศาสตรบัณฑิต%' and status ='3' and type123='1';");
+									$query22 = $conn->query("select * from scan2557 where education like'%ศิลปกรรมศาสตรบัณฑิต%' and status ='3' and type123 IS NOT NULL;");
 									$total22 = $query22->num_rows;
 
 									//ครุศาสตรบัณฑิต(ค.บ.)
-									$query3 = $conn->query("select * from scan2557 where education like'%ครุศาสตรบัณฑิต%' and status ='2' and type123='1';");
+									$query3 = $conn->query("select * from scan2557 where education like'%ครุศาสตรบัณฑิต%' and status ='2' and type123 IS NOT NULL;");
 									$total3 = $query3->num_rows;
 									//ครุศาสตรบัณฑิต(ค.บ.) กศ.บท.
-									$query33 = $conn->query("select * from scan2557 where education like'%ครุศาสตรบัณฑิต%' and status ='3' and type123='1';");
+									$query33 = $conn->query("select * from scan2557 where education like'%ครุศาสตรบัณฑิต%' and status ='3' and type123 IS NOT NULL;");
 									$total33 = $query33->num_rows;
 
 									//วิทยาศาสตรบัณฑิต(วท.บ.)
-									$query4 = $conn->query("select * from scan2557 where education like'%วิทยาศาสตรบัณฑิต%' and status ='2' and type123='1';");
+									$query4 = $conn->query("select * from scan2557 where education like'%วิทยาศาสตรบัณฑิต%' and status ='2' and type123 IS NOT NULL;");
 									$total4 = $query4->num_rows;
 									//วิทยาศาสตรบัณฑิต(วท.บ.) กศ.บท.
-									$query44 = $conn->query("select * from scan2557 where education like'%วิทยาศาสตรบัณฑิต%' and status ='3' and type123='1';");
+									$query44 = $conn->query("select * from scan2557 where education like'%วิทยาศาสตรบัณฑิต%' and status ='3' and type123 IS NOT NULL;");
 									$total44 = $query44->num_rows;
 
 									//นิติศาสตรบัณฑิต(น.บ.)
-									$query5 = $conn->query("select * from scan2557 where education like'%นิติศาสตรบัณฑิต%' and status ='2' and type123='1';");
+									$query5 = $conn->query("select * from scan2557 where education like'%นิติศาสตรบัณฑิต%' and status ='2' and type123 IS NOT NULL;");
 									$total5 = $query5->num_rows;
 									//นิติศาสตรบัณฑิต(น.บ.) กศ.บท.
-									$query55 = $conn->query("select * from scan2557 where education like'%นิติศาสตรบัณฑิต%' and status ='3' and type123='1';");
+									$query55 = $conn->query("select * from scan2557 where education like'%นิติศาสตรบัณฑิต%' and status ='3' and type123 IS NOT NULL;");
 									$total55 = $query55->num_rows;
 
 									//รัฐประศาสนศาสตรบัณฑิต(รป.บ.)
-									$query6 = $conn->query("select * from scan2557 where education like'%รัฐประศาสนศาสตรบัณฑิต%' and status ='2' and type123='1';");
+									$query6 = $conn->query("select * from scan2557 where education like'%รัฐประศาสนศาสตรบัณฑิต%' and status ='2' and type123 IS NOT NULL;");
 									$total6 = $query6->num_rows;
 									//รัฐประศาสนศาสตรบัณฑิต(รป.บ.) กศ.บท.
-									$query66 = $conn->query("select * from scan2557 where education like'%รัฐประศาสนศาสตรบัณฑิต%' and status ='3' and type123='1';");
+									$query66 = $conn->query("select * from scan2557 where education like'%รัฐประศาสนศาสตรบัณฑิต%' and status ='3' and type123 IS NOT NULL;");
 									$total66 = $query66->num_rows;
 
 									//บริหารธุรกิจบัณฑิต(บธ.บ.)
-									$query7 = $conn->query("select * from scan2557 where education like'%บริหารธุรกิจบัณฑิต%' and status ='2' and type123='1';");
+									$query7 = $conn->query("select * from scan2557 where education like'%บริหารธุรกิจบัณฑิต%' and status ='2' and type123 IS NOT NULL;");
 									$total7 = $query7->num_rows;
 									//บริหารธุรกิจบัณฑิต(บธ.บ.) กศ.บท.
-									$query77 = $conn->query("select * from scan2557 where education like'%บริหารธุรกิจบัณฑิต%' and status ='3' and type123='1';");
+									$query77 = $conn->query("select * from scan2557 where education like'%บริหารธุรกิจบัณฑิต%' and status ='3' and type123 IS NOT NULL;");
 									$total77 = $query77->num_rows;
 
 									//บัญชีบัณฑิต(บช.บ.)
-									$query8 = $conn->query("select * from scan2557 where education like'%บัญชีบัณฑิต%' and status ='2' and type123='1';");
+									$query8 = $conn->query("select * from scan2557 where education like'%บัญชีบัณฑิต%' and status ='2' and type123 IS NOT NULL;");
 									$total8 = $query8->num_rows;
 									//บัญชีบัณฑิต(บช.บ.) กศ.บท.
-									$query88 = $conn->query("select * from scan2557 where education like'%บัญชีบัณฑิต%' and status ='3' and type123='1';");
+									$query88 = $conn->query("select * from scan2557 where education like'%บัญชีบัณฑิต%' and status ='3' and type123 IS NOT NULL;");
 									$total88 = $query88->num_rows;
 
 									//พยาบาลศาสตรบัณฑิต(พย.บ.)
-									$query9 = $conn->query("select * from scan2557 where education like'%พยาบาลศาสตรบัณฑิต%' and status ='2' and type123='1';");
+									$query9 = $conn->query("select * from scan2557 where education like'%พยาบาลศาสตรบัณฑิต%' and status ='2' and type123 IS NOT NULL;");
 									$total9 = $query9->num_rows;
 									//พยาบาลศาสตรบัณฑิต(พย.บ.) กศ.บท.
-									$query99 = $conn->query("select * from scan2557 where education like'%พยาบาลศาสตรบัณฑิต%' and status ='3' and type123='1';");
+									$query99 = $conn->query("select * from scan2557 where education like'%พยาบาลศาสตรบัณฑิต%' and status ='3' and type123 IS NOT NULL;");
 									$total99 = $query99->num_rows;
 
-									$query10 = $conn->query("select * from scan2557 where education like'%นิเทศศาสตรบัณฑิต%' and status ='2' and type123='1';");
+									$query10 = $conn->query("select * from scan2557 where education like'%นิเทศศาสตรบัณฑิต%' and status ='2' and type123 IS NOT NULL;");
 									$total10 = $query10->num_rows;
-									$query1010 = $conn->query("select * from scan2557 where education like'%นิเทศศาสตรบัณฑิต%' and status ='3' and type123='1';");
+									$query1010 = $conn->query("select * from scan2557 where education like'%นิเทศศาสตรบัณฑิต%' and status ='3' and type123 IS NOT NULL;");
 									$total1010 = $query1010->num_rows;
 
-									$query11 = $conn->query("select * from scan2557 where education like'%รัฐศาสตรบัณฑิต%' and status ='2' and type123='1';");
+									$query11 = $conn->query("select * from scan2557 where education like'%รัฐศาสตรบัณฑิต%' and status ='2' and type123 IS NOT NULL;");
 									$total11 = $query11->num_rows;
-									$query1111 = $conn->query("select * from scan2557 where education like'%รัฐศาสตรบัณฑิต%' and status ='3' and type123='1';");
+									$query1111 = $conn->query("select * from scan2557 where education like'%รัฐศาสตรบัณฑิต%' and status ='3' and type123 IS NOT NULL;");
 									$total1111 = $query1111->num_rows;
 
-									$query12 = $conn->query("select * from scan2557 where education like'%บริการธุรกิจบัณฑิต%' and status ='2' and type123='1';");
+									$query12 = $conn->query("select * from scan2557 where education like'%บริการธุรกิจบัณฑิต%' and status ='2' and type123 IS NOT NULL;");
 									$total12 = $query12->num_rows;
-									$query1212 = $conn->query("select * from scan2557 where education like'%บริการธุรกิจบัณฑิต%' and status ='3' and type123='1';");
+									$query1212 = $conn->query("select * from scan2557 where education like'%บริการธุรกิจบัณฑิต%' and status ='3' and type123 IS NOT NULL;");
 									$total1212 = $query1212->num_rows;
+
+									$queryses = $conn->query("select * from scan2557 where education like'%เศรษฐศาสตรบัณฑิต%' and status ='2' and type123 IS NOT NULL;");
+									$totalses = $queryses->num_rows;
+									$queryses1 = $conn->query("select * from scan2557 where education like'%เศรษฐศาสตรบัณฑิต%' and status ='3' and type123 IS NOT NULL;");
+									$totalses1 = $queryses1->num_rows;
+
 									?>
 									<!-- 222222222222222222222222222222 -->
 									<tr class="warning">
@@ -252,9 +258,9 @@ if (!isset($_SESSION['suser'])) {
 									</tr>
 									<tr class="warning">
 										<td>รัฐศาสตรบัณฑิต(...)</td>
-										<td><?php echo $total6; ?></td>
-										<td><?php echo $total66; ?></td>
-										<td><?php echo ($total6 + $total66); ?></td>
+										<td><?php echo $total11; ?></td>
+										<td><?php echo $total1111; ?></td>
+										<td><?php echo ($total11 + $total1111); ?></td>
 										<td class="noPrint">
 											<center><a href="/scan//scan/configmenu/report1-1.php?status=4"><button type="button" class="btn btn-success btn-xs">รายละเอียด&nbsp;<span class="glyphicon glyphicon-new-window"></span></button></a></center>
 										</td>
@@ -313,16 +319,17 @@ if (!isset($_SESSION['suser'])) {
 									</tr>
 									<!-- End 3333333333333333333333 End -->
 
-
-									<!-- 444444444444444444444444444444 -->
-
-									<!-- End 4444444444444444444444 End -->
-
-
-									<!-- 555555555555555555555555555555 -->
-
-									<!-- End 5555555555555555555555 End -->
-
+									<!-- ses -->
+									<tr class="warning">
+										<td>เศรษฐศาสตรบัณฑิต(บช.บ.)</td>
+										<td><?php echo $totalses; ?></td>
+										<td><?php echo $totalses1; ?></td>
+										<td><?php echo ($totalses + $totalses1); ?></td>
+										<td class="noPrint">
+											<center><a href="/scan//scan/configmenu/report1-1.php?status=7"><button type="button" class="btn btn-success btn-xs">รายละเอียด&nbsp;<span class="glyphicon glyphicon-new-window"></span></button></a></center>
+										</td>
+									</tr>
+									<!-- End ses End -->
 
 									<!-- 666666666666666666666666666666 -->
 									<tr class="warning">
@@ -336,12 +343,6 @@ if (!isset($_SESSION['suser'])) {
 									</tr>
 									<!-- End 6666666666666666666666 End -->
 
-
-									<!-- 777777777777777777777777777777 -->
-
-									<!-- End 7777777777777777777777 End -->
-
-
 									<!-- 888888888888888888888888888888 -->
 									<tr class="warning">
 										<td>พยาบาลศาสตรบัณฑิต(พย.บ.)</td>
@@ -354,24 +355,11 @@ if (!isset($_SESSION['suser'])) {
 									</tr>
 									<!-- End 8888888888888888888888 End -->
 
-
-									<!-- 999999999999999999999999999999 -->
-									<tr class="warning">
-										<td>บริหารธุรกิจบัณฑิต(บธ.บ.)</td>
-										<td><?php echo $total7; ?></td>
-										<td><?php echo $total77; ?></td>
-										<td><?php echo ($total7 + $total77); ?></td>
-										<td class="noPrint">
-											<center><a href="/scan//scan/configmenu/report1-1.php?status=9"><button type="button" class="btn btn-success btn-xs">รายละเอียด&nbsp;<span class="glyphicon glyphicon-new-window"></span></button></a></center>
-										</td>
-									</tr>
-									<!-- End 9999999999999999999999 End -->
-
 									<tr class="danger">
 										<td>รวม</td>
-										<td><?php echo ($total1 + $total2 + $total3 + $total4 + $total5 + $total6 + $total7 + $total8 + $total9); ?></td>
-										<td><?php echo ($total11 + $total22 + $total33 + $total44 + $total55 + $total66 + $total77 + $total88 + $total99); ?></td>
-										<td><?php echo ($total1 + $total2 + $total3 + $total4 + $total5 + $total6 + $total7 + $total8 + $total9) + ($total11 + $total22 + $total33 + $total44 + $total55 + $total66 + $total77 + $total88 + $total99); ?></td>
+										<td><?php echo ($total1 + $total2 + $total3 + $total4 + $total5 + $total6 + $total7 + $total8 + $total9 + $total10 + $total11 + $total12 + $totalses); ?></td>
+										<td><?php echo ($total11 + $total22 + $total33 + $total44 + $total55 + $total66 + $total77 + $total88 + $total99 + $total1010 +$total1111 + $total1212 + $totalses1); ?></td>
+										<td><?php echo ($total1 + $total2 + $total3 + $total4 + $total5 + $total6 + $total7 + $total8 + $total9 + $total10 + $total11 + $total12 + $totalses) + ($total11 + $total22 + $total33 + $total44 + $total55 + $total66 + $total77 + $total88 + $total99 + $total1010 +$total1111 + $total1212 + $totalses1); ?></td>
 										<td class="noPrint"></td>
 									</tr>
 								</tbody>

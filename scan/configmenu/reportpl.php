@@ -257,7 +257,7 @@
 										$query9999 = $conn->query("select * from scan2557 where education like '%พยาบาลศาสตรบัณฑิต%' and (chdate4 like '%ลา%' or chdate42 like '%ลา%') and type123='1';");
 										$total9999 = $query9999->num_rows;
 										
-										
+										// นิเทศ
 										$query10 = $conn->query("select * from scan2557 where education like '%นิเทศศาสตรบัณฑิต%' and (chdate1 like '%ลา%' or chdate12 like '%ลา%') and type123='1';");
 										$total10 = $query10->num_rows;
 										
@@ -269,45 +269,61 @@
 										
 										$query10000 = $conn->query("select * from scan2557 where education like '%นิเทศศาสตรบัณฑิต%' and (chdate4 like '%ลา%' or chdate42 like '%ลา%') and type123='1';");
 										$total10000 = $query10000->num_rows;
+										// จบ
+
+										// รัฐศาสตร์
+										$queryrat = $conn->query("select * from scan2557 where education like '%รัฐศาสตรบัณฑิต%' and (chdate1 like '%ลา%' or chdate12 like '%ลา%') and type123='1';");
+										$totalrat = $queryrat->num_rows;
 										
-								?>
-										  <!-- 111111111111111111111111111111 -->
-										  <tr class="warning">
-											<td>ครุศาสตรบัณฑิต(ค.บ.)</td>
-											<td><?php echo $total3;?></td>
-											<td><?php echo $total33;?></td>
-											<td><?php echo $total333;?></td>
-											<td><?php echo $total3333;?></td>
+										$queryrat1 = $conn->query("select * from scan2557 where education like '%รัฐศาสตรบัณฑิต%' and (chdate2 like '%ลา%' or chdate22 like '%ลา%') and type123='1';");
+										$totalrat1 = $queryrat1->num_rows;
+										
+										$queryrat2 = $conn->query("select * from scan2557 where education like '%รัฐศาสตรบัณฑิต%' and (chdate3 like '%ลา%' or chdate32 like '%ลา%') and type123='1';");
+										$totalrat2 = $queryrat2->num_rows;
+										
+										$queryrat3 = $conn->query("select * from scan2557 where education like '%รัฐศาสตรบัณฑิต%' and (chdate4 like '%ลา%' or chdate42 like '%ลา%') and type123='1';");
+										$totalrat3 = $queryrat3->num_rows;
+										// จบ
+
+										// เศรษฐศาสตร์
+										$queryses = $conn->query("select * from scan2557 where education like '%รัฐศาสตรบัณฑิต%' and (chdate1 like '%ลา%' or chdate12 like '%ลา%') and type123='1';");
+										$totalses = $queryses->num_rows;
+										
+										$queryses1 = $conn->query("select * from scan2557 where education like '%รัฐศาสตรบัณฑิต%' and (chdate2 like '%ลา%' or chdate22 like '%ลา%') and type123='1';");
+										$totalses1 = $queryses1->num_rows;
+										
+										$queryses2 = $conn->query("select * from scan2557 where education like '%รัฐศาสตรบัณฑิต%' and (chdate3 like '%ลา%' or chdate32 like '%ลา%') and type123='1';");
+										$totalses2 = $queryses2->num_rows;
+										
+										$queryses3 = $conn->query("select * from scan2557 where education like '%รัฐศาสตรบัณฑิต%' and (chdate4 like '%ลา%' or chdate42 like '%ลา%') and type123='1';");
+										$totalses3 = $queryses3->num_rows;
+										// จบ
+										
+										?>
+										<!-- 222222222222222222222222222222 วิทย์-->
+										<tr class="warning">
+										  <td>วิทยาศาสตรบัณฑิต(วท.บ.)</td>
+										  <td><?php echo $total4;?></td>
+										  <td><?php echo $total44;?></td>
+										  <td><?php echo $total444;?></td>
+										  <td><?php echo $total4444;?></td>
+										   <td><center><a class="noPrint" href="#"><button type="button" class="btn btn-success btn-xs">รายละเอียด&nbsp;<span class="glyphicon glyphicon-new-window"></span></button></a></center></td>
+										</tr>
+										<!-- End 2222222222222222222222 End -->
+
+                                          <!-- 1010101010101010 นิเทศ -->
+                                          <tr class="warning">
+											<td>นิเทศศาสตรบัณฑิต</td>
+											<td><?php echo $total10;?> </td>
+											<td><?php echo $total100;?></td>
+											<td><?php echo $total1000;?></td>
+											<td><?php echo $total10000;?></td>
 											 <td><center><a class="noPrint" href="#"><button type="button" class="btn btn-success btn-xs">รายละเอียด&nbsp;<span class="glyphicon glyphicon-new-window"></span></button></a></center></td>
 										  </tr>
-										  <!-- End 1111111111111111111111 End -->
+										  <!-- End 1010101010101010 End -->
 
-
-										  <!-- 222222222222222222222222222222 -->
-										  <tr class="warning">
-											<td>วิทยาศาสตรบัณฑิต(วท.บ.)</td>
-											<td><?php echo $total4;?></td>
-											<td><?php echo $total44;?></td>
-											<td><?php echo $total444;?></td>
-											<td><?php echo $total4444;?></td>
-											 <td><center><a class="noPrint" href="#"><button type="button" class="btn btn-success btn-xs">รายละเอียด&nbsp;<span class="glyphicon glyphicon-new-window"></span></button></a></center></td>
-										  </tr>
-										  <!-- End 2222222222222222222222 End -->
-
-
-										  <!-- 333333333333333333333333333333 -->
-										  <tr class="warning">
-											<td>นิติศาสตรบัณฑิต(น.บ.)</td>
-											<td><?php echo $total5;?></td>
-											<td><?php echo $total55;?></td>
-											<td><?php echo $total555;?></td>
-											<td><?php echo $total5555;?></td>
-											 <td><center><a class="noPrint" href="#"><button type="button" class="btn btn-success btn-xs">รายละเอียด&nbsp;<span class="glyphicon glyphicon-new-window"></span></button></a></center></td>
-										  </tr>
-										  <!-- End 3333333333333333333333 End -->
-
-
-										  <!-- 444444444444444444444444444444 -->
+										
+										  <!-- 444444444444444444444444444444 รัฐประ-->
 										  <tr class="warning">
 											<td>รัฐประศาสนศาสตรบัณฑิต(รป.บ.)</td>
 											<td><?php echo $total6;?></td>
@@ -317,9 +333,19 @@
 											 <td><center><a class="noPrint" href="#"><button type="button" class="btn btn-success btn-xs">รายละเอียด&nbsp;<span class="glyphicon glyphicon-new-window"></span></button></a></center></td>
 										  </tr>
 										  <!-- End 4444444444444444444444 End -->
+										  <!-- rat รัฐประ-->
+										  <tr class="warning">
+											<td>รัฐศาสตรบัณฑิต(รศ.บ.)</td>
+											<td><?php echo $totalrat;?></td>
+											<td><?php echo $totalrat1;?></td>
+											<td><?php echo $totalrat2;?></td>
+											<td><?php echo $totalrat3;?></td>
+											 <td><center><a class="noPrint" href="#"><button type="button" class="btn btn-success btn-xs">รายละเอียด&nbsp;<span class="glyphicon glyphicon-new-window"></span></button></a></center></td>
+										  </tr>
+										  <!-- End rat End -->
 
 
-										  <!-- 555555555555555555555555555555 -->
+										  <!-- 555555555555555555555555555555 ศิลป์ปกรรรม-->
 										  <tr class="warning">
 											<td>ศิลปกรรมศาสตรบัณฑิต(ศป.บ.)</td>
 											<td><?php echo $total2;?></td>
@@ -330,20 +356,41 @@
 										  </tr>
 										  <!-- End 5555555555555555555555 End -->
 
-
-										  <!-- 666666666666666666666666666666 -->
+										  <!-- 999999999999999999999999999999 บริหาร-->
 										  <tr class="warning">
-											<td>ศิลปศาสตรบัณฑิต(ศศ.บ.)</td>
-											<td><?php echo $total1;?></td>
-											<td><?php echo $total11;?></td>
-											<td><?php echo $total111;?></td>
-											<td><?php echo $total1111;?></td>
-											<td><center><a class="noPrint" href="#"><button type="button" class="btn btn-success btn-xs">รายละเอียด&nbsp;<span class="glyphicon glyphicon-new-window"></span></button></a></center></td>
+											<td>บริหารธุรกิจบัณฑิต(บธ.บ.)</td>
+											<td><?php echo $total7;?></td>
+											<td><?php echo $total77;?></td>
+											<td><?php echo $total777;?></td>
+											<td><?php echo $total7777;?></td>
+											 <td><center><a class="noPrint" href="#"><button type="button" class="btn btn-success btn-xs">รายละเอียด&nbsp;<span class="glyphicon glyphicon-new-window"></span></button></a></center></td>
 										  </tr>
-										  <!-- End 6666666666666666666666 End -->
+										  <!-- ป.โท ป.เอก -->
+										  <!--  -->
 
+										  <!-- 111111111111111111111111111111 ครุศาสตร์-->
+										  <tr class="warning">
+											<td>ครุศาสตรบัณฑิต(ค.บ.)</td>
+											<td><?php echo $total3;?></td>
+											<td><?php echo $total33;?></td>
+											<td><?php echo $total333;?></td>
+											<td><?php echo $total3333;?></td>
+											 <td><center><a class="noPrint" href="#"><button type="button" class="btn btn-success btn-xs">รายละเอียด&nbsp;<span class="glyphicon glyphicon-new-window"></span></button></a></center></td>
+										  </tr>
+										  <!-- End 1111111111111111111111 End -->
 
-										  <!-- 777777777777777777777777777777 -->
+										  <!-- 333333333333333333333333333333 นิติ-->
+										  <tr class="warning">
+											<td>นิติศาสตรบัณฑิต(น.บ.)</td>
+											<td><?php echo $total5;?></td>
+											<td><?php echo $total55;?></td>
+											<td><?php echo $total555;?></td>
+											<td><?php echo $total5555;?></td>
+											 <td><center><a class="noPrint" href="#"><button type="button" class="btn btn-success btn-xs">รายละเอียด&nbsp;<span class="glyphicon glyphicon-new-window"></span></button></a></center></td>
+										  </tr>
+										  <!-- End 3333333333333333333333 End -->
+
+										  <!-- 777777777777777777777777777777 บัญชี-->
 										  <tr class="warning">
 											<td>บัญชีบัณฑิต(บช.บ.)</td>
 											<td><?php echo $total8;?></td>
@@ -354,8 +401,29 @@
 										  </tr>
 										  <!-- End 7777777777777777777777 End -->
 
+										  <!-- ses เศรษศาสตร์-->
+										  <tr class="warning">
+											<td>เศรษฐศาสตรบัณฑิต(ศ.บ.)</td>
+											<td><?php echo $totalses;?></td>
+											<td><?php echo $totalses1;?></td>
+											<td><?php echo $totalses2;?></td>
+											<td><?php echo $totalses3;?></td>
+											 <td><center><a class="noPrint" href="#"><button type="button" class="btn btn-success btn-xs">รายละเอียด&nbsp;<span class="glyphicon glyphicon-new-window"></span></button></a></center></td>
+										  </tr>
+										  <!-- End ses End -->
 
-										  <!-- 888888888888888888888888888888 -->
+										  <!-- 666666666666666666666666666666 ศิลป์ศาสตร์-->
+										  <tr class="warning">
+											<td>ศิลปศาสตรบัณฑิต(ศศ.บ.)</td>
+											<td><?php echo $total1;?></td>
+											<td><?php echo $total11;?></td>
+											<td><?php echo $total111;?></td>
+											<td><?php echo $total1111;?></td>
+											<td><center><a class="noPrint" href="#"><button type="button" class="btn btn-success btn-xs">รายละเอียด&nbsp;<span class="glyphicon glyphicon-new-window"></span></button></a></center></td>
+										  </tr>
+										  <!-- End 6666666666666666666666 End -->
+
+										  <!-- 888888888888888888888888888888 พยาบาล-->
 										  <tr class="warning">
 											<td>พยาบาลศาสตรบัณฑิต(พย.บ.)</td>
 											<td><?php echo $total9;?></td>
@@ -366,33 +434,12 @@
 										  </tr>
 										  <!-- End 8888888888888888888888 End -->
 
-
-										  <!-- 999999999999999999999999999999 -->
-										  <tr class="warning">
-											<td>บริหารธุรกิจบัณฑิต(บธ.บ.)</td>
-											<td><?php echo $total7;?></td>
-											<td><?php echo $total77;?></td>
-											<td><?php echo $total777;?></td>
-											<td><?php echo $total7777;?></td>
-											 <td><center><a class="noPrint" href="#"><button type="button" class="btn btn-success btn-xs">รายละเอียด&nbsp;<span class="glyphicon glyphicon-new-window"></span></button></a></center></td>
-										  </tr>
-                                          
-                                          <tr class="warning">
-											<td>นิเทศศาสตรบัณฑิต</td>
-											<td><?php echo $total10;?> </td>
-											<td><?php echo $total100;?></td>
-											<td><?php echo $total1000;?></td>
-											<td><?php echo $total10000;?></td>
-											 <td><center><a class="noPrint" href="#"><button type="button" class="btn btn-success btn-xs">รายละเอียด&nbsp;<span class="glyphicon glyphicon-new-window"></span></button></a></center></td>
-										  </tr>
-										  <!-- End 9999999999999999999999 End -->
-
 										   <tr class="danger">
 											<td>รวม</td>
-											<td><?php echo ($total1+$total2+$total3+$total4+$total5+$total6+$total7+$total8+$total9+$total10);?></td>
-											<td><?php echo ($total11+$total22+$total33+$total44+$total55+$total66+$total77+$total88+$total99+$total100);?></td>
-											<td><?php echo ($total111+$total222+$total333+$total444+$total555+$total666+$total777+$total888+$total999+$total1000);?></td>
-											<td><?php echo ($total1111+$total2222+$total3333+$total4444+$total5555+$total6666+$total7777+$total8888+$total9999+$total10000);?></td>
+											<td><?php echo ($total1+$total2+$total3+$total4+$total5+$total6+$total7+$total8+$total9+$total10+$totalrat);?></td>
+											<td><?php echo ($total11+$total22+$total33+$total44+$total55+$total66+$total77+$total88+$total99+$total100+$totalrat1);?></td>
+											<td><?php echo ($total111+$total222+$total333+$total444+$total555+$total666+$total777+$total888+$total999+$total1000+$totalrat2);?></td>
+											<td><?php echo ($total1111+$total2222+$total3333+$total4444+$total5555+$total6666+$total7777+$total8888+$total9999+$total10000+$totalrat3);?></td>
 											<td></td>
 										  </tr>
                                           

@@ -187,18 +187,29 @@ include('../sphp/conn.php');
 
 										$query99 = $conn->query("select * from scan2557 where education like '%พยาบาลศาสตรบัณฑิต%' and savejob like '%1%' and type123='1';");
 										$total99 = $query99->num_rows;
+
+										//นิเทศ()
+										$querynitas = $conn->query("select * from scan2557 where education like '%นิเทศศาสตรบัณฑิต%' and savejob like '%2%' and type123='1';");
+										$totalnitas = $querynitas->num_rows;
+
+										$querynitas1 = $conn->query("select * from scan2557 where education like '%นิเทศศาสตรบัณฑิต%' and savejob like '%1%' and type123='1';");
+										$totalnitas1 = $querynitas1->num_rows;
+
+										//รัฐศาสตร์(รศ.บ)
+										$queryrat = $conn->query("select * from scan2557 where education like '%รัฐศาสตรบัณฑิต%' and savejob like '%2%' and type123='1';");
+										$totalrat = $queryrat->num_rows;
+
+										$queryrat1 = $conn->query("select * from scan2557 where education like '%รัฐศาสตรบัณฑิต%' and savejob like '%1%' and type123='1';");
+										$totalrat1 = $queryrat1->num_rows;
+
+										//เศรษศาสตร์()
+										$queryses = $conn->query("select * from scan2557 where education like '%รัฐศาสตรบัณฑิต%' and savejob like '%2%' and type123='1';");
+										$totalses = $queryses->num_rows;
+
+										$queryses1 = $conn->query("select * from scan2557 where education like '%รัฐศาสตรบัณฑิต%' and savejob like '%1%' and type123='1';");
+										$totalses1 = $queryses1->num_rows;
 										
 								?>
-										  <!-- 111111111111111111111111111111 -->
-										  <tr class="warning">
-											<td>ครุศาสตรบัณฑิต(ค.บ.)</td>
-											<td><?php echo $total3;?></td>
-											<td><?php echo $total33;?></td>
-											 <td><center><a class="noPrint" href="#"><button type="button" class="btn btn-success btn-xs">รายละเอียด&nbsp;<span class="glyphicon glyphicon-new-window"></span></button></a></center></td>
-										  </tr>
-										  <!-- End 1111111111111111111111 End -->
-
-
 										  <!-- 222222222222222222222222222222 -->
 										  <tr class="warning">
 											<td>วิทยาศาสตรบัณฑิต(วท.บ.)</td>
@@ -208,16 +219,14 @@ include('../sphp/conn.php');
 										  </tr>
 										  <!-- End 2222222222222222222222 End -->
 
-
-										  <!-- 333333333333333333333333333333 -->
-										  <tr class="warning">
-											<td>นิติศาสตรบัณฑิต(น.บ.)</td>
-											<td><?php echo $total5;?></td>
-											<td><?php echo $total55;?></td>
+										<!-- nitas นิเทศ-->
+										<tr class="warning">
+											<td>นิเทศศาสตรบัณฑิต(นศ.บ.)</td>
+											<td><?php echo $totalnitas;?></td>
+											<td><?php echo $totalnitas1;?></td>
 											 <td><center><a class="noPrint" href="#"><button type="button" class="btn btn-success btn-xs">รายละเอียด&nbsp;<span class="glyphicon glyphicon-new-window"></span></button></a></center></td>
 										  </tr>
-										  <!-- End 3333333333333333333333 End -->
-
+										  <!-- End nitas End -->
 
 										  <!-- 444444444444444444444444444444 -->
 										  <tr class="warning">
@@ -228,6 +237,14 @@ include('../sphp/conn.php');
 										  </tr>
 										  <!-- End 4444444444444444444444 End -->
 
+										<!-- 444444444444444444444444444444 -->
+										<tr class="warning">
+											<td>รัฐศาสตรบัณฑิต(รศ.บ.)</td>
+											<td><?php echo $totalrat;?></td>
+											<td><?php echo $totalrat1;?></td>
+											 <td><center><a class="noPrint" href="#"><button type="button" class="btn btn-success btn-xs">รายละเอียด&nbsp;<span class="glyphicon glyphicon-new-window"></span></button></a></center></td>
+										  </tr>
+										  <!-- End 4444444444444444444444 End -->
 
 										  <!-- 555555555555555555555555555555 -->
 										  <tr class="warning">
@@ -238,6 +255,50 @@ include('../sphp/conn.php');
 										  </tr>
 										  <!-- End 5555555555555555555555 End -->
 
+										  <!-- 999999999999999999999999999999 -->
+										  <tr class="warning">
+											<td>บริหารธุรกิจบัณฑิต(บธ.บ.)</td>
+											<td><?php echo $total7;?></td>
+											<td><?php echo $total77;?></td>
+											 <td><center><a class="noPrint" href="#"><button type="button" class="btn btn-success btn-xs">รายละเอียด&nbsp;<span class="glyphicon glyphicon-new-window"></span></button></a></center></td>
+										  </tr>
+										  <!-- End 9999999999999999999999 End -->
+
+										  <!-- 111111111111111111111111111111 -->
+										  <tr class="warning">
+											<td>ครุศาสตรบัณฑิต(ค.บ.)</td>
+											<td><?php echo $total3;?></td>
+											<td><?php echo $total33;?></td>
+											 <td><center><a class="noPrint" href="#"><button type="button" class="btn btn-success btn-xs">รายละเอียด&nbsp;<span class="glyphicon glyphicon-new-window"></span></button></a></center></td>
+										  </tr>
+										  <!-- End 1111111111111111111111 End -->
+
+										  <!-- 333333333333333333333333333333 -->
+										  <tr class="warning">
+											<td>นิติศาสตรบัณฑิต(น.บ.)</td>
+											<td><?php echo $total5;?></td>
+											<td><?php echo $total55;?></td>
+											 <td><center><a class="noPrint" href="#"><button type="button" class="btn btn-success btn-xs">รายละเอียด&nbsp;<span class="glyphicon glyphicon-new-window"></span></button></a></center></td>
+										  </tr>
+										  <!-- End 3333333333333333333333 End -->
+
+										  <!-- 777777777777777777777777777777 -->
+											<tr class="warning">
+											<td>บัญชีบัณฑิต(บช.บ.)</td>
+											<td><?php echo $total8;?></td>
+											<td><?php echo $total88;?></td>
+											 <td><center><a class="noPrint" href="#"><button type="button" class="btn btn-success btn-xs">รายละเอียด&nbsp;<span class="glyphicon glyphicon-new-window"></span></button></a></center></td>
+										  </tr>
+										  <!-- End 7777777777777777777777 End -->
+
+										  <!-- 777777777777777777777777777777 -->
+											<tr class="warning">
+											<td>เศรษฐศาสตรบัณฑิต(..)</td>
+											<td><?php echo $totalses;?></td>
+											<td><?php echo $totalses1;?></td>
+											 <td><center><a class="noPrint" href="#"><button type="button" class="btn btn-success btn-xs">รายละเอียด&nbsp;<span class="glyphicon glyphicon-new-window"></span></button></a></center></td>
+										  </tr>
+										  <!-- End 7777777777777777777777 End -->
 
 										  <!-- 666666666666666666666666666666 -->
 										  <tr class="warning">
@@ -248,17 +309,6 @@ include('../sphp/conn.php');
 										  </tr>
 										  <!-- End 6666666666666666666666 End -->
 
-
-										  <!-- 777777777777777777777777777777 -->
-										  <tr class="warning">
-											<td>บัญชีบัณฑิต(บช.บ.)</td>
-											<td><?php echo $total8;?></td>
-											<td><?php echo $total88;?></td>
-											 <td><center><a class="noPrint" href="#"><button type="button" class="btn btn-success btn-xs">รายละเอียด&nbsp;<span class="glyphicon glyphicon-new-window"></span></button></a></center></td>
-										  </tr>
-										  <!-- End 7777777777777777777777 End -->
-
-
 										  <!-- 888888888888888888888888888888 -->
 										  <tr class="warning">
 											<td>พยาบาลศาสตรบัณฑิต(พย.บ.)</td>
@@ -268,20 +318,10 @@ include('../sphp/conn.php');
 										  </tr>
 										  <!-- End 8888888888888888888888 End -->
 
-
-										  <!-- 999999999999999999999999999999 -->
-										  <tr class="warning">
-											<td>บริหารธุรกิจบัณฑิต(บธ.บ.)</td>
-											<td><?php echo $total7;?></td>
-											<td><?php echo $total77;?></td>
-											 <td><center><a class="noPrint" href="#"><button type="button" class="btn btn-success btn-xs">รายละเอียด&nbsp;<span class="glyphicon glyphicon-new-window"></span></button></a></center></td>
-										  </tr>
-										  <!-- End 9999999999999999999999 End -->
-
 										   <tr class="danger">
 											<td>รวม</td>
-											<td><?php echo ($total1+$total2+$total3+$total4+$total5+$total6+$total7+$total8+$total9);?></td>
-											<td><?php echo ($total11+$total22+$total33+$total44+$total55+$total66+$total77+$total88+$total99);?></td>
+											<td><?php echo ($total1+$total2+$total3+$total4+$total5+$total6+$total7+$total8+$total9+$totalnitas+$totalrat+$totalses);?></td>
+											<td><?php echo ($total11+$total22+$total33+$total44+$total55+$total66+$total77+$total88+$total99+$totalnitas1+$totalrat1+$totalses1);?></td>
 										  </tr>
 										</tbody>
 								<?php
