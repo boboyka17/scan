@@ -154,8 +154,10 @@ $row['status'];
 
 	  <input type="radio" name="savejob" value="1" <?php echo "checked"; if($row['savejob']==1){echo "checked";};?>
 	  <?php if(!isset($_SESSION['suser'])or $showstatus['status']==3){echo "disabled";} ?>> บันทึกแล้ว(การมีงานทำ)
-	  <br/>
 
+	  
+	  <br/>
+	 
 
 
 	  หมายเหตุพิเศษ<input type="text" name="statustext" size="55" value="<?php  echo $row['statustext'];?>" 
