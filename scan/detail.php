@@ -143,7 +143,7 @@ $row['status'];
 	  <input type="radio" name="status" value="2" <?php if($row['status']==2){echo "checked";};?>
 	  <?php if(!isset($_SESSION['suser'])or $showstatus['status']==3){echo "disabled";} ?>> ตั้งครรภ์ &nbsp
 
-	  <input type="radio" name="status" value="3" <?php if($row['status']==3){echo "checked";};?>
+	  <input type="radio" id="check" onclick="removeElement()" name="status" value="3" <?php if($row['status']==3){echo "checked";};?>
 	  <?php if(!isset($_SESSION['suser'])or $showstatus['status']==3){echo "disabled";} ?>> ร่างกายไม่สมบูรณ์ &nbsp&nbsp&nbsp
 
 	  <input type="radio" name="la" value="(ลา)" 
@@ -154,8 +154,16 @@ $row['status'];
 
 	  <input type="radio" name="savejob" value="1" <?php echo "checked"; if($row['savejob']==1){echo "checked";};?>
 	  <?php if(!isset($_SESSION['suser'])or $showstatus['status']==3){echo "disabled";} ?>> บันทึกแล้ว(การมีงานทำ)
-
-	  
+	  <br>
+	  <br>
+	  <label for="">ระดับความพิการ</label>
+	  <select name="savetype" id="" >
+		<option value="1">ระดับปกติ</option>
+		<option value="2">ระดับหนึ่ง</option>
+		<option value="3">ระดับสอง</option>
+		<option value="4">ระดับสาม</option>
+	  </select>
+	  <br>
 	  <br/>
 	 
 
