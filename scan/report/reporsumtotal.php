@@ -596,1199 +596,7 @@ include('../sphp/conn.php');
 										</tr>
 									</thead>
 									<tbody>
-
-
-										<tr class="warning">
-											<td>
-												<div align="left">ครุศาสตรบัณฑิต(ค.บ.)</div>
-											</td>
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%ครุศาสตรบัณฑิต%'  ;", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%ครุศาสตรบัณฑิต%'  and degree = 1 and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%ครุศาสตรบัณฑิต%'  and degree = 2 and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%ครุศาสตรบัณฑิต%'  and degree = 9 and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%ครุศาสตรบัณฑิต%'   and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%ครุศาสตรบัณฑิต%'  and degree = 1 and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%ครุศาสตรบัณฑิต%'  and degree = 2 and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%ครุศาสตรบัณฑิต%'  and degree = 9 and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-											<td>
-												<div align="left">
-													<strong>
-														<?php
-														$query = $conn->query("select * from scan2557 where education like '%ครุศาสตรบัณฑิต%'   and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
-														$total = $query->num_rows;
-														if ($total != 0) echo $total;
-														else echo "-";
-														?>
-													</strong></div>
-											</td>
-											<td>
-												<div align="left">
-													<strong>
-														<?php
-														$query = $conn->query("select * from scan2557 where education like '%ครุศาสตรบัณฑิต%'   and ch" . $_POST['date'] . " !='';", $con);
-														$total = $query->num_rows;
-														if ($total != 0) echo $total;
-														else echo "-";
-														?>
-													</strong></div>
-											</td>
-											<td>
-												<div align="left">
-													<strong>
-														<?php
-														$query = $conn->query("select * from scan2557 where education like '%ครุศาสตรบัณฑิต%'   and ch" . $_POST['date'] . " ='';", $con);
-														$total = $query->num_rows;
-														if ($total != 0) echo $total;
-														else echo "-";
-														?>
-													</strong></div>
-											</td>
-										</tr>
-										<tr class="warning">
-											<td>
-												<div align="left">นิติศาสตรบัณฑิต(น.บ.)</div>
-											</td>
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%นิติศาสตรบัณฑิต%'   ;", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%นิติศาสตรบัณฑิต%'  and degree = 1 and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%นิติศาสตรบัณฑิต%'  and degree = 2 and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%นิติศาสตรบัณฑิต%'  and degree = 9 and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%นิติศาสตรบัณฑิต%'   and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%นิติศาสตรบัณฑิต%'  and degree = 1 and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%นิติศาสตรบัณฑิต%'  and degree = 2 and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%นิติศาสตรบัณฑิต%'  and degree = 9 and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-											<td>
-												<div align="left">
-													<strong>
-														<?php
-														$query = $conn->query("select * from scan2557 where education like '%นิติศาสตรบัณฑิต%'   and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
-														$total = $query->num_rows;
-														if ($total != 0) echo $total;
-														else echo "-";
-														?>
-													</strong></div>
-											</td>
-											<td>
-												<div align="left">
-													<strong>
-														<?php
-														$query = $conn->query("select * from scan2557 where education like '%นิติศาสตรบัณฑิต%'   and ch" . $_POST['date'] . " !='';", $con);
-														$total = $query->num_rows;
-														if ($total != 0) echo $total;
-														else echo "-";
-														?>
-													</strong></div>
-											</td>
-											<td>
-												<div align="left">
-													<strong>
-														<?php
-														$query = $conn->query("select * from scan2557 where education like '%นิติศาสตรบัณฑิต%'   and ch" . $_POST['date'] . " ='';", $con);
-														$total = $query->num_rows;
-														if ($total != 0) echo $total;
-														else echo "-";
-														?>
-													</strong></div>
-											</td>
-										</tr>
-										<tr class="warning">
-											<td>
-												<div align="left">รัฐประศาสนศาสตรบัณฑิต(รป.บ.)</div>
-											</td>
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%รัฐประศาสนศาสตรบัณฑิต%'   ;", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%รัฐประศาสนศาสตรบัณฑิต%'  and degree = 1 and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%รัฐประศาสนศาสตรบัณฑิต%'  and degree = 2 and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%รัฐประศาสนศาสตรบัณฑิต%'  and degree = 9 and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%รัฐประศาสนศาสตรบัณฑิต%'   and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%รัฐประศาสนศาสตรบัณฑิต%'  and degree = 1 and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%รัฐประศาสนศาสตรบัณฑิต%'  and degree = 2 and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%รัฐประศาสนศาสตรบัณฑิต%'  and degree = 9 and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-											<td>
-												<div align="left">
-													<strong>
-														<?php
-														$query = $conn->query("select * from scan2557 where education like '%รัฐประศาสนศาสตรบัณฑิต%'   and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
-														$total = $query->num_rows;
-														if ($total != 0) echo $total;
-														else echo "-";
-														?>
-													</strong></div>
-											</td>
-											<td>
-												<div align="left">
-													<strong>
-														<?php
-														$query = $conn->query("select * from scan2557 where education like '%รัฐประศาสนศาสตรบัณฑิต%'   and ch" . $_POST['date'] . " !='';", $con);
-														$total = $query->num_rows;
-														if ($total != 0) echo $total;
-														else echo "-";
-														?>
-													</strong></div>
-											</td>
-											<td>
-												<div align="left">
-													<strong>
-														<?php
-														$query = $conn->query("select * from scan2557 where education like '%รัฐประศาสนศาสตรบัณฑิต%'   and ch" . $_POST['date'] . " ='';", $con);
-														$total = $query->num_rows;
-														if ($total != 0) echo $total;
-														else echo "-";
-														?>
-													</strong></div>
-											</td>
-										</tr>
-										<tr class="warning">
-											<td>
-												<div align="left">รัฐศาสตรบัณฑิต(ร.บ.)</div>
-											</td>
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%รัฐศาสตรบัณฑิต%'  ;", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%รัฐศาสตรบัณฑิต%'  and degree = 1 and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%รัฐศาสตรบัณฑิต%'  and degree = 2 and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%รัฐศาสตรบัณฑิต%'  and degree = 9 and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%รัฐศาสตรบัณฑิต%'   and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%รัฐศาสตรบัณฑิต%'  and degree = 1 and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%รัฐศาสตรบัณฑิต%'  and degree = 2 and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%รัฐศาสตรบัณฑิต%'  and degree = 9 and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-											<td>
-												<div align="left">
-													<strong>
-														<?php
-														$query = $conn->query("select * from scan2557 where education like '%รัฐศาสตรบัณฑิต%'   and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
-														$total = $query->num_rows;
-														if ($total != 0) echo $total;
-														else echo "-";
-														?>
-													</strong></div>
-											</td>
-											<td>
-												<div align="left">
-													<strong>
-														<?php
-														$query = $conn->query("select * from scan2557 where education like '%รัฐศาสตรบัณฑิต%'   and ch" . $_POST['date'] . " !='';", $con);
-														$total = $query->num_rows;
-														if ($total != 0) echo $total;
-														else echo "-";
-														?>
-													</strong></div>
-											</td>
-											<td>
-												<div align="left">
-													<strong>
-														<?php
-														$query = $conn->query("select * from scan2557 where education like '%รัฐศาสตรบัณฑิต%'   and ch" . $_POST['date'] . " ='';", $con);
-														$total = $query->num_rows;
-														if ($total != 0) echo $total;
-														else echo "-";
-														?>
-													</strong></div>
-											</td>
-										</tr>
-										<tr class="warning">
-											<td>
-												<div align="left">ศิลปกรรมศาสตรบัณฑิต(ศป.บ.)</div>
-											</td>
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%ศิลปกรรมศาสตรบัณฑิต%'  ;", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%ศิลปกรรมศาสตรบัณฑิต%'  and degree = 1 and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%ศิลปกรรมศาสตรบัณฑิต%'  and degree = 2 and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%ศิลปกรรมศาสตรบัณฑิต%'  and degree = 9 and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%ศิลปกรรมศาสตรบัณฑิต%'   and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%ศิลปกรรมศาสตรบัณฑิต%'  and degree = 1 and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%ศิลปกรรมศาสตรบัณฑิต%'  and degree = 2 and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%ศิลปกรรมศาสตรบัณฑิต%'  and degree = 9 and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-											<td>
-												<div align="left">
-													<strong>
-														<?php
-														$query = $conn->query("select * from scan2557 where education like '%ศิลปกรรมศาสตรบัณฑิต%'   and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
-														$total = $query->num_rows;
-														if ($total != 0) echo $total;
-														else echo "-";
-														?>
-													</strong></div>
-											</td>
-											<td>
-												<div align="left">
-													<strong>
-														<?php
-														$query = $conn->query("select * from scan2557 where education like '%ศิลปกรรมศาสตรบัณฑิต%'   and ch" . $_POST['date'] . " !='';", $con);
-														$total = $query->num_rows;
-														if ($total != 0) echo $total;
-														else echo "-";
-														?>
-													</strong></div>
-											</td>
-											<td>
-												<div align="left">
-													<strong>
-														<?php
-														$query = $conn->query("select * from scan2557 where education like '%ศิลปกรรมศาสตรบัณฑิต%'   and ch" . $_POST['date'] . " ='';", $con);
-														$total = $query->num_rows;
-														if ($total != 0) echo $total;
-														else echo "-";
-														?>
-													</strong></div>
-											</td>
-										</tr>
-										<tr class="warning">
-											<td>
-												<div align="left">ศิลปศาสตรบัณฑิต(ศศ.บ.)</div>
-											</td>
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%ศิลปศาสตรบัณฑิต%'   ;", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%ศิลปศาสตรบัณฑิต%'  and degree = 1 and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-											<td>
-												<div align="left">
-
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%ศิลปศาสตรบัณฑิต%'  and degree = 2 and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%ศิลปศาสตรบัณฑิต%'  and degree = 9 and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%ศิลปศาสตรบัณฑิต%'   and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%ศิลปศาสตรบัณฑิต%'  and degree = 1 and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%ศิลปศาสตรบัณฑิต%'  and degree = 2 and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%ศิลปศาสตรบัณฑิต%'  and degree = 9 and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-											<td>
-												<div align="left">
-													<strong>
-														<?php
-														$query = $conn->query("select * from scan2557 where education like '%ศิลปศาสตรบัณฑิต%'   and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
-														$total = $query->num_rows;
-														if ($total != 0) echo $total;
-														else echo "-";
-														?>
-													</strong></div>
-											</td>
-											<td>
-												<div align="left">
-													<strong>
-														<?php
-														$query = $conn->query("select * from scan2557 where education like '%ศิลปศาสตรบัณฑิต%'   and ch" . $_POST['date'] . " !='';", $con);
-														$total = $query->num_rows;
-														if ($total != 0) echo $total;
-														else echo "-";
-														?>
-													</strong></div>
-											</td>
-											<td>
-												<div align="left">
-													<strong>
-														<?php
-														$query = $conn->query("select * from scan2557 where education like '%ศิลปศาสตรบัณฑิต%'   and ch" . $_POST['date'] . " ='';", $con);
-														$total = $query->num_rows;
-														if ($total != 0) echo $total;
-														else echo "-";
-														?>
-													</strong></div>
-											</td>
-										</tr>
-										<tr class="warning">
-											<td>
-												<div align="left">พยาบาลศาสตรบัณฑิต(พย.บ.)</div>
-											</td>
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%พยาบาลศาสตรบัณฑิต%' ;", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%พยาบาลศาสตรบัณฑิต%'  and degree = 1 and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%พยาบาลศาสตรบัณฑิต%'  and degree = 2 and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%พยาบาลศาสตรบัณฑิต%'  and degree = 9 and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%พยาบาลศาสตรบัณฑิต%'   and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%พยาบาลศาสตรบัณฑิต%'  and degree = 1 and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%พยาบาลศาสตรบัณฑิต%'  and degree = 2 and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%พยาบาลศาสตรบัณฑิต%'  and degree = 9 and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-											<td>
-												<div align="left">
-													<strong>
-														<?php
-														$query = $conn->query("select * from scan2557 where education like '%พยาบาลศาสตรบัณฑิต%'   and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
-														$total = $query->num_rows;
-														if ($total != 0) echo $total;
-														else echo "-";
-														?>
-													</strong></div>
-											</td>
-											<td>
-												<div align="left">
-													<strong>
-														<?php
-														$query = $conn->query("select * from scan2557 where education like '%พยาบาลศาสตรบัณฑิต%'   and ch" . $_POST['date'] . " !='';", $con);
-														$total = $query->num_rows;
-														if ($total != 0) echo $total;
-														else echo "-";
-														?>
-													</strong></div>
-											</td>
-											<td>
-												<div align="left">
-													<strong>
-														<?php
-														$query = $conn->query("select * from scan2557 where education like '%พยาบาลศาสตรบัณฑิต%'   and ch" . $_POST['date'] . " ='';", $con);
-														$total = $query->num_rows;
-														if ($total != 0) echo $total;
-														else echo "-";
-														?>
-													</strong></div>
-											</td>
-										</tr>
-										<tr class="warning">
-											<td>
-												<div align="left">บริหารธุรกิจบัณฑิต(บธ.บ.)</div>
-											</td>
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%บริหารธุรกิจบัณฑิต%'   ;", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%บริหารธุรกิจบัณฑิต%'  and degree = 1 and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%บริหารธุรกิจบัณฑิต%'  and degree = 2 and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%บริหารธุรกิจบัณฑิต%'  and degree = 9 and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%บริหารธุรกิจบัณฑิต%'   and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%บริหารธุรกิจบัณฑิต%'  and degree = 1 and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%บริหารธุรกิจบัณฑิต%'  and degree = 2 and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%บริหารธุรกิจบัณฑิต%'  and degree = 9 and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-											<td>
-												<div align="left">
-													<strong>
-														<?php
-														$query = $conn->query("select * from scan2557 where education like '%บริหารธุรกิจบัณฑิต%'   and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
-														$total = $query->num_rows;
-														if ($total != 0) echo $total;
-														else echo "-";
-														?>
-													</strong></div>
-											</td>
-											<td>
-												<div align="left">
-													<strong>
-														<?php
-														$query = $conn->query("select * from scan2557 where education like '%บริหารธุรกิจบัณฑิต%'   and ch" . $_POST['date'] . " !='';", $con);
-														$total = $query->num_rows;
-														if ($total != 0) echo $total;
-														else echo "-";
-														?>
-													</strong></div>
-											</td>
-											<td>
-												<div align="left">
-													<strong>
-														<?php
-														$query = $conn->query("select * from scan2557 where education like '%บริหารธุรกิจบัณฑิต%'   and ch" . $_POST['date'] . " ='';", $con);
-														$total = $query->num_rows;
-														if ($total != 0) echo $total;
-														else echo "-";
-														?>
-													</strong></div>
-											</td>
-										</tr>
-										<tr class="warning">
-											<td>
-												<div align="left">บัญชีบัณฑิต(บช.บ.)</div>
-											</td>
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%บัญชีบัณฑิต%'   ;", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%บัญชีบัณฑิต%'  and degree = 1 and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%บัญชีบัณฑิต%'  and degree = 2 and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%บัญชีบัณฑิต%'  and degree = 9 and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%บัญชีบัณฑิต%'   and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%บัญชีบัณฑิต%'  and degree = 1 and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%บัญชีบัณฑิต%'  and degree = 2 and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%บัญชีบัณฑิต%'  and degree = 9 and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-											<td>
-												<div align="left">
-													<strong>
-														<?php
-														$query = $conn->query("select * from scan2557 where education like '%บัญชีบัณฑิต%'   and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
-														$total = $query->num_rows;
-														if ($total != 0) echo $total;
-														else echo "-";
-														?>
-													</strong></div>
-											</td>
-											<td>
-												<div align="left">
-													<strong>
-														<?php
-														$query = $conn->query("select * from scan2557 where education like '%บัญชีบัณฑิต%'   and ch" . $_POST['date'] . " !='';", $con);
-														$total = $query->num_rows;
-														if ($total != 0) echo $total;
-														else echo "-";
-														?>
-													</strong></div>
-											</td>
-											<td>
-												<div align="left">
-													<strong>
-														<?php
-														$query = $conn->query("select * from scan2557 where education like '%บัญชีบัณฑิต%'   and ch" . $_POST['date'] . " ='';", $con);
-														$total = $query->num_rows;
-														if ($total != 0) echo $total;
-														else echo "-";
-														?>
-													</strong></div>
-											</td>
-										</tr>
-										<tr class="warning">
-											<td>
-												<div align="left">เศรษฐศาสตรบัณฑิต(ศ.บ.)</div>
-											</td>
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%เศรษฐศาสตรบัณฑิต%'  ;", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%เศรษฐศาสตรบัณฑิต%'  and degree = 1 and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%เศรษฐศาสตรบัณฑิต%'  and degree = 2 and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%เศรษฐศาสตรบัณฑิต%'  and degree = 9 and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%เศรษฐศาสตรบัณฑิต%'   and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%เศรษฐศาสตรบัณฑิต%'  and degree = 1 and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%เศรษฐศาสตรบัณฑิต%'  and degree = 2 and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-											<td>
-												<div align="left">
-													<?php
-													$query = $conn->query("select * from scan2557 where education like '%เศรษฐศาสตรบัณฑิต%'  and degree = 9 and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
-													$total = $query->num_rows;
-													if ($total != 0) echo $total;
-													else echo "-";
-													?>
-												</div>
-											</td>
-											<td>
-												<div align="left">
-													<strong>
-														<?php
-														$query = $conn->query("select * from scan2557 where education like '%เศรษฐศาสตรบัณฑิต%'   and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
-														$total = $query->num_rows;
-														if ($total != 0) echo $total;
-														else echo "-";
-														?>
-													</strong></div>
-											</td>
-											<td>
-												<div align="left">
-													<strong>
-														<?php
-														$query = $conn->query("select * from scan2557 where education like '%เศรษฐศาสตรบัณฑิต%'   and ch" . $_POST['date'] . " !='';", $con);
-														$total = $query->num_rows;
-														if ($total != 0) echo $total;
-														else echo "-";
-														?>
-													</strong></div>
-											</td>
-											<td>
-												<div align="left">
-													<strong>
-														<?php
-														$query = $conn->query("select * from scan2557 where education like '%เศรษฐศาสตรบัณฑิต%'   and ch" . $_POST['date'] . " ='';", $con);
-														$total = $query->num_rows;
-														if ($total != 0) echo $total;
-														else echo "-";
-														?>
-													</strong></div>
-											</td>
-										</tr>
+										<!-- วิทยาศาสตร์ ****-->
 										<tr class="warning">
 											<td>
 												<div align="left">วิทยาศาสตรบัณฑิต(วท.บ.)</div>
@@ -1908,6 +716,7 @@ include('../sphp/conn.php');
 													</strong></div>
 											</td>
 										</tr>
+										<!-- นิเทศศาสตรบัณฑิต ****-->
 										<tr class="warning">
 											<td>
 												<div align="left">นิเทศศาสตรบัณฑิต(นศ.บ.)</div>
@@ -2028,6 +837,1211 @@ include('../sphp/conn.php');
 													</strong></div>
 											</td>
 										</tr>
+										<!-- รัฐประศาสนศาสตรบัณฑิต ***-->
+										<tr class="warning">
+											<td>
+												<div align="left">รัฐประศาสนศาสตรบัณฑิต(รป.บ.)</div>
+											</td>
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%รัฐประศาสนศาสตรบัณฑิต%'   ;", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%รัฐประศาสนศาสตรบัณฑิต%'  and degree = 1 and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%รัฐประศาสนศาสตรบัณฑิต%'  and degree = 2 and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%รัฐประศาสนศาสตรบัณฑิต%'  and degree = 9 and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%รัฐประศาสนศาสตรบัณฑิต%'   and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%รัฐประศาสนศาสตรบัณฑิต%'  and degree = 1 and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%รัฐประศาสนศาสตรบัณฑิต%'  and degree = 2 and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%รัฐประศาสนศาสตรบัณฑิต%'  and degree = 9 and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														<?php
+														$query = $conn->query("select * from scan2557 where education like '%รัฐประศาสนศาสตรบัณฑิต%'   and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
+														$total = $query->num_rows;
+														if ($total != 0) echo $total;
+														else echo "-";
+														?>
+													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														<?php
+														$query = $conn->query("select * from scan2557 where education like '%รัฐประศาสนศาสตรบัณฑิต%'   and ch" . $_POST['date'] . " !='';", $con);
+														$total = $query->num_rows;
+														if ($total != 0) echo $total;
+														else echo "-";
+														?>
+													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														<?php
+														$query = $conn->query("select * from scan2557 where education like '%รัฐประศาสนศาสตรบัณฑิต%'   and ch" . $_POST['date'] . " ='';", $con);
+														$total = $query->num_rows;
+														if ($total != 0) echo $total;
+														else echo "-";
+														?>
+													</strong></div>
+											</td>
+										</tr>
+										<!-- รัฐศาสตรบัณฑิต ***-->
+										<tr class="warning">
+											<td>
+												<div align="left">รัฐศาสตรบัณฑิต(ร.บ.)</div>
+											</td>
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%รัฐศาสตรบัณฑิต%'  ;", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%รัฐศาสตรบัณฑิต%'  and degree = 1 and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%รัฐศาสตรบัณฑิต%'  and degree = 2 and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%รัฐศาสตรบัณฑิต%'  and degree = 9 and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%รัฐศาสตรบัณฑิต%'   and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%รัฐศาสตรบัณฑิต%'  and degree = 1 and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%รัฐศาสตรบัณฑิต%'  and degree = 2 and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%รัฐศาสตรบัณฑิต%'  and degree = 9 and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														<?php
+														$query = $conn->query("select * from scan2557 where education like '%รัฐศาสตรบัณฑิต%'   and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
+														$total = $query->num_rows;
+														if ($total != 0) echo $total;
+														else echo "-";
+														?>
+													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														<?php
+														$query = $conn->query("select * from scan2557 where education like '%รัฐศาสตรบัณฑิต%'   and ch" . $_POST['date'] . " !='';", $con);
+														$total = $query->num_rows;
+														if ($total != 0) echo $total;
+														else echo "-";
+														?>
+													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														<?php
+														$query = $conn->query("select * from scan2557 where education like '%รัฐศาสตรบัณฑิต%'   and ch" . $_POST['date'] . " ='';", $con);
+														$total = $query->num_rows;
+														if ($total != 0) echo $total;
+														else echo "-";
+														?>
+													</strong></div>
+											</td>
+										</tr>
+										<!-- ศิลปกรรมศาสตรบัณฑิต ***-->
+										<tr class="warning">
+											<td>
+												<div align="left">ศิลปกรรมศาสตรบัณฑิต(ศป.บ.)</div>
+											</td>
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%ศิลปกรรมศาสตรบัณฑิต%'  ;", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%ศิลปกรรมศาสตรบัณฑิต%'  and degree = 1 and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%ศิลปกรรมศาสตรบัณฑิต%'  and degree = 2 and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%ศิลปกรรมศาสตรบัณฑิต%'  and degree = 9 and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%ศิลปกรรมศาสตรบัณฑิต%'   and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%ศิลปกรรมศาสตรบัณฑิต%'  and degree = 1 and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%ศิลปกรรมศาสตรบัณฑิต%'  and degree = 2 and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%ศิลปกรรมศาสตรบัณฑิต%'  and degree = 9 and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														<?php
+														$query = $conn->query("select * from scan2557 where education like '%ศิลปกรรมศาสตรบัณฑิต%'   and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
+														$total = $query->num_rows;
+														if ($total != 0) echo $total;
+														else echo "-";
+														?>
+													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														<?php
+														$query = $conn->query("select * from scan2557 where education like '%ศิลปกรรมศาสตรบัณฑิต%'   and ch" . $_POST['date'] . " !='';", $con);
+														$total = $query->num_rows;
+														if ($total != 0) echo $total;
+														else echo "-";
+														?>
+													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														<?php
+														$query = $conn->query("select * from scan2557 where education like '%ศิลปกรรมศาสตรบัณฑิต%'   and ch" . $_POST['date'] . " ='';", $con);
+														$total = $query->num_rows;
+														if ($total != 0) echo $total;
+														else echo "-";
+														?>
+													</strong></div>
+											</td>
+										</tr>
+										<!-- บริหารธุรกิจบัณฑิต ***-->
+										<tr class="warning">
+											<td>
+												<div align="left">บริหารธุรกิจบัณฑิต(บธ.บ.)</div>
+											</td>
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%บริหารธุรกิจบัณฑิต%'   ;", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%บริหารธุรกิจบัณฑิต%'  and degree = 1 and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%บริหารธุรกิจบัณฑิต%'  and degree = 2 and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%บริหารธุรกิจบัณฑิต%'  and degree = 9 and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%บริหารธุรกิจบัณฑิต%'   and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%บริหารธุรกิจบัณฑิต%'  and degree = 1 and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%บริหารธุรกิจบัณฑิต%'  and degree = 2 and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%บริหารธุรกิจบัณฑิต%'  and degree = 9 and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														<?php
+														$query = $conn->query("select * from scan2557 where education like '%บริหารธุรกิจบัณฑิต%'   and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
+														$total = $query->num_rows;
+														if ($total != 0) echo $total;
+														else echo "-";
+														?>
+													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														<?php
+														$query = $conn->query("select * from scan2557 where education like '%บริหารธุรกิจบัณฑิต%'   and ch" . $_POST['date'] . " !='';", $con);
+														$total = $query->num_rows;
+														if ($total != 0) echo $total;
+														else echo "-";
+														?>
+													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														<?php
+														$query = $conn->query("select * from scan2557 where education like '%บริหารธุรกิจบัณฑิต%'   and ch" . $_POST['date'] . " ='';", $con);
+														$total = $query->num_rows;
+														if ($total != 0) echo $total;
+														else echo "-";
+														?>
+													</strong></div>
+											</td>
+										</tr>
+										<!-- ครุศาสตรบัณฑิต ***-->
+										<tr class="warning">
+											<td>
+												<div align="left">ครุศาสตรบัณฑิต(ค.บ.)</div>
+											</td>
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%ครุศาสตรบัณฑิต%'  ;", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%ครุศาสตรบัณฑิต%'  and degree = 1 and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%ครุศาสตรบัณฑิต%'  and degree = 2 and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%ครุศาสตรบัณฑิต%'  and degree = 9 and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%ครุศาสตรบัณฑิต%'   and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%ครุศาสตรบัณฑิต%'  and degree = 1 and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%ครุศาสตรบัณฑิต%'  and degree = 2 and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%ครุศาสตรบัณฑิต%'  and degree = 9 and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														<?php
+														$query = $conn->query("select * from scan2557 where education like '%ครุศาสตรบัณฑิต%'   and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
+														$total = $query->num_rows;
+														if ($total != 0) echo $total;
+														else echo "-";
+														?>
+													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														<?php
+														$query = $conn->query("select * from scan2557 where education like '%ครุศาสตรบัณฑิต%'   and ch" . $_POST['date'] . " !='';", $con);
+														$total = $query->num_rows;
+														if ($total != 0) echo $total;
+														else echo "-";
+														?>
+													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														<?php
+														$query = $conn->query("select * from scan2557 where education like '%ครุศาสตรบัณฑิต%'   and ch" . $_POST['date'] . " ='';", $con);
+														$total = $query->num_rows;
+														if ($total != 0) echo $total;
+														else echo "-";
+														?>
+													</strong></div>
+											</td>
+										</tr>
+										<!-- นิติศาสตรบัณฑิต ***-->
+										<tr class="warning">
+											<td>
+												<div align="left">นิติศาสตรบัณฑิต(น.บ.)</div>
+											</td>
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%นิติศาสตรบัณฑิต%'   ;", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%นิติศาสตรบัณฑิต%'  and degree = 1 and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%นิติศาสตรบัณฑิต%'  and degree = 2 and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%นิติศาสตรบัณฑิต%'  and degree = 9 and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%นิติศาสตรบัณฑิต%'   and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%นิติศาสตรบัณฑิต%'  and degree = 1 and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%นิติศาสตรบัณฑิต%'  and degree = 2 and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%นิติศาสตรบัณฑิต%'  and degree = 9 and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														<?php
+														$query = $conn->query("select * from scan2557 where education like '%นิติศาสตรบัณฑิต%'   and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
+														$total = $query->num_rows;
+														if ($total != 0) echo $total;
+														else echo "-";
+														?>
+													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														<?php
+														$query = $conn->query("select * from scan2557 where education like '%นิติศาสตรบัณฑิต%'   and ch" . $_POST['date'] . " !='';", $con);
+														$total = $query->num_rows;
+														if ($total != 0) echo $total;
+														else echo "-";
+														?>
+													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														<?php
+														$query = $conn->query("select * from scan2557 where education like '%นิติศาสตรบัณฑิต%'   and ch" . $_POST['date'] . " ='';", $con);
+														$total = $query->num_rows;
+														if ($total != 0) echo $total;
+														else echo "-";
+														?>
+													</strong></div>
+											</td>
+										</tr>
+										<!-- บัญชีบัณฑิต ***-->
+										<tr class="warning">
+											<td>
+												<div align="left">บัญชีบัณฑิต(บช.บ.)</div>
+											</td>
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%บัญชีบัณฑิต%'   ;", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%บัญชีบัณฑิต%'  and degree = 1 and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%บัญชีบัณฑิต%'  and degree = 2 and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%บัญชีบัณฑิต%'  and degree = 9 and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%บัญชีบัณฑิต%'   and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%บัญชีบัณฑิต%'  and degree = 1 and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%บัญชีบัณฑิต%'  and degree = 2 and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%บัญชีบัณฑิต%'  and degree = 9 and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														<?php
+														$query = $conn->query("select * from scan2557 where education like '%บัญชีบัณฑิต%'   and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
+														$total = $query->num_rows;
+														if ($total != 0) echo $total;
+														else echo "-";
+														?>
+													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														<?php
+														$query = $conn->query("select * from scan2557 where education like '%บัญชีบัณฑิต%'   and ch" . $_POST['date'] . " !='';", $con);
+														$total = $query->num_rows;
+														if ($total != 0) echo $total;
+														else echo "-";
+														?>
+													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														<?php
+														$query = $conn->query("select * from scan2557 where education like '%บัญชีบัณฑิต%'   and ch" . $_POST['date'] . " ='';", $con);
+														$total = $query->num_rows;
+														if ($total != 0) echo $total;
+														else echo "-";
+														?>
+													</strong></div>
+											</td>
+										</tr>
+										<!-- เศรษฐศาสตรบัณฑิต ***-->
+										<tr class="warning">
+											<td>
+												<div align="left">เศรษฐศาสตรบัณฑิต(ศ.บ.)</div>
+											</td>
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%เศรษฐศาสตรบัณฑิต%'  ;", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%เศรษฐศาสตรบัณฑิต%'  and degree = 1 and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%เศรษฐศาสตรบัณฑิต%'  and degree = 2 and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%เศรษฐศาสตรบัณฑิต%'  and degree = 9 and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%เศรษฐศาสตรบัณฑิต%'   and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%เศรษฐศาสตรบัณฑิต%'  and degree = 1 and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%เศรษฐศาสตรบัณฑิต%'  and degree = 2 and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%เศรษฐศาสตรบัณฑิต%'  and degree = 9 and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														<?php
+														$query = $conn->query("select * from scan2557 where education like '%เศรษฐศาสตรบัณฑิต%'   and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
+														$total = $query->num_rows;
+														if ($total != 0) echo $total;
+														else echo "-";
+														?>
+													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														<?php
+														$query = $conn->query("select * from scan2557 where education like '%เศรษฐศาสตรบัณฑิต%'   and ch" . $_POST['date'] . " !='';", $con);
+														$total = $query->num_rows;
+														if ($total != 0) echo $total;
+														else echo "-";
+														?>
+													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														<?php
+														$query = $conn->query("select * from scan2557 where education like '%เศรษฐศาสตรบัณฑิต%'   and ch" . $_POST['date'] . " ='';", $con);
+														$total = $query->num_rows;
+														if ($total != 0) echo $total;
+														else echo "-";
+														?>
+													</strong></div>
+											</td>
+										</tr>
+										<!-- ศิลปศาสตรบัณฑิต ***-->
+										<tr class="warning">
+											<td>
+												<div align="left">ศิลปศาสตรบัณฑิต(ศศ.บ.)</div>
+											</td>
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%ศิลปศาสตรบัณฑิต%'   ;", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%ศิลปศาสตรบัณฑิต%'  and degree = 1 and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+											<td>
+												<div align="left">
+
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%ศิลปศาสตรบัณฑิต%'  and degree = 2 and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%ศิลปศาสตรบัณฑิต%'  and degree = 9 and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%ศิลปศาสตรบัณฑิต%'   and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%ศิลปศาสตรบัณฑิต%'  and degree = 1 and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%ศิลปศาสตรบัณฑิต%'  and degree = 2 and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%ศิลปศาสตรบัณฑิต%'  and degree = 9 and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														<?php
+														$query = $conn->query("select * from scan2557 where education like '%ศิลปศาสตรบัณฑิต%'   and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
+														$total = $query->num_rows;
+														if ($total != 0) echo $total;
+														else echo "-";
+														?>
+													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														<?php
+														$query = $conn->query("select * from scan2557 where education like '%ศิลปศาสตรบัณฑิต%'   and ch" . $_POST['date'] . " !='';", $con);
+														$total = $query->num_rows;
+														if ($total != 0) echo $total;
+														else echo "-";
+														?>
+													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														<?php
+														$query = $conn->query("select * from scan2557 where education like '%ศิลปศาสตรบัณฑิต%'   and ch" . $_POST['date'] . " ='';", $con);
+														$total = $query->num_rows;
+														if ($total != 0) echo $total;
+														else echo "-";
+														?>
+													</strong></div>
+											</td>
+										</tr>
+										<!-- พยาบาลศาสตรบัณฑิต ***-->
+										<tr class="warning">
+											<td>
+												<div align="left">พยาบาลศาสตรบัณฑิต(พย.บ.)</div>
+											</td>
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%พยาบาลศาสตรบัณฑิต%' ;", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%พยาบาลศาสตรบัณฑิต%'  and degree = 1 and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%พยาบาลศาสตรบัณฑิต%'  and degree = 2 and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%พยาบาลศาสตรบัณฑิต%'  and degree = 9 and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%พยาบาลศาสตรบัณฑิต%'   and sex = 'f' and ch" . $_POST['date'] . " !='';", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%พยาบาลศาสตรบัณฑิต%'  and degree = 1 and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%พยาบาลศาสตรบัณฑิต%'  and degree = 2 and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+											<td>
+												<div align="left">
+													<?php
+													$query = $conn->query("select * from scan2557 where education like '%พยาบาลศาสตรบัณฑิต%'  and degree = 9 and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
+													$total = $query->num_rows;
+													if ($total != 0) echo $total;
+													else echo "-";
+													?>
+												</div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														<?php
+														$query = $conn->query("select * from scan2557 where education like '%พยาบาลศาสตรบัณฑิต%'   and sex = 'm' and ch" . $_POST['date'] . " !='';", $con);
+														$total = $query->num_rows;
+														if ($total != 0) echo $total;
+														else echo "-";
+														?>
+													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														<?php
+														$query = $conn->query("select * from scan2557 where education like '%พยาบาลศาสตรบัณฑิต%'   and ch" . $_POST['date'] . " !='';", $con);
+														$total = $query->num_rows;
+														if ($total != 0) echo $total;
+														else echo "-";
+														?>
+													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														<?php
+														$query = $conn->query("select * from scan2557 where education like '%พยาบาลศาสตรบัณฑิต%'   and ch" . $_POST['date'] . " ='';", $con);
+														$total = $query->num_rows;
+														if ($total != 0) echo $total;
+														else echo "-";
+														?>
+													</strong></div>
+											</td>
+										</tr>
+
+
+
+
 										<tr class="info">
 											<td>
 												<div align="left"><strong>รวมปริญญาตรี</strong></div>
