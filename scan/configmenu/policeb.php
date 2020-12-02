@@ -149,7 +149,6 @@ if (!isset($_SESSION['suser'])) {
   									</div>
   									<div class="col-sm-5 col-md-6">
   										<input class="noPrint btn btn-success btn-md " style="float: right;" type="button" value="Print" onClick="window.print()">
-  										<a href="policeb.php"><input type="button" name="v" value="Police" class="btn btn-info" style="float: right;margin-right: 10px"></a>
   									</div>
 								</div>
 									
@@ -274,9 +273,7 @@ if (!isset($_SESSION['suser'])) {
 													}
 												?>
 											</td>
-											<td><?php if ($row1['statustext'] = 'NORMAL') {
-													echo "";
-												} else echo $row1['statustext'] ?></td>
+											<td><center><?php echo $row1['card_id']; ?></center></td>
 										</tr> <?php //echo "<P CLASS='breakhere'>";
 												?>
 

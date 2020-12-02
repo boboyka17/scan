@@ -132,7 +132,7 @@ if (!isset($_SESSION['suser'])) {
 						<div class="panel panel-primary">
 							<div class="panel-heading noPrint">
 								<h3 class="panel-title">
-									<center>&nbsp; <span class="glyphicon glyphicon-user "></span>&nbsp;สรุปยอดบัณฑิตผู้มีสิทธิ์รับพระราชทานปริญญาบัตร 2560 </center>
+									<center>&nbsp; <span class="glyphicon glyphicon-user "></span>&nbsp;สรุปยอดบัณฑิตผู้มีสิทธิ์รับพระราชทานปริญญาบัตร 2563 </center>
 								</h3>
 							</div>
 							<div class="panel-body">
@@ -149,6 +149,7 @@ if (!isset($_SESSION['suser'])) {
   									</div>
   									<div class="col-sm-5 col-md-6">
   										<input class="noPrint btn btn-success btn-md " style="float: right;" type="button" value="Print" onClick="window.print()">
+  										<a href="police.php"><input type="button" name="v" value="Police" class="btn btn-info" style="float: right;margin-right: 10px"></a>
   									</div>
 								</div>
 									
@@ -162,7 +163,7 @@ if (!isset($_SESSION['suser'])) {
 								?>
 								<?php $cc = 0;
 								$taw = 1;
-								$query = "SELECT * FROM scan2557 WHERE level LIKE '%ตรี%' and ( education LIKE '%ศิลปกรรม%' or education LIKE '%รัฐป%' or education LIKE '%วิท%' or education LIKE '%นิเทศ%' or education LIKE '%รัฐศ%' or education LIKE '%บริหาร%')and (`chdate32`!='' or 'chdate1'!='' or 'chdate2'!='' or `chdate3`!='' or 'chdate12'!='' or 'chdate22'!='' ) and type123!='1'ORDER BY `scan2557`.`count` ASC;";
+								$query = "SELECT * FROM scan2557 WHERE level LIKE '%ตรี%' and ( education LIKE '%ศิลปกรรม%' or education LIKE '%รัฐป%' or education LIKE '%วิท%' or education LIKE '%นิเทศ%' or education LIKE '%รัฐศ%' or education LIKE '%บริหาร%') and ((`chdate32`!='' or 'chdate1'!='' or 'chdate2'!='' or `chdate3`!='' or 'chdate12'!='' or 'chdate22'!='' ) or (`chdate32` is not null or 'chdate1'is not null or 'chdate2'is not null or `chdate3`is not null or 'chdate12'is not null or 'chdate22'is not null )) and type123!='1'ORDER BY `scan2557`.`count` ASC;";
 								$result = $conn->query($query) or die($conn->error);
 								$tall=ceil($result->num_rows/$n);
 								echo "แถว " . $taw ."/".$tall. " (เช้า) อาจารย์คุมแถว....................................................................................................................";  ?>

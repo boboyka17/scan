@@ -132,7 +132,7 @@ if (!isset($_SESSION['suser'])) {
 						<div class="panel panel-primary">
 							<div class="panel-heading noPrint">
 								<h3 class="panel-title">
-									<center>&nbsp; <span class="glyphicon glyphicon-user "></span>&nbsp;สรุปยอดบัณฑิตผู้มีสิทธิ์รับพระราชทานปริญญาบัตร 2560 </center>
+									<center>&nbsp; <span class="glyphicon glyphicon-user "></span>&nbsp;สรุปยอดบัณฑิตผู้มีสิทธิ์รับพระราชทานปริญญาบัตร 2563 (for police) </center>
 								</h3>
 							</div>
 							<div class="panel-body">
@@ -149,7 +149,6 @@ if (!isset($_SESSION['suser'])) {
   									</div>
   									<div class="col-sm-5 col-md-6">
   										<input class="noPrint btn btn-success btn-md " style="float: right;" type="button" value="Print" onClick="window.print()">
-  										<a href="policeb.php"><input type="button" name="v" value="Police" class="btn btn-info" style="float: right;margin-right: 10px"></a>
   									</div>
 								</div>
 									
@@ -163,10 +162,10 @@ if (!isset($_SESSION['suser'])) {
 								?>
 								<?php $cc = 0;
 								$taw = 1;
-								$query =  "SELECT * FROM scan2557 WHERE level LIKE '%ตรี%' and ( education LIKE '%ครุ%' or education LIKE '%นิติ%' or education LIKE '%บัญชี%' or education LIKE '%เศรษฐ%' or education LIKE '%ศิลปศาส%' or education LIKE '%พยาบาล%')and (`chdate32`!='' or 'chdate1'!='' or 'chdate2'!='' or `chdate3`!='' or 'chdate12'!='' or 'chdate22'!='' ) and type123!='1'ORDER BY `scan2557`.`count` ASC;";
+								$query = "SELECT * FROM scan2557 WHERE level LIKE '%ตรี%' and ( education LIKE '%ศิลปกรรม%' or education LIKE '%รัฐป%' or education LIKE '%วิท%' or education LIKE '%นิเทศ%' or education LIKE '%รัฐศ%' or education LIKE '%บริหาร%')and (`chdate32`!='' or 'chdate1'!='' or 'chdate2'!='' or `chdate3`!='' or 'chdate12'!='' or 'chdate22'!='' ) and type123!='1'ORDER BY `scan2557`.`count` ASC;";
 								$result = $conn->query($query) or die($conn->error);
 								$tall=ceil($result->num_rows/$n);
-								echo "แถว " . $taw ."/".$tall. " (บ่าย) อาจารย์คุมแถว....................................................................................................................";  ?>
+								echo "แถว " . $taw ."/".$tall. " (เช้า) อาจารย์คุมแถว....................................................................................................................";  ?>
 								<table class="table table-bordered">
 									<thead>
 
@@ -200,11 +199,6 @@ if (!isset($_SESSION['suser'])) {
 											</th>
 											<th>
 												<center><?php echo "<h3><span class='glyphicon glyphicon-ok'></span></h3>"; ?></center>
-											</th>
-											<th>
-												<center>
-													<font size="2">A/B
-												</center>
 											</th>
 											<th>
 												<center>
@@ -260,23 +254,7 @@ if (!isset($_SESSION['suser'])) {
 												} else {
 												} ?></td>
 											<td><?php echo @$cout; ?></td>
-											<td>
-												<?php 
-													$nub=($n/2);
-													$co=$cout;
-													$char='A';
-													if($co>$nub){
-														$co=$co-$nub;
-														$char++;
-													}
-													if($co<=$nub){
-														echo $co.$char;
-													}
-												?>
-											</td>
-											<td><?php if ($row1['statustext'] = 'NORMAL') {
-													echo "";
-												} else echo $row1['statustext'] ?></td>
+											<td><center><?php echo $row1['card_id']; ?></center></td>
 										</tr> <?php //echo "<P CLASS='breakhere'>";
 												?>
 
@@ -291,7 +269,7 @@ if (!isset($_SESSION['suser'])) {
 								</table>
 								<?php
 												echo "<p class='breakhere'>";
-												echo "แถว " . $taw ."/".$tall. " (บ่าย) อาจารย์คุมแถว....................................................................................................................";
+												echo "แถว " . $taw ."/".$tall. " (เช้า) อาจารย์คุมแถว....................................................................................................................";
 
 								?>
 
@@ -328,11 +306,6 @@ if (!isset($_SESSION['suser'])) {
 											</th>
 											<th>
 												<center><?php echo "<h3><span class='glyphicon glyphicon-ok'></span></h3>"; ?></center>
-											</th>
-											<th>
-												<center>
-													<font size="2">A/B
-												</center>
 											</th>
 											<th>
 												<center>
