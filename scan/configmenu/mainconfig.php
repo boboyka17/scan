@@ -193,6 +193,12 @@ if (!isset($_SESSION['suser'])) {
 											</button>
 										</a>
 										<br /><br />
+										<a href="../configmenu/sumtaw.php">
+											<button type="button" class="btn btn-warning">
+												<span class="glyphicon glyphicon-cog" style="font-family: 'Kanit'"> sumtaw</span>
+											</button>
+										</a>
+										<br /><br />
 									</div>
 
 									<div class="col-xs-4">
@@ -225,6 +231,12 @@ if (!isset($_SESSION['suser'])) {
 											<a href="../configmenu/row80a.php">
 												<button type="button" class="btn btn-info">
 													<span class="glyphicon glyphicon-cog" style="font-family: 'Kanit'"> ตัดแถวบ่าย</span>
+												</button>
+											</a>
+											<br /><br />
+											<a href="../configmenu/exportexcel.php">
+												<button type="button" class="btn btn-info">
+													<span class="glyphicon glyphicon-cog" style="font-family: 'Kanit'"> Export รวม</span>
 												</button>
 											</a>
 											<br /><br />

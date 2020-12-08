@@ -142,19 +142,51 @@ if (!isset($_SESSION['suser'])) {
 
 								?></center>
 								<form action="" method='get'>
-								<div class="row">
-  									<div class="col-sm-5 col-md-6">
-  										<input id='n' type="number" name="n" style="height: 30px" min="0">
-										<input type="submit" name="btn_action" value="Submit" class="btn btn-info">
-  									</div>
-  									<div class="col-sm-5 col-md-6">
-  										<input class="noPrint btn btn-success btn-md " style="float: right;" type="button" value="Print" onClick="window.print()">
-  										<a href="police.php"><input type="button" name="v" value="Police" class="btn btn-info" style="float: right;margin-right: 10px"></a>
-  									</div>
-								</div>
-									
-									
+									<div class="row">
+										<div class="col-sm-5 col-md-6">
+											<input id='n' type="number" name="n" style="height: 30px" min="0">
+											<input type="submit" name="btn_action" value="Submit" class="btn btn-info">
+										</div>
+										<div class="col-sm-5 col-md-6">
+											<input class="noPrint btn btn-success btn-md " style="float: right;" type="button" value="Print" onClick="window.print()">
+											<a href="police.php"><input type="button" name="v" value="Police" class="btn btn-info" style="float: right;margin-right: 10px"></a>
+										</div>
+									</div>
+
+
 								</form>
+								<style>
+									#myBtn {
+										position: fixed;
+										bottom: 20px;
+										right: 30px;
+										z-index: 99;
+									}
+								</style>
+								<button onclick="topFunction()" id="myBtn" class="btn btn-info" title="Go to top">กลับไปบนสุด</button>
+								<script>
+									//Get the button
+									var mybutton = document.getElementById("myBtn");
+
+									// When the user scrolls down 20px from the top of the document, show the button
+									window.onscroll = function() {
+										scrollFunction()
+									};
+
+									function scrollFunction() {
+										if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+											mybutton.style.display = "block";
+										} else {
+											mybutton.style.display = "none";
+										}
+									}
+
+									// When the user clicks on the button, scroll to the top of the document
+									function topFunction() {
+										document.body.scrollTop = 0;
+										document.documentElement.scrollTop = 0;
+									}
+								</script>
 								<br>
 								<?php
 								if (isset($_GET["n"])) {
@@ -163,13 +195,13 @@ if (!isset($_SESSION['suser'])) {
 								?>
 								<?php $cc = 0;
 								$taw = 1;
-								//$query = "SELECT * FROM scan2557 WHERE level LIKE '%ตรี%' and ( education LIKE '%ศิลปกรรม%' or education LIKE '%รัฐป%' or education LIKE '%วิท%' or education LIKE '%นิเทศ%' or education LIKE '%รัฐศ%' or education LIKE '%บริหาร%') and (`chdate32` !='' or 'chdate1' !='' or 'chdate2' !='' or `chdate3` !='' or 'chdate12' !='' or 'chdate22' !='' ) and type123!='1' ORDER BY `scan2557`.`count` ASC;";
-								$query = "SELECT * FROM scan2557 WHERE level LIKE '%ตรี%' and ( education LIKE '%ศิลปกรรม%' or education LIKE '%รัฐป%' or education LIKE '%วิท%' or education LIKE '%นิเทศ%' or education LIKE '%รัฐศ%' or education LIKE '%บริหาร%') and (`chdate1`!=' ' or `chdate12`!=' ' or `chdate2`!=' ' or`chdate22`!=' ' or`chdate3`!=' ' or`chdate32`or `chdate4`!=' ' or `chdate42`!=' ') ";
-								//echo $query;
+								$query =  "SELECT * FROM scan2557 WHERE level LIKE '%ตรี%' and ( education LIKE '%ครุ%' or education LIKE '%นิติ%' or education LIKE '%บัญชี%' or education LIKE '%เศรษฐ%' or education LIKE '%ศิลปศาส%' or education LIKE '%พยาบาล%')and (`chdate1`!='' or `chdate12`!='' or `chdate2`!='' or `chdate22`!='' or `chdate3`!='' or `chdate32`!='' or `chdate4`!='' or `chdate42`!='') and type123!='1'ORDER BY `scan2557`.`count` ASC;";
+								//$query = "SELECT * FROM scan2557 WHERE level LIKE '%ตรี%' and ( education LIKE '%ศิลปกรรม%' or education LIKE '%รัฐป%' or education LIKE '%วิท%' or education LIKE '%นิเทศ%' or education LIKE '%รัฐศ%' or education LIKE '%บริหาร%') and (`chdate32`!='' or 'chdate1'!='' or 'chdate2'!='' or `chdate3`!='' or 'chdate12'!='' or 'chdate22'!='' ) and type123!='1'ORDER BY `scan2557`.`count` ASC;";
+								//echo $query . "<br><br>";
 								$result = $conn->query($query) or die($conn->error);
-								$tall=ceil($result->num_rows/$n);
-								echo "แถว " . $taw ."/".$tall. " (เช้า) อาจารย์คุมแถว....................................................................................................................";  ?>
-								<table id='area' class="table table-bordered">
+								$tall = ceil($result->num_rows / $n);
+								echo "แถว " . $taw . "/" . $tall . " (เช้า) อาจารย์คุมแถว....................................................................................................................";  ?>
+								<table id="table2excel" class="table table-bordered">
 									<thead>
 
 										<tr class="success">
@@ -210,6 +242,11 @@ if (!isset($_SESSION['suser'])) {
 											</th>
 											<th>
 												<center>
+													<font size="2">วุฒิ
+												</center>
+											</th>
+											<th>
+												<center>
 													<font size="5">หมายเหตุ
 												</center>
 											</th>
@@ -219,66 +256,107 @@ if (!isset($_SESSION['suser'])) {
 									$cout = 1;
 									//ก่อนจะ import ให้เรียงคณะก่อน
 									while ($row1 = $result->fetch_assoc()) {
-										$cc++;
 									?>
-										<tr>
-											<td><?php echo $cout; ?></td>
-											<td><?php echo $row1['counteducation'];
-												$counteducation = $row1['counteducation'] + 1;  ?></td>
-											<td><?php echo $row1['pre'] . $row1['name'] . ' ' . $row1['lastname']; ?></td>
-											<td><?php
-												if ($row1['education'] === 'ครุศาสตรบัณฑิต (หลักสูตร 5 ปี)') {
-													echo "ค.บ.";
-												} else if ($row1['education'] === 'วิทยาศาสตรบัณฑิต') {
-													echo "วท.บ.";
-												} else if ($row1['education'] === 'นิติศาสตรบัณฑิต') {
-													echo "น.บ.";
-												} else if ($row1['education'] === 'รัฐประศาสนศาสตรบัณฑิต') {
-													echo "รป.บ.";
-												} else if ($row1['education'] === 'ศิลปกรรมศาสตรบัณฑิต') {
-													echo "ศป.บ.";
-												} else if ($row1['education'] === 'ศิลปศาสตรบัณฑิต') {
-													echo "ศศ.บ.";
-												} else if ($row1['education'] === 'บัญชีบัณฑิต') {
-													echo "บช.บ.";
-												} else if ($row1['education'] === 'พยาบาลศาสตรบัณฑิต') {
-													echo "พย.บ.";
-												} else if ($row1['education'] === 'บริหารธุรกิจบัณฑิต') {
-													echo "บธ.บ.";
-												} else if ($row1['education'] === 'นิเทศศาสตรบัณฑิต') {
-													echo "นศ.บ.";
-												} else if ($row1['education'] === 'รัฐศาสตรบัณฑิต') {
-													echo "ร.บ.";
-												} else if ($row1['education'] === 'ครุศาสตรบัณฑิต') {
-													echo "ค.บ.";
-												} else if ($row1['education'] === 'เศรษฐศาสตรบัณฑิต') {
-													echo "ศ.บ.";
-												}
-												?></td>
-											<td><?php if ($row1['degree'] === '1') {
-													echo "1";
-												} else if ($row1['degree'] === '2') {
-													echo "2";
-												} else {
-												} ?></td>
-											<td><?php echo @$cout; ?></td>
-											<td>
-												<?php 
-													$nub=($n/2);
-													$co=$cout;
-													$char='A';
-													if($co>$nub){
-														$co=$co-$nub;
-														$char++;
-													}
-													if($co<=$nub){
-														echo $co.$char;
-													}
-												?>
-											</td>
-											<td><?php if ($row1['statustext'] = 'NORMAL') {
-													echo "";
-												} else echo $row1['statustext'] ?></td>
+										<td><?php echo $cout; ?></td>
+										<td><?php echo $row1['counteducation'];
+											$counteducation = $row1['counteducation'] + 1;  ?></td>
+										<td><?php echo $row1['pre'] . $row1['name'] . ' ' . $row1['lastname']; ?></td>
+										<td><?php
+											if ($row1['education'] === 'ครุศาสตรบัณฑิต (หลักสูตร 5 ปี)') {
+												echo "ค.บ.";
+											} else if ($row1['education'] === 'วิทยาศาสตรบัณฑิต') {
+												echo "วท.บ.";
+											} else if ($row1['education'] === 'นิติศาสตรบัณฑิต') {
+												echo "น.บ.";
+											} else if ($row1['education'] === 'รัฐประศาสนศาสตรบัณฑิต') {
+												echo "รป.บ.";
+											} else if ($row1['education'] === 'ศิลปกรรมศาสตรบัณฑิต') {
+												echo "ศป.บ.";
+											} else if ($row1['education'] === 'ศิลปศาสตรบัณฑิต') {
+												echo "ศศ.บ.";
+											} else if ($row1['education'] === 'บัญชีบัณฑิต') {
+												echo "บช.บ.";
+											} else if ($row1['education'] === 'พยาบาลศาสตรบัณฑิต') {
+												echo "พย.บ.";
+											} else if ($row1['education'] === 'บริหารธุรกิจบัณฑิต') {
+												echo "บธ.บ.";
+											} else if ($row1['education'] === 'นิเทศศาสตรบัณฑิต') {
+												echo "นศ.บ.";
+											} else if ($row1['education'] === 'รัฐศาสตรบัณฑิต') {
+												echo "ร.บ.";
+											} else if ($row1['education'] === 'ครุศาสตรบัณฑิต') {
+												echo "ค.บ.";
+											} else if ($row1['education'] === 'เศรษฐศาสตรบัณฑิต') {
+												echo "ศ.บ.";
+											}
+											?></td>
+										<td><?php if ($row1['degree'] === '1') {
+												echo "1";
+											} else if ($row1['degree'] === '2') {
+												echo "2";
+											} else {
+											} ?></td>
+										<td><?php echo @$cout; ?></td>
+										<td>
+											<?php
+											$nub = ($n / 2);
+											$co = $cout;
+											$char = 'A';
+											if ($co > $nub) {
+												$co = $co - $nub;
+												$char++;
+											}
+											if ($co <= $nub) {
+												echo $co . $char;
+											}
+											?>
+										</td>
+										<td>
+											<?php if ($row1['education'] === 'ครุศาสตรบัณฑิต (หลักสูตร 5 ปี)') {
+												$kb = $kb + 1;
+												echo "ค.บ." . $kb;
+											} else if ($row1['education'] === 'วิทยาศาสตรบัณฑิต') {
+												$wt = $wt + 1;
+												echo "วท.บ." . $wt;
+											} else if ($row1['education'] === 'นิติศาสตรบัณฑิต') {
+												$ns = $ns + 1;
+												echo "น.บ." . $ns;
+											} else if ($row1['education'] === 'รัฐประศาสนศาสตรบัณฑิต') {
+												$ss = $ss + 1;
+												echo "รป.บ." . $ss;
+											} else if ($row1['education'] === 'ศิลปกรรมศาสตรบัณฑิต') {
+												$sw = $sq + 1;
+												echo "ศป.บ." . $sw;
+											} else if ($row1['education'] === 'ศิลปศาสตรบัณฑิต') {
+												$sa = $sa + 1;
+												echo "ศศ.บ." . $sa;
+											} else if ($row1['education'] === 'บัญชีบัณฑิต') {
+												$bc = $bc + 1;
+												echo "บช.บ." . $bc;
+											} else if ($row1['education'] === 'พยาบาลศาสตรบัณฑิต') {
+												$pp = $pp + 1;
+												echo "พย.บ." . $pp;
+											} else if ($row1['education'] === 'บริหารธุรกิจบัณฑิต') {
+												$bp = $bp + 1;
+												echo "บธ.บ." . $bp;
+											} else if ($row1['education'] === 'นิเทศศาสตรบัณฑิต') {
+												$st = $st + 1;
+												echo "นศ.บ." . $st;
+											} else if ($row1['education'] === 'รัฐศาสตรบัณฑิต') {
+												$sd = $sd + 1;
+												echo "ร.บ." . $sd;
+											} else if ($row1['education'] === 'ครุศาสตรบัณฑิต') {
+												$kk = $kk + 1;
+												echo "ค.บ." . $kk;
+											} else if ($row1['education'] === 'เศรษฐศาสตรบัณฑิต') {
+												$so = $so + 1;
+												echo "ศ.บ." . $so;
+											}
+											?>
+										</td>
+										<td><?php if ($row1['statustext'] = 'NORMAL') {
+												echo "";
+											} else echo $row1['statustext'] ?></td>
 										</tr> <?php //echo "<P CLASS='breakhere'>";
 												?>
 
@@ -293,7 +371,7 @@ if (!isset($_SESSION['suser'])) {
 								</table>
 								<?php
 												echo "<p class='breakhere'>";
-												echo "แถว " . $taw ."/".$tall. " (เช้า) อาจารย์คุมแถว....................................................................................................................";
+												echo "แถว " . $taw . "/" . $tall . " (เช้า) อาจารย์คุมแถว....................................................................................................................";
 
 								?>
 
@@ -338,6 +416,11 @@ if (!isset($_SESSION['suser'])) {
 											</th>
 											<th>
 												<center>
+													<font size="2">วุฒิ
+												</center>
+											</th>
+											<th>
+												<center>
 													<font size="5">หมายเหตุ
 												</center>
 											</th>
@@ -350,14 +433,14 @@ if (!isset($_SESSION['suser'])) {
 							?>
 
 							<!------end table1------->
-							
-							</table>
+
+								</table>
 
 
 
 
-							ยอดรวม <?php echo $cc; ?>
-							</font>
+								ยอดรวม <?php echo $cc; ?>
+								</font>
 							</div>
 						</div>
 						<?php
@@ -371,18 +454,12 @@ if (!isset($_SESSION['suser'])) {
 						<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
 						<!-- Include all compiled plugins (below), or include individual files as needed -->
 						<script src="../dist/js/bootstrap.min.js"></script>
+						<script src="../dist/js/jquery.table2excel.js"></script>
+						<script src="../dist/js/jquery-3.5.1.min.js"></script>
+
 	</body>
 
 	</html>
-	<script>
-    function printDiv() {
-        var divToPrint = document.getElementById('area');
-        newWin = window.open("");
-        newWin.document.write(divToPrint.outerHTML);
-        newWin.print();
-        newWin.close();
-   }
-</script>
 <?php
 
 }
