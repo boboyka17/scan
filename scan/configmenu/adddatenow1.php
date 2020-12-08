@@ -34,23 +34,23 @@
 				$mont="พฤศจิกายน";
 			}else if ($mont>=10){
 				$mont="ตุลาคม";
-			}else if ($mont>=09){
+			}else if ($mont>=9){
 				$mont="กันยายน";
-			}else if ($mont>=08){
+			}else if ($mont>=8){
 				$mont="สิงหาคม";
-			}else if ($mont>=07){
+			}else if ($mont>=7){
 				$mont="กรกฎาคม";
-			}else if ($mont>=06){
+			}else if ($mont>=6){
 				$mont="มิถุนายน";
-			}else if ($mont>=05){
+			}else if ($mont>=5){
 				$mont="พฤษภาคม";
-			}else if ($mont>=04){
+			}else if ($mont>=4){
 				$mont="เมษายน";
-			}else if ($mont>=03){
+			}else if ($mont>=3){
 				$mont="มีนาคม";
-			}else if ($mont>=02){
+			}else if ($mont>=2){
 				$mont="กุมภาพันธ์";
-			}else if ($mont>=01){
+			}else if ($mont>=1){
 				$mont="มกราคม";
 			}
 	   
@@ -91,23 +91,23 @@ require ("../sphp/conn.php");
 				$mont="พฤศจิกายน";
 			}else if ($mont>=10){
 				$mont="ตุลาคม";
-			}else if ($mont>=09){
+			}else if ($mont>=9){
 				$mont="กันยายน";
-			}else if ($mont>=08){
+			}else if ($mont>=8){
 				$mont="สิงหาคม";
-			}else if ($mont>=07){
+			}else if ($mont>=7){
 				$mont="กรกฎาคม";
-			}else if ($mont>=06){
+			}else if ($mont>=6){
 				$mont="มิถุนายน";
-			}else if ($mont>=05){
+			}else if ($mont>=5){
 				$mont="พฤษภาคม";
-			}else if ($mont>=04){
+			}else if ($mont>=4){
 				$mont="เมษายน";
-			}else if ($mont>=03){
+			}else if ($mont>=3){
 				$mont="มีนาคม";
-			}else if ($mont>=02){
+			}else if ($mont>=2){
 				$mont="กุมภาพันธ์";
-			}else if ($mont>=01){
+			}else if ($mont>=1){
 				$mont="มกราคม";
 			}
 	   
@@ -148,23 +148,23 @@ require ("../sphp/conn.php");
 				$mont="พฤศจิกายน";
 			}else if ($mont>=10){
 				$mont="ตุลาคม";
-			}else if ($mont>=09){
+			}else if ($mont>=9){
 				$mont="กันยายน";
-			}else if ($mont>=08){
+			}else if ($mont>=8){
 				$mont="สิงหาคม";
-			}else if ($mont>=07){
+			}else if ($mont>=7){
 				$mont="กรกฎาคม";
-			}else if ($mont>=06){
+			}else if ($mont>=6){
 				$mont="มิถุนายน";
-			}else if ($mont>=05){
+			}else if ($mont>=5){
 				$mont="พฤษภาคม";
-			}else if ($mont>=04){
+			}else if ($mont>=4){
 				$mont="เมษายน";
-			}else if ($mont>=03){
+			}else if ($mont>=3){
 				$mont="มีนาคม";
-			}else if ($mont>=02){
+			}else if ($mont>=2){
 				$mont="กุมภาพันธ์";
-			}else if ($mont>=01){
+			}else if ($mont>=1){
 				$mont="มกราคม";
 			}
 	   
@@ -204,23 +204,23 @@ require ("../sphp/conn.php");
 				$mont="พฤศจิกายน";
 			}else if ($mont>=10){
 				$mont="ตุลาคม";
-			}else if ($mont>=09){
+			}else if ($mont>=9){
 				$mont="กันยายน";
-			}else if ($mont>=08){
+			}else if ($mont>=8){
 				$mont="สิงหาคม";
-			}else if ($mont>=07){
+			}else if ($mont>=7){
 				$mont="กรกฎาคม";
-			}else if ($mont>=06){
+			}else if ($mont>=6){
 				$mont="มิถุนายน";
-			}else if ($mont>=05){
+			}else if ($mont>=5){
 				$mont="พฤษภาคม";
-			}else if ($mont>=04){
+			}else if ($mont>=4){
 				$mont="เมษายน";
-			}else if ($mont>=03){
+			}else if ($mont>=3){
 				$mont="มีนาคม";
-			}else if ($mont>=02){
+			}else if ($mont>=2){
 				$mont="กุมภาพันธ์";
-			}else if ($mont>=01){
+			}else if ($mont>=1){
 				$mont="มกราคม";
 			}
 	   
@@ -243,4 +243,3 @@ require ("../sphp/conn.php");
 
 	   
 ?>
-

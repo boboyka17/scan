@@ -34,7 +34,7 @@
 	</style>
   <div class="container">
         <div class="row noPrint">
-        <center><img src="../head.png"></center>
+        <center><img src="../headnew.png"></center>
         </div>
        
 

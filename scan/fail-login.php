@@ -19,7 +19,7 @@
   <body style="font-family: 'Kanit'">
   <div class="container">
         <div class="row">
-        <center><img src="head.png"></center>
+        <center><img src="headnew.png"></center>
         </div>
        
 

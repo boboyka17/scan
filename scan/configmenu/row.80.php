@@ -45,7 +45,7 @@ if (!isset($_SESSION['suser'])) {
 
 			<div class="container">
 				<div>
-					<center><img src="../head.png"></center>
+					<center><img src="../headnew.png"></center>
 				</div>
 
 				<!-- +++++++++++++++++++++ END OF HEADER ++++++++++++++++++++++++-->
@@ -163,11 +163,13 @@ if (!isset($_SESSION['suser'])) {
 								?>
 								<?php $cc = 0;
 								$taw = 1;
-								$query = "SELECT * FROM scan2557 WHERE level LIKE '%ตรี%' and ( education LIKE '%ศิลปกรรม%' or education LIKE '%รัฐป%' or education LIKE '%วิท%' or education LIKE '%นิเทศ%' or education LIKE '%รัฐศ%' or education LIKE '%บริหาร%') and ((`chdate32`!='' or 'chdate1'!='' or 'chdate2'!='' or `chdate3`!='' or 'chdate12'!='' or 'chdate22'!='' ) or (`chdate32` is not null or 'chdate1'is not null or 'chdate2'is not null or `chdate3`is not null or 'chdate12'is not null or 'chdate22'is not null )) and type123!='1'ORDER BY `scan2557`.`count` ASC;";
+								//$query = "SELECT * FROM scan2557 WHERE level LIKE '%ตรี%' and ( education LIKE '%ศิลปกรรม%' or education LIKE '%รัฐป%' or education LIKE '%วิท%' or education LIKE '%นิเทศ%' or education LIKE '%รัฐศ%' or education LIKE '%บริหาร%') and (`chdate32` !='' or 'chdate1' !='' or 'chdate2' !='' or `chdate3` !='' or 'chdate12' !='' or 'chdate22' !='' ) and type123!='1' ORDER BY `scan2557`.`count` ASC;";
+								$query = "SELECT * FROM scan2557 WHERE level LIKE '%ตรี%' and ( education LIKE '%ศิลปกรรม%' or education LIKE '%รัฐป%' or education LIKE '%วิท%' or education LIKE '%นิเทศ%' or education LIKE '%รัฐศ%' or education LIKE '%บริหาร%') and (`chdate1`!=' ' or `chdate12`!=' ' or `chdate2`!=' ' or`chdate22`!=' ' or`chdate3`!=' ' or`chdate32`or `chdate4`!=' ' or `chdate42`!=' ') ";
+								//echo $query;
 								$result = $conn->query($query) or die($conn->error);
 								$tall=ceil($result->num_rows/$n);
 								echo "แถว " . $taw ."/".$tall. " (เช้า) อาจารย์คุมแถว....................................................................................................................";  ?>
-								<table class="table table-bordered">
+								<table id='area' class="table table-bordered">
 									<thead>
 
 										<tr class="success">
@@ -372,6 +374,15 @@ if (!isset($_SESSION['suser'])) {
 	</body>
 
 	</html>
+	<script>
+    function printDiv() {
+        var divToPrint = document.getElementById('area');
+        newWin = window.open("");
+        newWin.document.write(divToPrint.outerHTML);
+        newWin.print();
+        newWin.close();
+   }
+</script>
 <?php
 
 }

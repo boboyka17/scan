@@ -15,7 +15,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ÊÃØ»ÂÍ´ºÑ³±Ôµ¼ÙéÁÕÊÔ·¸ÔìÃÑº¾ÃÐÃÒª·Ò¹»ÃÔ­­ÒºÑµÃ 2558</title>
+    <title>ï¿½ï¿½Ø»ï¿½Í´ï¿½Ñ³ï¿½Ôµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô·ï¿½ï¿½ï¿½ï¿½Ñºï¿½ï¿½ï¿½ï¿½Òªï¿½Ò¹ï¿½ï¿½Ô­ï¿½ÒºÑµï¿½ 2558</title>
 
     <!-- Bootstrap -->
     <link href="../dist/css/bootstrap.min.css" rel="stylesheet">
@@ -39,7 +39,7 @@
 
   <div class="container">
         <div >
-        <center><img src="../head.png"></center>
+        <center><img src="../headnew.png"></center>
         </div>
   
       <!-- +++++++++++++++++++++ END OF HEADER ++++++++++++++++++++++++-->
@@ -48,13 +48,13 @@
               <div class="col-md-12 noPrint">
                    <ul class="breadcrumb">
                         <li>
-                          <a href="../main.php">Ë¹éÒËÅÑ¡</a>
+                          <a href="../main.php">Ë¹ï¿½ï¿½ï¿½ï¿½Ñ¡</a>
                         </li>
                         <li>
-                         <a href="mainconfig.php">ÃÒÂ¡ÒÃ¨Ñ´¡ÒÃÃÐºº</a>
+                         <a href="mainconfig.php">ï¿½ï¿½Â¡ï¿½Ã¨Ñ´ï¿½ï¿½ï¿½ï¿½Ðºï¿½</a>
                         </li>
 						<li>
-                         <a href="reporttext.php">ÃÐººÃÒÂ§Ò¹¼Å ReMark</a>
+                         <a href="reporttext.php">ï¿½Ðºï¿½ï¿½ï¿½Â§Ò¹ï¿½ï¿½ ReMark</a>
                         </li>
                   </ul>
               </div>
@@ -65,29 +65,29 @@
               <div class="col-md-3 noPrint">
                   <div class="panel panel-primary">
                       <div class="panel-heading">
-                          <h3 class="panel-title text-center">ÃÒÂ¡ÒÃËÅÑ¡ (Main Menu)</h3>
+                          <h3 class="panel-title text-center">ï¿½ï¿½Â¡ï¿½ï¿½ï¿½ï¿½Ñ¡ (Main Menu)</h3>
                       </div>
                   <div class="panel-body">
                     <ul class="nav nav-pills">
 							<li>
                                 <a href="../menu_1.php">
-                                  <span class="glyphicon glyphicon-list-alt"></span>&nbsp;¢éÍÁÙÅºÑ³±Ôµ / Å§ª×èÍÇÑ¹«éÍÁÃÑº </a> 
+                                  <span class="glyphicon glyphicon-list-alt"></span>&nbsp;ï¿½ï¿½ï¿½ï¿½ï¿½ÅºÑ³ï¿½Ôµ / Å§ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¹ï¿½ï¿½ï¿½ï¿½ï¿½Ñº </a> 
                             </li>
                             <li>
                               <a href="../menu_2-0.php">
-                                  <span class="glyphicon glyphicon-info-sign"></span>&nbsp;ÃÒÂ§Ò¹ÊÃØ»µÒÁÇØ²Ô</a>
+                                  <span class="glyphicon glyphicon-info-sign"></span>&nbsp;ï¿½ï¿½Â§Ò¹ï¿½ï¿½Ø»ï¿½ï¿½ï¿½ï¿½Ø²ï¿½</a>
                             </li>
                             <li>
                                 <a href="../menu_3-0.php">
-                                  <span class="glyphicon glyphicon-info-sign"></span>&nbsp;ÃÒÂ§Ò¹ÊÃØ»µÒÁ¤³Ð</a>
+                                  <span class="glyphicon glyphicon-info-sign"></span>&nbsp;ï¿½ï¿½Â§Ò¹ï¿½ï¿½Ø»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½</a>
                             </li>
 							<li class="active">
                                 <a href="mainconfig.php">
-                                  <span class="glyphicon glyphicon-cog"></span>&nbsp;ÃÒÂ¡ÒÃ¨Ñ´¡ÒÃÃÐºº</a>
+                                  <span class="glyphicon glyphicon-cog"></span>&nbsp;ï¿½ï¿½Â¡ï¿½Ã¨Ñ´ï¿½ï¿½ï¿½ï¿½Ðºï¿½</a>
                             </li>
 							<li>
                                 <a href="../sphp/sessionout.php">
-                                  <span class="glyphicon glyphicon-off"></span>&nbsp;ÍÍ¡¨Ò¡ÃÐºº</a>
+                                  <span class="glyphicon glyphicon-off"></span>&nbsp;ï¿½Í¡ï¿½Ò¡ï¿½Ðºï¿½</a>
                             </li>
                         </ul>    
                   </div>
@@ -98,25 +98,25 @@
 <?php
 include('../sphp/conn.php');
 		/**
-		//¤ÃØÈÒÊµÃì »¡µÔ
-		//ÁÒ
+		//ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+		//ï¿½ï¿½
 
-		//$query=sprintf("select * from scan2557 where faculty = '¤ÃØÈÒÊµÃì' and level like '%»¡µÔ%' and type123='1' and");
+		//$query=sprintf("select * from scan2557 where faculty = 'ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½' and level like '%ï¿½ï¿½ï¿½ï¿½%' and type123='1' and");
 
-		$queryA1 = mysql_query("select * from scan2557 where faculty = '¤ÃØÈÒÊµÃì' and level like '%»¡µÔ%' and type123='1' and chdate31 !=' ';",$con);
+		$queryA1 = mysql_query("select * from scan2557 where faculty = 'ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½' and level like '%ï¿½ï¿½ï¿½ï¿½%' and type123='1' and chdate31 !=' ';",$con);
 		$totalA1 = mysql_num_rows($queryA1);
-		//äÁèÁÒ
-		$queryA11 = mysql_query("select * from scan2557 where faculty = '¤ÃØÈÒÊµÃì' and level like '%»¡µÔ%' and type123='1' and chdate31 =' ';",$con);
+		//ï¿½ï¿½ï¿½ï¿½ï¿½
+		$queryA11 = mysql_query("select * from scan2557 where faculty = 'ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½' and level like '%ï¿½ï¿½ï¿½ï¿½%' and type123='1' and chdate31 =' ';",$con);
 		$totalA11 = mysql_num_rows($queryA11);
 		
 		
 
-		//¤ÃØÈÒÊµÃì ¡È.º·.
-		//ÁÒ
-		$queryB3 = mysql_query("select * from scan2557 where faculty = '¤ÃØÈÒÊµÃì' and level not like '%»¡µÔ%' and type123='1' and chdate2 !=' ';",$con);
+		//ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½ ï¿½ï¿½.ï¿½ï¿½.
+		//ï¿½ï¿½
+		$queryB3 = mysql_query("select * from scan2557 where faculty = 'ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½' and level not like '%ï¿½ï¿½ï¿½ï¿½%' and type123='1' and chdate2 !=' ';",$con);
 		$totalB3 = mysql_num_rows($queryB3);
-		//äÁèÁÒ
-		$queryB33 = mysql_query("select * from scan2557 where faculty = '¤ÃØÈÒÊµÃì' and level not like '%»¡µÔ%' and type123='1' and chdate2 =' ';",$con);
+		//ï¿½ï¿½ï¿½ï¿½ï¿½
+		$queryB33 = mysql_query("select * from scan2557 where faculty = 'ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½' and level not like '%ï¿½ï¿½ï¿½ï¿½%' and type123='1' and chdate2 =' ';",$con);
 		$totalB33 = mysql_num_rows($queryB33);
 		*/
 ?>
@@ -126,7 +126,7 @@ include('../sphp/conn.php');
               <div class="panel panel-primary">
                   <div class="panel-heading noPrint">
                      <h3 class="panel-title">
-                          <center>&nbsp; <span class="glyphicon glyphicon-user "></span>&nbsp;ÊÃØ»ÂÍ´ºÑ³±Ôµ¼ÙéÁÕÊÔ·¸ÔìÃÑº¾ÃÐÃÒª·Ò¹»ÃÔ­­ÒºÑµÃ 2558 </center>
+                          <center>&nbsp; <span class="glyphicon glyphicon-user "></span>&nbsp;ï¿½ï¿½Ø»ï¿½Í´ï¿½Ñ³ï¿½Ôµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô·ï¿½ï¿½ï¿½ï¿½Ñºï¿½ï¿½ï¿½ï¿½Òªï¿½Ò¹ï¿½ï¿½Ô­ï¿½ÒºÑµï¿½ 2558 </center>
                      </h3>           
                   </div>
           
@@ -141,25 +141,25 @@ include('../sphp/conn.php');
 ?></center>			
 
 
-<?php $cc=0;  $taw=1;echo "á¶Ç ".$taw." ÍÒ¨ÒÃÂì¤ØÁá¶Ç....................................................................................................................";  ?>
+<?php $cc=0;  $taw=1;echo "ï¿½ï¿½ ".$taw." ï¿½Ò¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½....................................................................................................................";  ?>
 					<table class="table table-bordered"   >
 						<thead>
 						
 							<tr class="success">
-							<th rowspan="2"><center><font size="2">¨Ó¹Ç¹ã¹á¶Ç</center></th>
-							<th rowspan="2"><center><font size="2">ÃËÑÊºÑ³±Ôµ</center></th>
+							<th rowspan="2"><center><font size="2">ï¿½Ó¹Ç¹ï¿½ï¿½ï¿½</center></th>
+							<th rowspan="2"><center><font size="2">ï¿½ï¿½ï¿½ÊºÑ³ï¿½Ôµ</center></th>
 							</center>
 							<tr class="success">
-							<th><center><font size="5">ª×èÍ-Ê¡ØÅ</center></th>
-							<th><center><font size="2">ÇØ²Ô»ÃÔ­­Ò</center></th>
-							<th><center><font size="5">¡</center></th>
+							<th><center><font size="5">ï¿½ï¿½ï¿½ï¿½-Ê¡ï¿½ï¿½</center></th>
+							<th><center><font size="2">ï¿½Ø²Ô»ï¿½Ô­ï¿½ï¿½</center></th>
+							<th><center><font size="5">ï¿½</center></th>
 							<th><center><?php echo "<h3><span class='glyphicon glyphicon-ok'></span></h3>"; ?></center></th>
-							<th><center><font size="5">ËÁÒÂàËµØ</center></th>
+							<th><center><font size="5">ï¿½ï¿½ï¿½ï¿½ï¿½Ëµï¿½</center></th>
 							</tr>
 						</thead>
 						<?php 
 						$cout=1;
-						$query="SELECT * FROM scan2557 WHERE level LIKE '%µÃÕ%' and (education LIKE '%¤ÃØ%' or education LIKE '%ÈÔÅ»ÈÒÊ%' or education LIKE '%ÈÔÅ»¡ÃÃÁ%' or education LIKE '%ÃÑ°%' or education LIKE '%¾ÂÒºÒÅ%' and  'chdate3'!='')   and `status`='1'
+						$query="SELECT * FROM scan2557 WHERE level LIKE '%ï¿½ï¿½ï¿½%' and (education LIKE '%ï¿½ï¿½ï¿½%' or education LIKE '%ï¿½ï¿½Å»ï¿½ï¿½ï¿½%' or education LIKE '%ï¿½ï¿½Å»ï¿½ï¿½ï¿½ï¿½%' or education LIKE '%ï¿½Ñ°%' or education LIKE '%ï¿½ï¿½Òºï¿½ï¿½%' and  'chdate3'!='')   and `status`='1'
 ORDER BY `scan2557`.`count` ASC;";
 						$result=mysql_query($query,$con);
 						while($row1=mysql_fetch_assoc($result) )    { $cc++;
@@ -168,16 +168,16 @@ ORDER BY `scan2557`.`count` ASC;";
 								<td><?php echo $cout; ?></td>
 								<td><?php  echo $row1['counteducation']; $counteducation=$row1['counteducation']+1;  ?></td>
 								<td><?php echo $row1['pre'].$row1['name'].' '.$row1['lastname']; ?></td>
-								<td><?php if ($row1['education']==='¤ÃØÈÒÊµÃºÑ³±Ôµ (ËÅÑ¡ÊÙµÃ 5 »Õ)')
-							{echo "¤.º.";}else if ($row1['education']==='ÇÔ·ÂÒÈÒÊµÃºÑ³±Ôµ')
-							{echo "Ç·.º.";}else if ($row1['education']==='¹ÔµÔÈÒÊµÃºÑ³±Ôµ')
-							{echo "¹.º.";}else if ($row1['education']==='ÃÑ°»ÃÐÈÒÊ¹ÈÒÊµÃºÑ³±Ôµ')
-							{echo "Ã».º.";}else if ($row1['education']==='ÈÔÅ»¡ÃÃÁÈÒÊµÃºÑ³±Ôµ')
-							{echo "È».º.";}else if ($row1['education']==='ÈÔÅ»ÈÒÊµÃºÑ³±Ôµ')
-							{echo "ÈÈ.º.";}else if ($row1['education']==='ºÑ­ªÕºÑ³±Ôµ')
-							{echo "ºª.º.";}else if ($row1['education']==='¾ÂÒºÒÅÈÒÊµÃºÑ³±Ôµ')
-							{echo "¾Â.º.";}else if ($row1['education']==='ºÃÔËÒÃ¸ØÃ¡Ô¨ºÑ³±Ôµ')
-							{echo "º¸.º."; } ?></td>
+								<td><?php if ($row1['education']==='ï¿½ï¿½ï¿½ï¿½ï¿½ÊµÃºÑ³ï¿½Ôµ (ï¿½ï¿½Ñ¡ï¿½Ùµï¿½ 5 ï¿½ï¿½)')
+							{echo "ï¿½.ï¿½.";}else if ($row1['education']==='ï¿½Ô·ï¿½ï¿½ï¿½ï¿½ÊµÃºÑ³ï¿½Ôµ')
+							{echo "Ç·.ï¿½.";}else if ($row1['education']==='ï¿½Ôµï¿½ï¿½ï¿½ÊµÃºÑ³ï¿½Ôµ')
+							{echo "ï¿½.ï¿½.";}else if ($row1['education']==='ï¿½Ñ°ï¿½ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½ÊµÃºÑ³ï¿½Ôµ')
+							{echo "Ã».ï¿½.";}else if ($row1['education']==='ï¿½ï¿½Å»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÊµÃºÑ³ï¿½Ôµ')
+							{echo "È».ï¿½.";}else if ($row1['education']==='ï¿½ï¿½Å»ï¿½ï¿½ÊµÃºÑ³ï¿½Ôµ')
+							{echo "ï¿½ï¿½.ï¿½.";}else if ($row1['education']==='ï¿½Ñ­ï¿½ÕºÑ³ï¿½Ôµ')
+							{echo "ï¿½ï¿½.ï¿½.";}else if ($row1['education']==='ï¿½ï¿½Òºï¿½ï¿½ï¿½ï¿½ÊµÃºÑ³ï¿½Ôµ')
+							{echo "ï¿½ï¿½.ï¿½.";}else if ($row1['education']==='ï¿½ï¿½ï¿½ï¿½ï¿½Ã¸ï¿½Ã¡Ô¨ï¿½Ñ³ï¿½Ôµ')
+							{echo "ï¿½ï¿½.ï¿½."; } ?></td>
 								<td><?php if($row1['degree']==='1'){echo "1";}else if($row1['degree']==='2'){echo "2";}else{}?></td>
 								<td></td>
 								<td><?php if($row1['statustext']='NORMAL'){echo "";}else echo $row1['statustext']?></td>
@@ -191,7 +191,7 @@ ORDER BY `scan2557`.`count` ASC;";
 									</table>
 									<?php 
 									echo "<p class='breakhere'>";
-									echo "á¶Ç ".$taw." ÍÒ¨ÒÃÂì¤ØÁá¶Ç...................................................................................................................."; 
+									echo "ï¿½ï¿½ ".$taw." ï¿½Ò¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½...................................................................................................................."; 
 									
 									?>
 
@@ -199,15 +199,15 @@ ORDER BY `scan2557`.`count` ASC;";
 									<thead>
 						
 							<tr class="success">
-							<th rowspan="2"><center><font size="2">¨Ó¹Ç¹ã¹á¶Ç</center></th>
-							<th rowspan="2"><center><font size="2">ÃËÑÊºÑ³±Ôµ</center></th>
+							<th rowspan="2"><center><font size="2">ï¿½Ó¹Ç¹ï¿½ï¿½ï¿½</center></th>
+							<th rowspan="2"><center><font size="2">ï¿½ï¿½ï¿½ÊºÑ³ï¿½Ôµ</center></th>
 							</center>
 							<tr class="success">
-							<th><center><font size="5">ª×èÍ-Ê¡ØÅ</center></th>
-							<th><center><font size="2">ÇØ²Ô»ÃÔ­­Ò</center></th>
-							<th><center><font size="5">¡</center></th>
+							<th><center><font size="5">ï¿½ï¿½ï¿½ï¿½-Ê¡ï¿½ï¿½</center></th>
+							<th><center><font size="2">ï¿½Ø²Ô»ï¿½Ô­ï¿½ï¿½</center></th>
+							<th><center><font size="5">ï¿½</center></th>
 							<th><center><?php echo "<h3><span class='glyphicon glyphicon-ok'></span></h3>"; ?></center></th>
-							<th><center><font size="5">ËÁÒÂàËµØ</center></th>
+							<th><center><font size="5">ï¿½ï¿½ï¿½ï¿½ï¿½Ëµï¿½</center></th>
 							</tr>
 						</thead>
 						
@@ -217,22 +217,22 @@ ORDER BY `scan2557`.`count` ASC;";
 							?>
 
 						<!------end table1------->
-<table><tr><?php  $taw=1;echo "á¶Ç ".$taw." ÍÒ¨ÒÃÂì¤ØÁá¶Ç....................................................................................................................";  ?></tr></table>
+<table><tr><?php  $taw=1;echo "ï¿½ï¿½ ".$taw." ï¿½Ò¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½....................................................................................................................";  ?></tr></table>
 
 					
 					<table class="table table-bordered"   >
 						<thead>
 						
 							<tr class="success">
-							<th rowspan="2"><center><font size="2">¨Ó¹Ç¹ã¹á¶Ç</center></th>
-							<th rowspan="2"><center><font size="2">ÃËÑÊºÑ³±Ôµ</center></th>
+							<th rowspan="2"><center><font size="2">ï¿½Ó¹Ç¹ï¿½ï¿½ï¿½</center></th>
+							<th rowspan="2"><center><font size="2">ï¿½ï¿½ï¿½ÊºÑ³ï¿½Ôµ</center></th>
 							</center>
 							<tr class="success">
-							<th><center><font size="5">ª×èÍ-Ê¡ØÅ</center></th>
-							<th><center><font size="2">ÇØ²Ô»ÃÔ­­Ò</center></th>
-							<th><center><font size="5">¡</center></th>
+							<th><center><font size="5">ï¿½ï¿½ï¿½ï¿½-Ê¡ï¿½ï¿½</center></th>
+							<th><center><font size="2">ï¿½Ø²Ô»ï¿½Ô­ï¿½ï¿½</center></th>
+							<th><center><font size="5">ï¿½</center></th>
 							<th><center><?php echo "<h3><span class='glyphicon glyphicon-ok'></span></h3>"; ?></center></th>
-							<th><center><font size="5">ËÁÒÂàËµØ</center></th>
+							<th><center><font size="5">ï¿½ï¿½ï¿½ï¿½ï¿½Ëµï¿½</center></th>
 							</tr>
 						</thead>
 
@@ -247,12 +247,12 @@ ORDER BY `scan2557`.`count` ASC;";
 							<tr class=""> <?php
 							$cout=1;
 						
-						$query="SELECT * FROM scan2557 WHERE ((level LIKE '%àÍ¡%' and  'chdate3'!='')   and status=1) or ((level LIKE '%â·%' and  'chdate3'!='')   and status=1) order by count ASC;";
+						$query="SELECT * FROM scan2557 WHERE ((level LIKE '%ï¿½Í¡%' and  'chdate3'!='')   and status=1) or ((level LIKE '%ï¿½%' and  'chdate3'!='')   and status=1) order by count ASC;";
 						$result=mysql_query($query,$con); ?><?php
 						$numrow = mysql_num_rows($result);
 						$chnuml=80-$numrow;
 						
-						if($numrow<80)/*maek 80*/{ $tre="(SELECT * FROM scan2557 WHERE (level LIKE '%µÃÕ%' and (education LIKE '%ËÒÃ%' and 
+						if($numrow<80)/*maek 80*/{ $tre="(SELECT * FROM scan2557 WHERE (level LIKE '%ï¿½ï¿½ï¿½%' and (education LIKE '%ï¿½ï¿½ï¿½%' and 
 						 'chdate3'!='')  and status=1 LIMIT ".$chnuml.");";
 							$resulttree=mysql_query($tre,$con);
 							while($row11=mysql_fetch_assoc($resulttree) )    {   $cc++;
@@ -261,16 +261,16 @@ ORDER BY `scan2557`.`count` ASC;";
 								<td><?php echo $cout; ?></td>
 								<td><?php  echo $row11['counteducation']; $counteducation=$row11['counteducation']+1;  ?></td>
 								<td><?php echo $row11['pre'].$row11['name'].' '.$row11['lastname']; ?></td>
-								<td><?php if ($row11['education']==='¤ÃØÈÒÊµÃºÑ³±Ôµ (ËÅÑ¡ÊÙµÃ 5 »Õ)')
-							{echo "¤.º.";}else if ($row11['education']==='ÇÔ·ÂÒÈÒÊµÃºÑ³±Ôµ')
-							{echo "Ç·.º.";}else if ($row11['education']==='¹ÔµÔÈÒÊµÃºÑ³±Ôµ')
-							{echo "¹.º.";}else if ($row11['education']==='ÃÑ°»ÃÐÈÒÊ¹ÈÒÊµÃºÑ³±Ôµ')
-							{echo "Ã».º.";}else if ($row11['education']==='ÈÔÅ»¡ÃÃÁÈÒÊµÃºÑ³±Ôµ')
-							{echo "È».º.";}else if ($row11['education']==='ÈÔÅ»ÈÒÊµÃºÑ³±Ôµ')
-							{echo "ÈÈ.º.";}else if ($row11['education']==='ºÑ­ªÕºÑ³±Ôµ')
-							{echo "ºª.º.";}else if ($row11['education']==='¾ÂÒºÒÅÈÒÊµÃºÑ³±Ôµ')
-							{echo "¾Â.º.";}else if ($row11['education']==='ºÃÔËÒÃ¸ØÃ¡Ô¨ºÑ³±Ôµ')
-							{echo "º¸.º."; } ?></td>
+								<td><?php if ($row11['education']==='ï¿½ï¿½ï¿½ï¿½ï¿½ÊµÃºÑ³ï¿½Ôµ (ï¿½ï¿½Ñ¡ï¿½Ùµï¿½ 5 ï¿½ï¿½)')
+							{echo "ï¿½.ï¿½.";}else if ($row11['education']==='ï¿½Ô·ï¿½ï¿½ï¿½ï¿½ÊµÃºÑ³ï¿½Ôµ')
+							{echo "Ç·.ï¿½.";}else if ($row11['education']==='ï¿½Ôµï¿½ï¿½ï¿½ÊµÃºÑ³ï¿½Ôµ')
+							{echo "ï¿½.ï¿½.";}else if ($row11['education']==='ï¿½Ñ°ï¿½ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½ÊµÃºÑ³ï¿½Ôµ')
+							{echo "Ã».ï¿½.";}else if ($row11['education']==='ï¿½ï¿½Å»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÊµÃºÑ³ï¿½Ôµ')
+							{echo "È».ï¿½.";}else if ($row11['education']==='ï¿½ï¿½Å»ï¿½ï¿½ÊµÃºÑ³ï¿½Ôµ')
+							{echo "ï¿½ï¿½.ï¿½.";}else if ($row11['education']==='ï¿½Ñ­ï¿½ÕºÑ³ï¿½Ôµ')
+							{echo "ï¿½ï¿½.ï¿½.";}else if ($row11['education']==='ï¿½ï¿½Òºï¿½ï¿½ï¿½ï¿½ÊµÃºÑ³ï¿½Ôµ')
+							{echo "ï¿½ï¿½.ï¿½.";}else if ($row11['education']==='ï¿½ï¿½ï¿½ï¿½ï¿½Ã¸ï¿½Ã¡Ô¨ï¿½Ñ³ï¿½Ôµ')
+							{echo "ï¿½ï¿½.ï¿½."; } ?></td>
 								<td><?php if($row11['degree']==='1'){echo "1";}else if($row11['degree']==='2'){echo "2";}else{}?></td>
 								<td></td>
 								<td><?php if($row11['statustext']='NORMAL'){echo "";}else echo $row11['statustext']?></td>
@@ -284,7 +284,7 @@ ORDER BY `scan2557`.`count` ASC;";
 									</table>
 									<?php 
 									echo "<p class='breakhere'>";
-									echo "á¶Ç ".$taw." ÍÒ¨ÒÃÂì¤ØÁá¶Ç...................................................................................................................."; 
+									echo "ï¿½ï¿½ ".$taw." ï¿½Ò¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½...................................................................................................................."; 
 									
 									?>
 
@@ -292,15 +292,15 @@ ORDER BY `scan2557`.`count` ASC;";
 									<thead>
 						
 							<tr class="success">
-							<th rowspan="2"><center><font size="2">¨Ó¹Ç¹ã¹á¶Ç</center></th>
-							<th rowspan="2"><center><font size="2">ÃËÑÊºÑ³±Ôµ</center></th>
+							<th rowspan="2"><center><font size="2">ï¿½Ó¹Ç¹ï¿½ï¿½ï¿½</center></th>
+							<th rowspan="2"><center><font size="2">ï¿½ï¿½ï¿½ÊºÑ³ï¿½Ôµ</center></th>
 							</center>
 							<tr class="success">
-							<th><center><font size="5">ª×èÍ-Ê¡ØÅ</center></th>
-							<th><center><font size="2">ÇØ²Ô»ÃÔ­­Ò</center></th>
-							<th><center><font size="5">¡</center></th>
+							<th><center><font size="5">ï¿½ï¿½ï¿½ï¿½-Ê¡ï¿½ï¿½</center></th>
+							<th><center><font size="2">ï¿½Ø²Ô»ï¿½Ô­ï¿½ï¿½</center></th>
+							<th><center><font size="5">ï¿½</center></th>
 							<th><center><?php echo "<h3><span class='glyphicon glyphicon-ok'></span></h3>"; ?></center></th>
-							<th><center><font size="5">ËÁÒÂàËµØ</center></th>
+							<th><center><font size="5">ï¿½ï¿½ï¿½ï¿½ï¿½Ëµï¿½</center></th>
 							</tr>
 						</thead>
 						
@@ -314,16 +314,16 @@ ORDER BY `scan2557`.`count` ASC;";
 								<td><?php echo $cout; ?></td>
 								<td><?php  echo $row1['counteducation'];  ?></td>
 								<td><?php echo $row1['pre'].$row1['name'].' '.$row1['lastname']; ?></td>
-								<td><?php if ($row1['education']==='¤ÃØÈÒÊµÃºÑ³±Ôµ (ËÅÑ¡ÊÙµÃ 5 »Õ)')
-							{echo "¤.º.";}else if ($row1['education']==='ÇÔ·ÂÒÈÒÊµÃºÑ³±Ôµ')
-							{echo "Ç·.º.";}else if ($row1['education']==='¹ÔµÔÈÒÊµÃºÑ³±Ôµ')
-							{echo "¹.º.";}else if ($row1['education']==='ÃÑ°»ÃÐÈÒÊ¹ÈÒÊµÃºÑ³±Ôµ')
-							{echo "Ã».º.";}else if ($row1['education']==='ÈÔÅ»¡ÃÃÁÈÒÊµÃºÑ³±Ôµ')
-							{echo "È».º.";}else if ($row1['education']==='ÈÔÅ»ÈÒÊµÃºÑ³±Ôµ')
-							{echo "ÈÈ.º.";}else if ($row1['education']==='ºÑ­ªÕºÑ³±Ôµ')
-							{echo "ºª.º.";}else if ($row1['education']==='¾ÂÒºÒÅÈÒÊµÃºÑ³±Ôµ')
-							{echo "¾Â.º.";}else if ($row1['education']==='ºÃÔËÒÃ¸ØÃ¡Ô¨ºÑ³±Ôµ')
-							{echo "º¸.º."; } ?></td>
+								<td><?php if ($row1['education']==='ï¿½ï¿½ï¿½ï¿½ï¿½ÊµÃºÑ³ï¿½Ôµ (ï¿½ï¿½Ñ¡ï¿½Ùµï¿½ 5 ï¿½ï¿½)')
+							{echo "ï¿½.ï¿½.";}else if ($row1['education']==='ï¿½Ô·ï¿½ï¿½ï¿½ï¿½ÊµÃºÑ³ï¿½Ôµ')
+							{echo "Ç·.ï¿½.";}else if ($row1['education']==='ï¿½Ôµï¿½ï¿½ï¿½ÊµÃºÑ³ï¿½Ôµ')
+							{echo "ï¿½.ï¿½.";}else if ($row1['education']==='ï¿½Ñ°ï¿½ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½ÊµÃºÑ³ï¿½Ôµ')
+							{echo "Ã».ï¿½.";}else if ($row1['education']==='ï¿½ï¿½Å»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÊµÃºÑ³ï¿½Ôµ')
+							{echo "È».ï¿½.";}else if ($row1['education']==='ï¿½ï¿½Å»ï¿½ï¿½ÊµÃºÑ³ï¿½Ôµ')
+							{echo "ï¿½ï¿½.ï¿½.";}else if ($row1['education']==='ï¿½Ñ­ï¿½ÕºÑ³ï¿½Ôµ')
+							{echo "ï¿½ï¿½.ï¿½.";}else if ($row1['education']==='ï¿½ï¿½Òºï¿½ï¿½ï¿½ï¿½ÊµÃºÑ³ï¿½Ôµ')
+							{echo "ï¿½ï¿½.ï¿½.";}else if ($row1['education']==='ï¿½ï¿½ï¿½ï¿½ï¿½Ã¸ï¿½Ã¡Ô¨ï¿½Ñ³ï¿½Ôµ')
+							{echo "ï¿½ï¿½.ï¿½."; } ?></td>
 								<td><?php if($row1['degree']==='1'){echo "1";}else if($row1['degree']==='2'){echo "2";}else{}?></td>
 								<td></td>
 								<td><?php if($row1['statustext']='NORMAL'){echo "";}else echo $row1['statustext']?></td>
@@ -337,7 +337,7 @@ ORDER BY `scan2557`.`count` ASC;";
 									</table>
 									<?php 
 									echo "<p class='breakhere'>";
-									echo "á¶Ç ".$taw." ÍÒ¨ÒÃÂì¤ØÁá¶Ç...................................................................................................................."; 
+									echo "ï¿½ï¿½ ".$taw." ï¿½Ò¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½...................................................................................................................."; 
 									
 									?>
 
@@ -345,25 +345,25 @@ ORDER BY `scan2557`.`count` ASC;";
 									<thead>
 						
 							<tr class="success">
-							<th rowspan="2"><center><font size="2">¨Ó¹Ç¹ã¹á¶Ç</center></th>
-							<th rowspan="2"><center><font size="2">ÃËÑÊºÑ³±Ôµ</center></th>
+							<th rowspan="2"><center><font size="2">ï¿½Ó¹Ç¹ï¿½ï¿½ï¿½</center></th>
+							<th rowspan="2"><center><font size="2">ï¿½ï¿½ï¿½ÊºÑ³ï¿½Ôµ</center></th>
 							</center>
 							<tr class="success">
-							<th><center><font size="5">ª×èÍ-Ê¡ØÅ</center></th>
-							<th><center><font size="2">ÇØ²Ô»ÃÔ­­Ò</center></th>
-							<th><center><font size="5">¡</center></th>
+							<th><center><font size="5">ï¿½ï¿½ï¿½ï¿½-Ê¡ï¿½ï¿½</center></th>
+							<th><center><font size="2">ï¿½Ø²Ô»ï¿½Ô­ï¿½ï¿½</center></th>
+							<th><center><font size="5">ï¿½</center></th>
 							<th><center><?php echo "<h3><span class='glyphicon glyphicon-ok'></span></h3>"; ?></center></th>
-							<th><center><font size="5">ËÁÒÂàËµØ</center></th>
+							<th><center><font size="5">ï¿½ï¿½ï¿½ï¿½ï¿½Ëµï¿½</center></th>
 							</tr>
 						</thead>
 						
 							<?php	
 						  }//end if
-							 } // end while àÍ¡ â·?>
+							 } // end while ï¿½Í¡ ï¿½?>
 							 <?php
 				
 						
-						$query="SELECT * FROM scan2557 WHERE (level LIKE '%µÃÕ%' and (education LIKE '%ËÒÃ%' or education LIKE '%ÇÔ·ÂÒ%' or education LIKE '%¹ÔµÔ%' or education LIKE '%ºÑ­ªÕ%')  and chdate3 !='' ) AND status=1 AND `counteducation` BETWEEN ".$counteducation."  AND 9999;";
+						$query="SELECT * FROM scan2557 WHERE (level LIKE '%ï¿½ï¿½ï¿½%' and (education LIKE '%ï¿½ï¿½ï¿½%' or education LIKE '%ï¿½Ô·ï¿½ï¿½%' or education LIKE '%ï¿½Ôµï¿½%' or education LIKE '%ï¿½Ñ­ï¿½ï¿½%')  and chdate3 !='' ) AND status=1 AND `counteducation` BETWEEN ".$counteducation."  AND 9999;";
 							
 						$result=mysql_query($query,$con); ?><?php
 							
@@ -373,16 +373,16 @@ ORDER BY `scan2557`.`count` ASC;";
 								<td><?php echo $cout; ?></td>
 								<td><?php  echo $row1['counteducation'];  ?></td>
 								<td><?php echo $row1['pre'].$row1['name'].' '.$row1['lastname']; ?></td>
-								<td><?php if ($row1['education']==='¤ÃØÈÒÊµÃºÑ³±Ôµ (ËÅÑ¡ÊÙµÃ 5 »Õ)')
-							{echo "¤.º.";}else if ($row1['education']==='ÇÔ·ÂÒÈÒÊµÃºÑ³±Ôµ')
-							{echo "Ç·.º.";}else if ($row1['education']==='¹ÔµÔÈÒÊµÃºÑ³±Ôµ')
-							{echo "¹.º.";}else if ($row1['education']==='ÃÑ°»ÃÐÈÒÊ¹ÈÒÊµÃºÑ³±Ôµ')
-							{echo "Ã».º.";}else if ($row1['education']==='ÈÔÅ»¡ÃÃÁÈÒÊµÃºÑ³±Ôµ')
-							{echo "È».º.";}else if ($row1['education']==='ÈÔÅ»ÈÒÊµÃºÑ³±Ôµ')
-							{echo "ÈÈ.º.";}else if ($row1['education']==='ºÑ­ªÕºÑ³±Ôµ')
-							{echo "ºª.º.";}else if ($row1['education']==='¾ÂÒºÒÅÈÒÊµÃºÑ³±Ôµ')
-							{echo "¾Â.º.";}else if ($row1['education']==='ºÃÔËÒÃ¸ØÃ¡Ô¨ºÑ³±Ôµ')
-							{echo "º¸.º."; } ?></td>
+								<td><?php if ($row1['education']==='ï¿½ï¿½ï¿½ï¿½ï¿½ÊµÃºÑ³ï¿½Ôµ (ï¿½ï¿½Ñ¡ï¿½Ùµï¿½ 5 ï¿½ï¿½)')
+							{echo "ï¿½.ï¿½.";}else if ($row1['education']==='ï¿½Ô·ï¿½ï¿½ï¿½ï¿½ÊµÃºÑ³ï¿½Ôµ')
+							{echo "Ç·.ï¿½.";}else if ($row1['education']==='ï¿½Ôµï¿½ï¿½ï¿½ÊµÃºÑ³ï¿½Ôµ')
+							{echo "ï¿½.ï¿½.";}else if ($row1['education']==='ï¿½Ñ°ï¿½ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½ÊµÃºÑ³ï¿½Ôµ')
+							{echo "Ã».ï¿½.";}else if ($row1['education']==='ï¿½ï¿½Å»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÊµÃºÑ³ï¿½Ôµ')
+							{echo "È».ï¿½.";}else if ($row1['education']==='ï¿½ï¿½Å»ï¿½ï¿½ÊµÃºÑ³ï¿½Ôµ')
+							{echo "ï¿½ï¿½.ï¿½.";}else if ($row1['education']==='ï¿½Ñ­ï¿½ÕºÑ³ï¿½Ôµ')
+							{echo "ï¿½ï¿½.ï¿½.";}else if ($row1['education']==='ï¿½ï¿½Òºï¿½ï¿½ï¿½ï¿½ÊµÃºÑ³ï¿½Ôµ')
+							{echo "ï¿½ï¿½.ï¿½.";}else if ($row1['education']==='ï¿½ï¿½ï¿½ï¿½ï¿½Ã¸ï¿½Ã¡Ô¨ï¿½Ñ³ï¿½Ôµ')
+							{echo "ï¿½ï¿½.ï¿½."; } ?></td>
 								<td><?php if($row1['degree']==='1'){echo "1";}else if($row1['degree']==='2'){echo "2";}else{}?></td>
 								<td></td>
 								<td><?php if($row1['statustext']='NORMAL'){echo "";}else echo $row1['statustext']?></td>
@@ -396,7 +396,7 @@ ORDER BY `scan2557`.`count` ASC;";
 									</table>
 									<?php 
 									echo "<p class='breakhere'>";
-									echo "á¶Ç ".$taw." ÍÒ¨ÒÃÂì¤ØÁá¶Ç...................................................................................................................."; 
+									echo "ï¿½ï¿½ ".$taw." ï¿½Ò¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½...................................................................................................................."; 
 									
 									?>
 
@@ -404,21 +404,21 @@ ORDER BY `scan2557`.`count` ASC;";
 									<thead>
 						
 							<tr class="success">
-							<th rowspan="2"><center><font size="2">¨Ó¹Ç¹ã¹á¶Ç</center></th>
-							<th rowspan="2"><center><font size="2">ÃËÑÊºÑ³±Ôµ</center></th>
+							<th rowspan="2"><center><font size="2">ï¿½Ó¹Ç¹ï¿½ï¿½ï¿½</center></th>
+							<th rowspan="2"><center><font size="2">ï¿½ï¿½ï¿½ÊºÑ³ï¿½Ôµ</center></th>
 							</center>
 							<tr class="success">
-							<th><center><font size="5">ª×èÍ-Ê¡ØÅ</center></th>
-							<th><center><font size="2">ÇØ²Ô»ÃÔ­­Ò</center></th>
-							<th><center><font size="5">¡</center></th>
+							<th><center><font size="5">ï¿½ï¿½ï¿½ï¿½-Ê¡ï¿½ï¿½</center></th>
+							<th><center><font size="2">ï¿½Ø²Ô»ï¿½Ô­ï¿½ï¿½</center></th>
+							<th><center><font size="5">ï¿½</center></th>
 							<th><center><?php echo "<h3><span class='glyphicon glyphicon-ok'></span></h3>"; ?></center></th>
-							<th><center><font size="5">ËÁÒÂàËµØ</center></th>
+							<th><center><font size="5">ï¿½ï¿½ï¿½ï¿½ï¿½Ëµï¿½</center></th>
 							</tr>
 						</thead>
 						
 							<?php	
 						  }//end if
-							 } // end while àÍ¡ â·?>
+							 } // end while ï¿½Í¡ ï¿½?>
 							 
 			
 									
@@ -439,7 +439,7 @@ ORDER BY `scan2557`.`count` ASC;";
 
 
 
-					ÂÍ´ÃÇÁ <?php echo $cc-1; ?>
+					ï¿½Í´ï¿½ï¿½ï¿½ <?php echo $cc-1; ?>
 					</font >
                     </div>
         </div>

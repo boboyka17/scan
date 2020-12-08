@@ -32,7 +32,7 @@ session_start();
 <body onload="document.getElementById('save').focus();" style="font-family: 'Kanit'">
 	<div class="container">
 		<div class="row">
-			<center><img src="head.png"></center>
+			<center><img src="headnew.png"></center>
 		</div>
 		<!---------------------------------------------------------------------------------->
 
@@ -140,7 +140,7 @@ session_start();
 									<div class="panel-heading">
 										<h4>รายละเอียด</h4>
 
-										<input type="radio" name="status" value="1" <?php if ($row['status'] == 1) {
+										<input type="radio" name="status" value="1" checked <?php if ($row['status'] == 1) {
 																						echo "checked";
 																					}; ?> <?php if (!isset($_SESSION['suser']) or $showstatus['status'] == 3) {
 																								echo "disabled";
@@ -158,7 +158,7 @@ session_start();
 																														echo "disabled";
 																													} ?>> ร่างกายไม่สมบูรณ์ &nbsp&nbsp&nbsp
 
-										<input type="radio" name="la" value="(ลา)" <?php if (!isset($_SESSION['suser']) or $showstatus['status'] == 3) {
+										<input type="checkbox" name="la" value="(ลา)" <?php if (!isset($_SESSION['suser']) or $showstatus['status'] == 3) {
 																						echo "disabled";
 																					} ?>> ลา &nbsp
 
@@ -176,7 +176,7 @@ session_start();
 																								} ?>> บันทึกแล้ว(การมีงานทำ)
 										<br>
 										<br>
-										<div id="select" class="hide">
+										<!-- <div id="select" class="hide">
 											<label for="">ระดับความพิการ</label>
 											<select id="level" name="type123" id="">
 												<option value="">กรุณาเลือก</option>
@@ -204,7 +204,7 @@ session_start();
 											})
 										</script>
 										<br>
-										<br />
+										<br /> -->
 
 
 
@@ -231,7 +231,7 @@ session_start();
 							<tbody>
 								<tr>
 									<td>
-										<h4 style="color:#8181F7;">รหัสนักศึกษา: <input type="text" name="id" value="<?php echo $row['std_id']; ?>" size="13" <?php if (!isset($_SESSION['suser']) or $showstatus['status'] == 3) {
+										<h4 style="color:#8181F7;">รหัสนักศึกษา: <input type="text" readonly name="id" value="<?php echo $row['std_id']; ?>" size="13" <?php if (!isset($_SESSION['suser']) or $showstatus['status'] == 3) {
 																																									echo "disabled";
 																																								} ?>></h4>
 									</td>

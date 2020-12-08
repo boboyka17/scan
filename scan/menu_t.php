@@ -13,7 +13,7 @@
 	<div class="container">
         <div class="row">
         	<center>
-        		<img src="head.png">
+        		<img src="headnew.png">
         	</center>
         </div>
         <div class="row">      

@@ -12,7 +12,7 @@
 <div class="container" style="font-family: 'Kanit'">
     <div class="row">
         <center>
-            <img src="head.png">
+            <img src="headnew.png">
         </center>
     </div>
     <div class="row">

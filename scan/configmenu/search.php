@@ -30,7 +30,7 @@ if (!isset($_SESSION['suser'])) {
 	<body onload="document.getElementById('text').focus();" style="font-family: 'kanit'">
 		<div class="container">
 			<div class="row">
-				<center><img src="../head.png"></center>
+				<center><img src="../headnew.png"></center>
 			</div>
 
 

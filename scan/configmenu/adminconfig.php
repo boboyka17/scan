@@ -33,7 +33,7 @@ include('../sphp/conn.php');
   <body>
   <div class="container">
         <div class="row">
-        <center><img src="../head.png"></center>
+        <center><img src="../headnew.png"></center>
         </div>
        
 
@@ -116,11 +116,10 @@ include('../sphp/conn.php');
 								<h4><span class="label label-success">ระบบจัดการวันลงบันทึก!</span></h4>
 								<br/>
 								   <?php 
-								   
-							
-										 $query=sprintf("SELECT * FROM datescan WHERE idday='1';");
-											$result=mysql_query($query,$con);
-											 $row1=mysql_fetch_assoc($result);
+								  
+										 $query1=sprintf("SELECT * FROM datescan WHERE idday='1';");
+											$result1=$conn->query($query1);
+											 $row1=$result1->fetch_assoc();
 												
 													 $_SESSION["day1"]=$row1["date"];
 													$_SESSION["month"]=$row1["mont"];
@@ -129,9 +128,9 @@ include('../sphp/conn.php');
 									<?php 
 								   
 							
-										 $query=sprintf("SELECT * FROM datescan WHERE idday='2';");
-											$result=mysql_query($query,$con);
-											 $row2=mysql_fetch_assoc($result);
+										 $query2=sprintf("SELECT * FROM datescan WHERE idday='2';");
+											$result2=$conn->query($query2);
+											 $row2=$result2->fetch_assoc();
 												
 													 $_SESSION["day2"]=$row2["date"];
 													$_SESSION["month2"]=$row2["mont"];
@@ -140,9 +139,9 @@ include('../sphp/conn.php');
 								<?php 
 								   
 							
-										 $query=sprintf("SELECT * FROM datescan WHERE idday='3';");
-											$result=mysql_query($query,$con);
-											 $row3=mysql_fetch_assoc($result);
+										 $query3=sprintf("SELECT * FROM datescan WHERE idday='3';");
+											$result3=$conn->query($query3);
+											 $row3=$result3->fetch_assoc();
 												
 													 $_SESSION["day3"]=$row3["date"];
 													$_SESSION["month3"]=$row3["mont"];
@@ -150,9 +149,9 @@ include('../sphp/conn.php');
 							<?php 
 								   
 							
-										 $query=sprintf("SELECT * FROM datescan WHERE idday='4';");
-											$result=mysql_query($query,$con);
-											 $row4=mysql_fetch_assoc($result);
+										 $query4=sprintf("SELECT * FROM datescan WHERE idday='4';");
+											$result4=$conn->query($query4);
+											 $row4=$result4->fetch_assoc();
 												
 													 $_SESSION["day4"]=$row4["date"];
 													$_SESSION["month4"]=$row4["mont"];
