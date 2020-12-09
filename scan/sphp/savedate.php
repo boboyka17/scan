@@ -2,6 +2,7 @@
 //echo ($_GET['statustext'].$_GET['id']);
 $statustext = (trim($_GET['statustext']));
 $type123 = $_GET["type123"];
+echo $type123;
 if (!empty($statustext)) {
 	//$statustext=$_GET['statustext'];
 	date_default_timezone_set("Asia/Bangkok");
@@ -9,21 +10,21 @@ if (!empty($statustext)) {
 	include('conn.php');
 	if (isset($_GET['la']) and isset($_GET['savejob'])) {
 		echo "if1";
-		$conn->query("update scan2557 set ch" . $date . "='" . date("Y-m-d | H:i:s") . "| (ลา)',status='" . $_GET['status'] . "',savejob='" . $_GET['savejob'] . "',statustext='" . $statustext . "',type123='" . $type123 . "'where std_id='" . $_GET['id'] . "';");
+		$conn->query("update scan2557 set ch" . $date . "='" . date("Y-m-d | H:i:s") . "| (ลา)',status='" . $_GET['status'] . "',savejob='" . $_GET['savejob'] . "',statustext='" . $statustext . "',type123='1' where std_id='" . $_GET['id'] . "';");
 		echo "<meta http-equiv='refresh' content='0;url=../menu_1.php'>";
 	}
 	if (!isset($_GET['la']) and !isset($_GET['savejob'])) {
 		echo "if2";
-		$conn->query("update scan2557 set ch" . $date . "='" . date("Y-m-d | H:i:s") . "',status='" . $_GET['status'] . "',statustext='" . $statustext . "' ,type123='" . $type123 . "'where std_id='" . $_GET['id'] . "';");
+		$conn->query("update scan2557 set ch" . $date . "='" . date("Y-m-d | H:i:s") . "',status='" . $_GET['status'] . "',statustext='" . $statustext . "' ,type123='1' where std_id='" . $_GET['id'] . "';");
 		echo "<meta http-equiv='refresh' content='0;url=../menu_1.php'>";
 	}
 	if (isset($_GET['la']) and !isset($_GET['savejob'])) {
-		$conn->query("update scan2557 set ch" . $date . "='" . date("Y-m-d | H:i:s") . " | (ลา)',status='" . $_GET['status'] . "',statustext='" . $statustext . "' ,type123='" . $type123 . "'where std_id='" . $_GET['id'] . "';");
+		$conn->query("update scan2557 set ch" . $date . "='" . date("Y-m-d | H:i:s") . " | (ลา)',status='" . $_GET['status'] . "',statustext='" . $statustext . "' ,type123='1' where std_id='" . $_GET['id'] . "';");
 		echo "<meta http-equiv='refresh' content='0;url=../menu_1.php'>";
 	}
 	if (!isset($_GET['la']) and isset($_GET['savejob'])) {
 		echo "if4";
-		$conn->query("update scan2557 set ch" . $date . "='" . date("Y-m-d | H:i:s") . "',status='" . $_GET['status'] . "',savejob='" . $_GET['savejob'] . "',statustext='" . $statustext . "' ,type123='" . $type123 . "'where std_id='" . $_GET['id'] . "';");
+		$conn->query("update scan2557 set ch" . $date . "='" . date("Y-m-d | H:i:s") . "',status='" . $_GET['status'] . "',savejob='" . $_GET['savejob'] . "',statustext='" . $statustext . "' ,type123='1' where std_id='" . $_GET['id'] . "';");
 		echo "<meta http-equiv='refresh' content='0;url=../menu_1.php'>";
 	}
 	include('cconn.php');

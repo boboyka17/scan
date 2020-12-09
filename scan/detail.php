@@ -141,10 +141,10 @@ session_start();
 										<h4>รายละเอียด</h4>
 
 										<input type="radio" name="status" value="1" checked <?php if ($row['status'] == 1) {
-																						echo "checked";
-																					}; ?> <?php if (!isset($_SESSION['suser']) or $showstatus['status'] == 3) {
-																								echo "disabled";
-																							} ?>>ปกติ &nbsp
+																								echo "checked";
+																							}; ?> <?php if (!isset($_SESSION['suser']) or $showstatus['status'] == 3) {
+																										echo "disabled";
+																									} ?>>ปกติ &nbsp
 
 										<input type="radio" name="status" value="2" <?php if ($row['status'] == 2) {
 																						echo "checked";
@@ -159,8 +159,8 @@ session_start();
 																													} ?>> ร่างกายไม่สมบูรณ์ &nbsp&nbsp&nbsp
 
 										<input type="checkbox" name="la" value="(ลา)" <?php if (!isset($_SESSION['suser']) or $showstatus['status'] == 3) {
-																						echo "disabled";
-																					} ?>> ลา &nbsp
+																							echo "disabled";
+																						} ?>> ลา &nbsp
 
 										<input type="radio" name="savejob" value="2" <?php if ($row['savejob'] == 2) {
 																							echo "checked";
@@ -232,8 +232,8 @@ session_start();
 								<tr>
 									<td>
 										<h4 style="color:#8181F7;">รหัสนักศึกษา: <input type="text" readonly name="id" value="<?php echo $row['std_id']; ?>" size="13" <?php if (!isset($_SESSION['suser']) or $showstatus['status'] == 3) {
-																																									echo "disabled";
-																																								} ?>></h4>
+																																											echo "disabled";
+																																										} ?>></h4>
 									</td>
 
 
@@ -257,56 +257,66 @@ session_start();
 													<?php
 													$query = $conn->query("select * from datescan where idday= 1;");
 													$row = $query->fetch_array();
-													echo "วันที่ " . $row["date"] . " เช้า";
+													$date1 = explode("-", $row["date"]);
+													echo "วันที่ " . $date1[2] . "/" . $date1[1] . "/" . $date1[0] . " เช้า";
 													?>
 												</th>
 												<th style="text-align:center;">
 													<?php
 													$query = $conn->query("select * from datescan where idday= 1.2;");
 													$row = $query->fetch_array();
-													echo "วันที่ " . $row["date"] . " บ่าย";
+													$date2 = explode("-", $row["date"]);
+													echo "วันที่ " . $date2[2] . "/" . $date2[1] . "/" . $date2[0] . " บ่าย";
 													?>
 												</th>
 												<th style="text-align:center;">
 													<?php
 													$query = $conn->query("select * from datescan where idday= 2;");
 													$row = $query->fetch_array();
-													echo "วันที่ " . $row["date"] . " เช้า";
+													$date3 = explode("-", $row["date"]);
+													echo "วันที่ " . $date3[2] . "/" . $date3[1] . "/" . $date3[0] . " เช้า";
 													?>
 												</th>
 												<th style="text-align:center;">
 													<?php
 													$query = $conn->query("select * from datescan where idday= 2.2;");
 													$row = $query->fetch_array();
-													echo "วันที่ " . $row["date"] . " บ่าย";
+													$date4 = explode("-", $row["date"]);
+													echo "วันที่ " . $date4[2] . "/" . $date4[1] . "/" . $date4[0] . " บ่าย";
 													?>
 												</th>
 												<th style="text-align:center;">
 													<?php
 													$query = $conn->query("select * from datescan where idday= 3;");
 													$row = $query->fetch_array();
-													echo "วันที่ " . $row["date"] . " เช้า";
+													$date5 = explode("-", $row["date"]);
+													echo "วันที่ " . $date5[2] . "/" . $date5[1] . "/" . $date5[0] . " เช้า";
 													?>
 												</th>
 												<th style="text-align:center;">
 													<?php
 													$query = $conn->query("select * from datescan where idday= 3.2;");
 													$row = $query->fetch_array();
-													echo "วันที่ " . $row["date"] . " บ่าย";
+													$date6 = explode("-", $row["date"]);
+													echo "วันที่ " . $date6[2] . "/" . $date6[1] . "/" . $date6[0] . " บ่าย";
 													?>
 												</th>
 												<th style="text-align:center;">
 													<?php
 													$query = $conn->query("select * from datescan where idday= 4;");
 													$row = $query->fetch_array();
-													echo "วันที่ " . $row["date"] . " รอบที่ 1";
+													$date7 = explode("-", $row["date"]);
+													echo "วันที่ " . $date7[2] . "/" . $date7[1] . "/" . $date7[0] . " รอบที่ 1";
+
 													?>
 												</th>
 												<th style="text-align:center;">
 													<?php
 													$query = $conn->query("select * from datescan where idday= 4;");
 													$row = $query->fetch_array();
-													echo "วันที่ " . $row["date"] . " รอบที่ 2";
+													$date8 = explode("-", $row["date"]);
+													echo "วันที่ " . $date8[2] . "/" . $date8[1] . "/" . $date8[0] . " รอบที่ 2";
+
 													?>
 												</th>
 											</tr>

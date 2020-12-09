@@ -193,9 +193,9 @@ if (!isset($_SESSION['suser'])) {
 											</button>
 										</a>
 										<br /><br />
-										<a href="../configmenu/sumtaw.php">
+										<a href="../configmenu/echoname.php">
 											<button type="button" class="btn btn-warning">
-												<span class="glyphicon glyphicon-cog" style="font-family: 'Kanit'"> sumtaw</span>
+												<span class="glyphicon glyphicon-cog" style="font-family: 'Kanit'"> ขานชื่อ</span>
 											</button>
 										</a>
 										<br /><br />

@@ -197,7 +197,13 @@ include('../sphp/conn.php');
 								<td><?php echo $row2['count'];?></td>
 								<td><?php echo $row2['std_id'];?></td>
 								<td><?php echo $row2['pre']." ".$row2['name']." ".$row2['lastname'];?></td>
-								<td><?php echo $row2['status'];?></td>
+								<td><?php 
+									if($row2['status']==3){
+										echo "ร่างกายไม่สมบูรณ์";
+										}else if($row2['status']==2){
+											echo "ตั้งครรภ์";
+										}
+								?></td>
 								<td><?php echo $row2['statustext'];?></td>
 							</tr>
 							<?php
@@ -229,7 +235,13 @@ include('../sphp/conn.php');
 								<td><?php echo $row3['count'];?></td>
 								<td><?php echo $row3['std_id'];?></td>
 								<td><?php echo $row3['pre']." ".$row3['name']." ".$row3['lastname'];?></td>
-								<td><?php echo $row3['status'];?></td>
+								<td><?php 
+									if($row3['status']==3){
+										echo "ร่างกายไม่สมบูรณ์";
+										}else if($row3['status']==2){
+											echo "ตั้งครรภ์";
+										}
+								?></td>
 								<td><?php echo $row3['statustext'];?></td>
 							</tr>
 							<?php
@@ -261,7 +273,13 @@ include('../sphp/conn.php');
 								<td><?php echo $row4['count'];?></td>
 								<td><?php echo $row4['std_id'];?></td>
 								<td><?php echo $row4['pre']." ".$row4['name']." ".$row4['lastname'];?></td>
-								<td><?php echo $row4['status'];?></td>
+								<td><?php 
+									if($row4['status']==3){
+										echo "ร่างกายไม่สมบูรณ์";
+										}else if($row4['status']==2){
+											echo "ตั้งครรภ์";
+										}
+								?></td>
 								<td><?php echo $row4['statustext'];?></td>
 							</tr>
 							<?php
@@ -293,7 +311,13 @@ include('../sphp/conn.php');
 								<td><?php echo $row5['count'];?></td>
 								<td><?php echo $row5['std_id'];?></td>
 								<td><?php echo $row5['pre']." ".$row5['name']." ".$row5['lastname'];?></td>
-								<td><?php echo $row5['status'];?></td>
+								<td><?php 
+									if($row5['status']==3){
+										echo "ร่างกายไม่สมบูรณ์";
+										}else if($row5['status']==2){
+											echo "ตั้งครรภ์";
+										}
+								?></td>
 								<td><?php echo $row5['statustext'];?></td>
 							</tr>
 							<?php
@@ -325,7 +349,13 @@ include('../sphp/conn.php');
 								<td><?php echo $row6['count'];?></td>
 								<td><?php echo $row6['std_id'];?></td>
 								<td><?php echo $row6['pre']." ".$row6['name']." ".$row6['lastname'];?></td>
-								<td><?php echo $row6['status'];?></td>
+								<td><?php 
+									if($row6['status']==3){
+										echo "ร่างกายไม่สมบูรณ์";
+										}else if($row6['status']==2){
+											echo "ตั้งครรภ์";
+										}
+								?></td>
 								<td><?php echo $row6['statustext'];?></td>
 							</tr>
 							<?php
@@ -357,7 +387,13 @@ include('../sphp/conn.php');
 								<td><?php echo $row7['count'];?></td>
 								<td><?php echo $row7['std_id'];?></td>
 								<td><?php echo $row7['pre']." ".$row7['name']." ".$row7['lastname'];?></td>
-								<td><?php echo $row7['status'];?></td>
+								<td><?php 
+									if($row7['status']==3){
+										echo "ร่างกายไม่สมบูรณ์";
+										}else if($row7['status']==2){
+											echo "ตั้งครรภ์";
+										}
+								?></td>
 								<td><?php echo $row7['statustext'];?></td>
 							</tr>
 							<?php

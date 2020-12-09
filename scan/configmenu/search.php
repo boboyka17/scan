@@ -104,15 +104,16 @@ if (!isset($_SESSION['suser'])) {
 
 								<div class="row">
 
-									<div class="col-xs-4">
+									<div class="col-xs-3">
 										<img src="admin.png" width="120" height="120">
 									</div>
 									<form method="POST">
-										<div class="col-xs-4">
+										<div class="col-xs-6">
 											<h4><span class="label label-success">กรุณาป้อนเลือกประเภทที่ต้องการค้นหา!</span></h4>
 											<br />
 
 											<input type="radio" name="typekeyword" value="counteducation" checked> รหัสบัณฑิต
+											<input type="radio" name="typekeyword" value="std_id"> รหัสนักศึกษา
 											<!--<input type="radio" name="typekeyword" value="std_id"> Barcode &nbsp-->
 											<input type="radio" name="typekeyword" value="name"> ชื่อ
 											<input type="radio" name="typekeyword" value="lastname"> สกุล
