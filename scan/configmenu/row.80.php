@@ -208,7 +208,7 @@ if (!isset($_SESSION['suser'])) {
 								}
 								$tall = ceil($result->num_rows / $n); ?>
 								<h4><?php
-									echo "แถว " . $taw . "/" . $tall . " (รอบแรก) อาจารย์คุมแถว " . $result_aj['tcname'] . " Tel............................................................................."; ?></h4>
+									echo "แถว " . $taw . "/" . $tall . " (รอบแรก) อาจารย์คุมแถว " . $result_aj['tcname'] . " Tel." . $result_aj["tcphone"]; ?></h4>
 								<table class="table table-bordered">
 									<thead>
 
@@ -357,7 +357,7 @@ if (!isset($_SESSION['suser'])) {
 								<?php
 												echo "<p class='breakhere'>"; ?>
 								<h4><?php
-												echo "แถว " . $taw . "/" . $tall . " (รอบแรก) อาจารย์คุมแถว " . $result_aj['tcname'] . " Tel.............................................................................";
+												echo "แถว " . $taw . "/" . $tall . " (รอบแรก) อาจารย์คุมแถว " . $result_aj['tcname'] . " Tel." . $result_aj["tcphone"];
 
 									?></h4>
 
@@ -423,6 +423,12 @@ if (!isset($_SESSION['suser'])) {
 						<?php
 						$tok = $conn->query("SELECT * FROM scan2557 WHERE level LIKE '%ตรี%' and ( education LIKE '%ศิลปกรรม%' or education LIKE '%รัฐป%' or education LIKE '%วิท%' or education LIKE '%นิเทศ%' or education LIKE '%รัฐศ%' or education LIKE '%บริหาร%')and (`chdate1`!='' or `chdate12`!='' or `chdate2`!='' or `chdate22`!='' or `chdate3`!='' or `chdate32`!='' or `chdate4`!='' or `chdate42`!='') and type123='1'ORDER BY `scan2557`.`status` ASC;");
 						$nubbb = $tok->num_rows;
+						$del = $conn->query("SELECT * FROM taw");
+						$nubro = $del->num_rows;
+						//echo $nubro;
+						if ($nubro > 0) {
+							$conn->query("DELETE FROM `taw`");
+						}
 						//echo $nubbb;
 						?>
 						<table class="table table-bordered ">

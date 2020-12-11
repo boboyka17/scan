@@ -101,7 +101,7 @@ if (!isset($_SESSION['suser'])) {
 
 
 				//ครุศาสตร์ ปกติ
-				$query1 = $conn->query("select * from scan2557 where statustext is not null and (type123='1' or type123='2') and  status='3' order by count;");
+				$query1 = $conn->query("select * from scan2557 where statustext is not null and (type123='1' or type123='2') and  status='2' order by count;");
 
 				//มนุษยศาสตร์และสังคมศาสตร์
 				$query2 = $conn->query("select * from scan2557 where faculty ='มนุษยศาสตร์และสังคมศาสตร์' and statustext is not null and (type123='1' or type123='2') and type123='2' order by count;");
