@@ -208,7 +208,7 @@ if (!isset($_SESSION['suser'])) {
 								}
 								$tall = ceil($result->num_rows / $n); ?>
 								<h4><?php
-									echo "แถว " . $taw . "/" . $tall . " (รอบสอง) อาจารย์คุมแถว " . $result_aj['tcname'] . " Tel............................................................................."; ?></h4>
+									echo "แถว " . $taw . "/" . $tall . " (รอบสอง) อาจารย์คุมแถว " . $result_aj['tcname'] . " Tel." . $result_aj["tcphone"]; ?></h4>
 								<table class="table table-bordered">
 									<thead>
 
@@ -378,7 +378,7 @@ if (!isset($_SESSION['suser'])) {
 								<?php
 												echo "<p class='breakhere'>"; ?>
 								<h4><?php
-												echo "แถว " . $taw . "/" . $tall . " (รอบสอง) อาจารย์คุมแถว " . $result_aj['tcname'] . " Tel.............................................................................";
+												echo "แถว " . $taw . "/" . $tall . " (รอบสอง) อาจารย์คุมแถว " . $result_aj['tcname'] . " Tel." . $result_aj["tcphone"];
 
 									?></h4>
 

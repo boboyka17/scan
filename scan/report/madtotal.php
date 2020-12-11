@@ -109,14 +109,14 @@ if ($_GET['st'] == 1) {
               $date = file_GET_contents("..//sphp/date.txt", "w");
               $_POST['date'] = $date;
               // $query="select * from scan2557 where level like '%ปริญญาตรี%'   and (`statustext` not like  '%p%' or `statustext` is null) and ch".$_POST['date']." !='';";
-              if ($_GET['st'] == 1) $query = "select * from scan2557 where ( education like '%ครุศาสตรบัณฑิต%' or education like '%นิติศาสตรบัณฑิต%' or education like '%รัฐประศาสนศาสตรบัณฑิต%' or education like '%รัฐศาสตรบัณฑิต%' or education like '%ศิลปกรรมศาสตรบัณฑิต%' or education like '%ศิลปศาสตรบัณฑิต%' or education like '%พยาบาลศาสตรบัณฑิต%' )  and  (`statustext` not like  '%p%' or `statustext` is null) and ch" . $_POST['date'] . " !='';";
-              else $query = "select * from scan2557 where (education like '%บริหารธุรกิจบัณฑิต%' or education like '%บัญชีบัณฑิต%' or education like '%เศรษฐศาสตรบัณฑิต%' or education like '%วิทยาศาสตรบัณฑิต%' or education like '%นิเทศศาสตรบัณฑิต%' )  and  (`statustext` not like  '%p%' or `statustext` is null) and ch" . $_POST['date'] . " !='';";
-
+              if ($_GET['st'] == 1) $query = "select * from scan2557 where level LIKE '%ตรี%' and ( education LIKE '%ศิลปกรรม%' or education LIKE '%รัฐป%' or education LIKE '%วิท%' or education LIKE '%นิเทศ%' or education LIKE '%รัฐศ%' or education LIKE '%บริหาร%')  and  (`statustext` not like  '%p%' or `statustext` is null) and ch" . $_POST['date'] . " !='';";
+              else $query2 = "select * from scan2557 where level LIKE '%ตรี%' or level LIKE '%โท%' or level LIKE '%เอก%' and (education LIKE '%ครุ%' or education LIKE '%นิติ%' or education LIKE '%บัญชี%' or education LIKE '%เศรษฐ%' or education LIKE '%ศิลปศาส%' or education LIKE '%พยาบาล%' or education LIKE '%มหา%' or education LIKE '%ดุษฎี%')  and  (`statustext` not like  '%p%' or `statustext` is null) and ch" . $_POST['date'] . " !='';";
               $mad = 1;
               $idmad = 1;
               $im = 1;
               $lang = 1;
               $result = $conn->query($query);
+              echo $count = $result->num_rows;
               while ($row = $result->fetch_assoc()) {
                 if ($row['education'] == 'ครุศาสตรบัณฑิต (หลักสูตร 5 ปี)') $row['education'] = 'ค.บ.';
                 else if ($row['education'] == 'นิติศาสตรบัณฑิต') $row['education'] = 'น.บ.';
@@ -158,7 +158,7 @@ if ($_GET['st'] == 1) {
                         <?php echo $lang; ?>
                     </td>
                   </tr>
-                <?php $idmad = 0;
+                  <?php $idmad = 0;
                           $im++;
                           $mad++;
                           if ($im > 3) {
@@ -168,6 +168,69 @@ if ($_GET['st'] == 1) {
                         }
 
                         $idmad++;
+                      }
+                      if ($_GET['st'] == 1) {
+                        $spquery = "select * from scan2557 where level LIKE '%ตรี%' and ( education LIKE '%ศิลปกรรม%' or education LIKE '%รัฐป%' or education LIKE '%วิท%' or education LIKE '%นิเทศ%' or education LIKE '%รัฐศ%' or education LIKE '%บริหาร%') and(type123='1') and  (`statustext` not like  '%p%' or `statustext` is null) and ch" . $_POST['date'] . " !='';";
+                        $resultsp = $conn->query($spquery);
+                        echo "<hr>";
+                        echo $count = $resultsp->num_rows;
+                        while ($rowsp = $resultsp->fetch_assoc()) {
+                          // -----------
+
+                          if ($rowsp['education'] == 'ครุศาสตรบัณฑิต (หลักสูตร 5 ปี)') $rowsp['education'] = 'ค.บ.';
+                          else if ($rowsp['education'] == 'นิติศาสตรบัณฑิต') $rowsp['education'] = 'น.บ.';
+                          else  if ($rowsp['education'] == 'วิทยาศาสตรบัณฑิต') $rowsp['education'] = 'วท.บ.';
+                          else if ($rowsp['education'] == 'รัฐประศาสนศาสตรบัณฑิต') $rowsp['education'] = 'รป.บ.';
+                          else if ($rowsp['education'] == 'ศิลปกรรมศาสตรบัณฑิต') $rowsp['education'] = 'ศป.บ.';
+                          else if ($rowsp['education'] == 'ศิลปศาสตรบัณฑิต') $rowsp['education'] = 'ศศ.บ.';
+                          else if ($rowsp['education'] == 'บัญชีบัณฑิต') $rowsp['education'] = 'บช.บ.';
+                          else if ($rowsp['education'] == 'พยาบาลศาสตรบัณฑิต') $rowsp['education'] = 'พย.บ.';
+                          else if ($rowsp['education'] == 'บริหารธุรกิจบัณฑิต') $rowsp['education'] = 'บธ.บ.';
+                          else if ($rowsp['education'] == 'นิเทศศาสตรบัณฑิต') $rowsp['education'] = 'นศ.บ.';
+                          else if ($rowsp['education'] == 'รัฐศาสตรบัณฑิต') $rowsp['education'] = 'ร.บ.';
+                          else if ($rowsp['education'] == 'เศรษฐศาสตรบัณฑิต') $rowsp['education'] = 'ศ.บ.';
+
+
+                          $education = $rowsp['education'];
+                          $counteducation = $rowsp['counteducation'];
+
+                          if ($idmad == 1) { ?>
+                    <tr class="danger">
+                      <td>
+                        <div align="left"><?php echo $mad; ?></div>
+                      </td>
+                      <td>
+                        <div align="left"><?php echo $rowsp['education'] ?></div>
+                      </td>
+                      <td>
+                        <div align="left"><?php echo $rowsp['counteducation'] ?></div>
+                      </td><?php }
+                          if ($idmad == 10) { ?>
+                      <td>
+                        <div align="left"><?php echo $rowsp['education'] ?></div>
+                      </td>
+                      <td>
+                        <div align="left"><?php echo $rowsp['counteducation'] ?></div>
+                      </td>
+                      <td>
+                        <div align="left">
+                          <?php echo $lang; ?>
+                      </td>
+                    </tr>
+                <?php $idmad = 0;
+                            $im++;
+                            $mad++;
+                            if ($im > 3) {
+                              $lang++;
+                              $im = 1;
+                            }
+                          }
+
+                          $idmad++;
+                          // -----------
+                        }
+                      } else {
+                        $spquery2 = "";
                       }
                       if ($idmad < 10 and $idmad != 1) { ?>
                 <td>

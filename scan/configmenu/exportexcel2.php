@@ -173,7 +173,16 @@ if (!isset($_SESSION['suser'])) {
                                         z-index: 99;
                                     }
                                 </style>
-                                <button onclick="topFunction()" id="myBtn" class="btn btn-info" title="Go to top">กลับไปบนสุด</button>
+                                <button id="hide" class="btn btn-danger">ซ่อน</button>
+                                <script>
+                                    $(document).ready(function() {
+                                        $('#hide').click(function() {
+                                            $('#std').toggle();
+                                            $('.std_td').toggle();
+                                        })
+                                    })
+                                </script>
+                                <!-- <button onclick="topFunction()" id="myBtn" class="btn btn-info" title="Go to top">กลับไปบนสุด</button> -->
                                 <script>
                                     //Get the button
                                     var mybutton = document.getElementById("myBtn");
@@ -205,6 +214,7 @@ if (!isset($_SESSION['suser'])) {
                                 ?>
                                 <?php $cc = 0;
                                 $taw = 1;
+                                $round = 1;
                                 //$query =  "SELECT * FROM scan2557 WHERE (level LIKE '%ตรี%' or level LIKE '%โท%' or level LIKE '%เอก%') and ( education LIKE '%ครุ%' or education LIKE '%นิติ%' or education LIKE '%บัญชี%' or education LIKE '%เศรษฐ%' or education LIKE '%ศิลปศาส%' or education LIKE '%พยาบาล%' or education LIKE '%มหา%' or education LIKE '%ดุษฎี%')and (`chdate32`!='' or `chdate1`!='' or `chdate2`!='' or `chdate3`!='' or `chdate12`!='' or `chdate22`!='' ) and type123!='1'ORDER BY `scan2557`.`count` ASC;";
                                 //$query =  "SELECT * FROM scan2557 WHERE (`chdate1`!='' or `chdate12`!='' or `chdate2`!='' or `chdate22`!='' or `chdate3`!='' or `chdate32`!='' or `chdate4`!='' or `chdate42`!='') ORDER BY `scan2557`.`count` ASC;";
                                 $query =  " SELECT * FROM scan2557 WHERE level LIKE '%ตรี%' and ( education LIKE '%ศิลปกรรม%' or education LIKE '%รัฐป%' or education LIKE '%วิท%' or education LIKE '%นิเทศ%' or education LIKE '%รัฐศ%' or education LIKE '%บริหาร%' )and (`chdate32`!='' or `chdate1`!='' or `chdate2`!='' or `chdate3`!='' or `chdate12`!='' or `chdate22`!='' ) and type123!='1'ORDER BY `scan2557`.`count` ASC;";
@@ -221,6 +231,222 @@ if (!isset($_SESSION['suser'])) {
                                     <table id="table2excel" class="table table-bordered">
                                         <thead>
                                             <tr class="success">
+                                                <th>
+                                                    <center>
+                                                        <font size="2">แถวที่
+                                                    </center>
+                                                </th>
+                                                <th>
+                                                    <center>
+                                                        <font size="2">ลำดับในแถว
+                                                    </center>
+                                                </th>
+                                                </center>
+                                                <th>
+                                                    <center>
+                                                        <font size="2">รหัสบัณฑิต
+                                                    </center>
+                                                </th>
+                                                <th id="std">
+                                                    <center>
+                                                        <font size="2">รหัสนักศึกษา
+                                                    </center>
+                                                </th>
+                                                <th>
+                                                    <center>
+                                                        <font size="2">คำนำหน้า
+                                                    </center>
+                                                </th>
+                                                <th>
+                                                    <center>
+                                                        <font size="2">ชื่อ
+                                                    </center>
+                                                </th>
+                                                <th>
+                                                    <center>
+                                                        <font size="2">สกุล
+                                                    </center>
+                                                </th>
+                                                <th>
+                                                    <center>
+                                                        <font size="2">วุฒิปริญญา
+                                                    </center>
+                                                </th>
+                                                <th>
+                                                    <center>
+                                                        <font size="2">เกียรตินิยม
+                                                    </center>
+                                                </th>
+                                                <th>
+                                                    <center>
+                                                        <font size="2">ลำดับในวุฒิ
+                                                    </center>
+                                                </th>
+                                                <th>
+                                                    <center>
+                                                        <font size="2">ลำดับในรอบ
+                                                    </center>
+                                                </th>
+                                                <!-- <th>
+                                                    <center>
+                                                        <font size="2">ลำดับในรอบ
+                                                    </center>
+                                                </th> -->
+                                                <!-- <th>
+                                                    <center>
+                                                        <font size="2">ลำดับ A/B
+                                                    </center>
+                                                </th> -->
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <br>
+                                            <?php
+                                            $cout = 1;
+                                            //ก่อนจะ import ให้เรียงคณะก่อน
+                                            while ($row1 = $result->fetch_assoc()) {
+                                            ?>
+                                                <?php
+                                                if ($cout - 1 == $_GET["n"]) :
+                                                    $taw++;
+                                                    $cout = 1;
+                                                ?>
+                                                    <tr>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                    </tr>
+                                                <?php
+                                                //break;
+                                                endif;
+                                                ?>
+                                                <tr>
+                                                    <td><?php echo $taw; ?></td>
+                                                    <td><?php echo $cout; ?></td>
+                                                    <td><?php echo $row1["counteducation"] ?></td>
+                                                    <td class="std_td"><?php echo $row1["std_id"]
+                                                                        ?></td>
+                                                    <td><?php echo $row1['pre'] ?></td>
+                                                    <td><?php echo $row1['name'] ?></td>
+                                                    <td><?php echo $row1['lastname'] ?></td>
+                                                    <td><?php
+                                                        $cc++;
+                                                        if ($row1['education'] === 'ครุศาสตรบัณฑิต (หลักสูตร 5 ปี)') {
+                                                            echo "ค.บ.";
+                                                        } else if ($row1['education'] === 'วิทยาศาสตรบัณฑิต') {
+                                                            echo "วท.บ.";
+                                                        } else if ($row1['education'] === 'นิติศาสตรบัณฑิต') {
+                                                            echo "น.บ.";
+                                                        } else if ($row1['education'] === 'รัฐประศาสนศาสตรบัณฑิต') {
+                                                            echo "รป.บ.";
+                                                        } else if ($row1['education'] === 'ศิลปกรรมศาสตรบัณฑิต') {
+                                                            echo "ศป.บ.";
+                                                        } else if ($row1['education'] === 'ศิลปศาสตรบัณฑิต') {
+                                                            echo "ศศ.บ.";
+                                                        } else if ($row1['education'] === 'บัญชีบัณฑิต') {
+                                                            echo "บช.บ.";
+                                                        } else if ($row1['education'] === 'พยาบาลศาสตรบัณฑิต') {
+                                                            echo "พย.บ.";
+                                                        } else if ($row1['education'] === 'บริหารธุรกิจบัณฑิต') {
+                                                            echo "บธ.บ.";
+                                                        } else if ($row1['education'] === 'นิเทศศาสตรบัณฑิต') {
+                                                            echo "นศ.บ.";
+                                                        } else if ($row1['education'] === 'รัฐศาสตรบัณฑิต') {
+                                                            echo "ร.บ.";
+                                                        } else if ($row1['education'] === 'ครุศาสตรบัณฑิต') {
+                                                            echo "ค.บ.";
+                                                        } else if ($row1['education'] === 'เศรษฐศาสตรบัณฑิต') {
+                                                            echo "ศ.บ.";
+                                                        }
+                                                        ?></td>
+                                                    <td><?php if ($row1['degree'] === '1') {
+                                                            echo "1";
+                                                        } else if ($row1['degree'] === '2') {
+                                                            echo "2";
+                                                        } else {
+                                                        } ?></td>
+                                                    <td>
+                                                        <?php
+                                                        if ($row1['education'] === 'ครุศาสตรบัณฑิต (หลักสูตร 5 ปี)') {
+                                                            $kb = $kb + 1;
+                                                            echo $kb;
+                                                        } else if ($row1['education'] === 'วิทยาศาสตรบัณฑิต') {
+                                                            $wt = $wt + 1;
+                                                            echo $wt;
+                                                        } else if ($row1['education'] === 'นิติศาสตรบัณฑิต') {
+                                                            $ns = $ns + 1;
+                                                            echo $ns;
+                                                        } else if ($row1['education'] === 'รัฐประศาสนศาสตรบัณฑิต') {
+                                                            $ss = $ss + 1;
+                                                            echo $ss;
+                                                        } else if ($row1['education'] === 'ศิลปกรรมศาสตรบัณฑิต') {
+                                                            $sw = $sq + 1;
+                                                            echo $sw;
+                                                        } else if ($row1['education'] === 'ศิลปศาสตรบัณฑิต') {
+                                                            $sa = $sa + 1;
+                                                            echo $sa;
+                                                        } else if ($row1['education'] === 'บัญชีบัณฑิต') {
+                                                            $bc = $bc + 1;
+                                                            echo $bc;
+                                                        } else if ($row1['education'] === 'พยาบาลศาสตรบัณฑิต') {
+                                                            $pp = $pp + 1;
+                                                            echo $pp;
+                                                        } else if ($row1['education'] === 'บริหารธุรกิจบัณฑิต') {
+                                                            $bp = $bp + 1;
+                                                            echo $bp;
+                                                        } else if ($row1['education'] === 'นิเทศศาสตรบัณฑิต') {
+                                                            $st = $st + 1;
+                                                            echo $st;
+                                                        } else if ($row1['education'] === 'รัฐศาสตรบัณฑิต') {
+                                                            $sd = $sd + 1;
+                                                            echo $sd;
+                                                        } else if ($row1['education'] === 'ครุศาสตรบัณฑิต') {
+                                                            $kk = $kk + 1;
+                                                            echo $kk;
+                                                        } else if ($row1['education'] === 'เศรษฐศาสตรบัณฑิต') {
+                                                            $so = $so + 1;
+                                                            echo $so;
+                                                        }
+                                                        ?>
+                                                    </td>
+                                                    <td><?= $round ?></td>
+                                                    <!-- <td>
+                                                        <?php echo $cc; ?>
+                                                    </td> -->
+                                                    <!-- <td>
+                                                        <?php
+                                                        // $nub = ($n / 2);
+                                                        // $co = $cout;
+                                                        // if ($co <= $nub) {
+                                                        //     echo $co . "A";
+                                                        // } else {
+                                                        //     echo $co . "B";
+                                                        // }
+                                                        ?>
+                                                    </td> -->
+                                                </tr>
+                                            <?php
+                                                $round++;
+                                                $cout++;
+                                            } //end while
+                                            ?>
+
+                                        </tbody>
+                                    </table>
+                                    <?php
+
+                                    ?>
+                                    <table class="table">
+                                        <thead>
+                                            <tr class="warning">
                                                 <th>
                                                     <center>
                                                         <font size="2">แถวที่
@@ -272,6 +498,11 @@ if (!isset($_SESSION['suser'])) {
                                                         <font size="2">ลำดับในวุฒิ
                                                     </center>
                                                 </th>
+                                                <th>
+                                                    <center>
+                                                        <font size="2">ลำดับในรอบ
+                                                    </center>
+                                                </th>
                                                 <!-- <th>
                                                     <center>
                                                         <font size="2">ลำดับในรอบ
@@ -285,141 +516,6 @@ if (!isset($_SESSION['suser'])) {
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <br>
-                                            <?php
-                                            $cout = 1;
-                                            //ก่อนจะ import ให้เรียงคณะก่อน
-                                            while ($row1 = $result->fetch_assoc()) {
-                                            ?>
-                                                <?php
-                                                if ($cout - 1 == $_GET["n"]) :
-                                                    $taw++;
-                                                    $cout = 1;
-                                                ?>
-                                                    <tr>
-                                                        <td>-</td>
-                                                        <td>-</td>
-                                                        <td>-</td>
-                                                        <td>-</td>
-                                                        <td>-</td>
-                                                        <td>-</td>
-                                                        <td>-</td>
-                                                        <td>-</td>
-                                                        <td>-</td>
-                                                        <td>-</td>
-                                                        <td>-</td>
-                                                    </tr>
-                                                <?php
-                                                //break;
-                                                endif;
-                                                ?>
-                                                <tr>
-                                                    <td><?php echo $taw; ?></td>
-                                                    <td><?php echo $cout; ?></td>
-                                                    <td><?php echo $row1["counteducation"] ?></td>
-                                                    <td><?php echo $row1["std_id"] ?></td>
-                                                    <td><?php echo $row1['pre'] ?></td>
-                                                    <td><?php echo $row1['name'] ?></td>
-                                                    <td><?php echo $row1['lastname'] ?></td>
-                                                    <td><?php
-                                                        $cc++;
-                                                        if ($row1['education'] === 'ครุศาสตรบัณฑิต (หลักสูตร 5 ปี)') {
-                                                            echo "ค.บ.";
-                                                        } else if ($row1['education'] === 'วิทยาศาสตรบัณฑิต') {
-                                                            echo "วท.บ.";
-                                                        } else if ($row1['education'] === 'นิติศาสตรบัณฑิต') {
-                                                            echo "น.บ.";
-                                                        } else if ($row1['education'] === 'รัฐประศาสนศาสตรบัณฑิต') {
-                                                            echo "รป.บ.";
-                                                        } else if ($row1['education'] === 'ศิลปกรรมศาสตรบัณฑิต') {
-                                                            echo "ศป.บ.";
-                                                        } else if ($row1['education'] === 'ศิลปศาสตรบัณฑิต') {
-                                                            echo "ศศ.บ.";
-                                                        } else if ($row1['education'] === 'บัญชีบัณฑิต') {
-                                                            echo "บช.บ.";
-                                                        } else if ($row1['education'] === 'พยาบาลศาสตรบัณฑิต') {
-                                                            echo "พย.บ.";
-                                                        } else if ($row1['education'] === 'บริหารธุรกิจบัณฑิต') {
-                                                            echo "บธ.บ.";
-                                                        } else if ($row1['education'] === 'นิเทศศาสตรบัณฑิต') {
-                                                            echo "นศ.บ.";
-                                                        } else if ($row1['education'] === 'รัฐศาสตรบัณฑิต') {
-                                                            echo "ร.บ.";
-                                                        } else if ($row1['education'] === 'ครุศาสตรบัณฑิต') {
-                                                            echo "ค.บ.";
-                                                        } else if ($row1['education'] === 'เศรษฐศาสตรบัณฑิต') {
-                                                            echo "ศ.บ.";
-                                                        }
-                                                        ?></td>
-                                                    <td><?php if ($row1['degree'] === '1') {
-                                                            echo "1";
-                                                        } else if ($row1['degree'] === '2') {
-                                                            echo "2";
-                                                        } else {
-                                                        } ?></td>
-                                                    <td>
-                                                        <?php
-                                                        if ($row1['education'] === 'ครุศาสตรบัณฑิต (หลักสูตร 5 ปี)') {
-                                                            $kb = $kb + 1;
-                                                            echo "ค.บ." . $kb;
-                                                        } else if ($row1['education'] === 'วิทยาศาสตรบัณฑิต') {
-                                                            $wt = $wt + 1;
-                                                            echo "วท.บ." . $wt;
-                                                        } else if ($row1['education'] === 'นิติศาสตรบัณฑิต') {
-                                                            $ns = $ns + 1;
-                                                            echo "น.บ." . $ns;
-                                                        } else if ($row1['education'] === 'รัฐประศาสนศาสตรบัณฑิต') {
-                                                            $ss = $ss + 1;
-                                                            echo "รป.บ." . $ss;
-                                                        } else if ($row1['education'] === 'ศิลปกรรมศาสตรบัณฑิต') {
-                                                            $sw = $sq + 1;
-                                                            echo "ศป.บ." . $sw;
-                                                        } else if ($row1['education'] === 'ศิลปศาสตรบัณฑิต') {
-                                                            $sa = $sa + 1;
-                                                            echo "ศศ.บ." . $sa;
-                                                        } else if ($row1['education'] === 'บัญชีบัณฑิต') {
-                                                            $bc = $bc + 1;
-                                                            echo "บช.บ." . $bc;
-                                                        } else if ($row1['education'] === 'พยาบาลศาสตรบัณฑิต') {
-                                                            $pp = $pp + 1;
-                                                            echo "พย.บ." . $pp;
-                                                        } else if ($row1['education'] === 'บริหารธุรกิจบัณฑิต') {
-                                                            $bp = $bp + 1;
-                                                            echo "บธ.บ." . $bp;
-                                                        } else if ($row1['education'] === 'นิเทศศาสตรบัณฑิต') {
-                                                            $st = $st + 1;
-                                                            echo "นศ.บ." . $st;
-                                                        } else if ($row1['education'] === 'รัฐศาสตรบัณฑิต') {
-                                                            $sd = $sd + 1;
-                                                            echo "ร.บ." . $sd;
-                                                        } else if ($row1['education'] === 'ครุศาสตรบัณฑิต') {
-                                                            $kk = $kk + 1;
-                                                            echo "ค.บ." . $kk;
-                                                        } else if ($row1['education'] === 'เศรษฐศาสตรบัณฑิต') {
-                                                            $so = $so + 1;
-                                                            echo "ศ.บ." . $so;
-                                                        }
-                                                        ?>
-                                                    </td>
-                                                    <!-- <td>
-                                                        <?php echo $cc; ?>
-                                                    </td> -->
-                                                    <!-- <td>
-                                                        <?php
-                                                        // $nub = ($n / 2);
-                                                        // $co = $cout;
-                                                        // if ($co <= $nub) {
-                                                        //     echo $co . "A";
-                                                        // } else {
-                                                        //     echo $co . "B";
-                                                        // }
-                                                        ?>
-                                                    </td> -->
-                                                </tr>
-                                            <?php
-                                                $cout++;
-                                            } //end while
-                                            ?>
 
                                         </tbody>
                                     </table>

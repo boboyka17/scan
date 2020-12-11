@@ -173,6 +173,15 @@ if (!isset($_SESSION['suser'])) {
                                         z-index: 99;
                                     }
                                 </style>
+                                <button id="hide" class="btn btn-danger">ซ่อน</button>
+                                <script>
+                                    $(document).ready(function() {
+                                        $('#hide').click(function() {
+                                            $('#std').toggle();
+                                            $('.std_td').toggle();
+                                        })
+                                    })
+                                </script>
                                 <button onclick="topFunction()" id="myBtn" class="btn btn-info" title="Go to top">กลับไปบนสุด</button>
                                 <script>
                                     //Get the button
@@ -206,7 +215,8 @@ if (!isset($_SESSION['suser'])) {
                                 ?>
                                 <?php $cc = 0;
                                 $taw = 1;
-                                $query =  "SELECT * FROM scan2557 WHERE (level LIKE '%ตรี%' or level LIKE '%โท%' or level LIKE '%เอก%') and ( education LIKE '%ครุ%' or education LIKE '%นิติ%' or education LIKE '%บัญชี%' or education LIKE '%เศรษฐ%' or education LIKE '%ศิลปศาส%' or education LIKE '%พยาบาล%' or education LIKE '%มหา%' or education LIKE '%ดุษฎี%')and (`chdate32`!='' or `chdate1`!='' or `chdate2`!='' or `chdate3`!='' or `chdate12`!='' or `chdate22`!='' ) and type123!='1'ORDER BY `scan2557`.`count` ASC;";
+                                $round = 1;
+                                $query =  "SELECT * FROM scan2557 WHERE (level LIKE '%ตรี%' or level LIKE '%โท%' or level LIKE '%เอก%') and ( education LIKE '%ครุ%' or education LIKE '%นิติ%' or education LIKE '%บัญชี%' or education LIKE '%เศรษฐ%' or education LIKE '%ศิลปศาส%' or education LIKE '%พยาบาล%' or education LIKE '%มหา%' or education LIKE '%ดุษฎี%')and (`chdate32`!='' or `chdate1`!='' or `chdate2`!='' or `chdate3`!='' or `chdate12`!='' or `chdate22`!='' ) and type123!='1'ORDER BY `scan2557`.`count` ASC, `scan2557`.`level` DESC;";
                                 //$query =  "SELECT * FROM scan2557 WHERE (`chdate1`!='' or `chdate12`!='' or `chdate2`!='' or `chdate22`!='' or `chdate3`!='' or `chdate32`!='' or `chdate4`!='' or `chdate42`!='') ORDER BY `scan2557`.`count` ASC;";
                                 //$query = "SELECT * FROM scan2557 WHERE level LIKE '%ตรี%' and ( education LIKE '%ศิลปกรรม%' or education LIKE '%รัฐป%' or education LIKE '%วิท%' or education LIKE '%นิเทศ%' or education LIKE '%รัฐศ%' or education LIKE '%บริหาร%') and (`chdate32`!='' or 'chdate1'!='' or 'chdate2'!='' or `chdate3`!='' or 'chdate12'!='' or 'chdate22'!='' ) and type123!='1'ORDER BY `scan2557`.`count` ASC;";
                                 //echo $query . "<br><br>";
@@ -238,7 +248,7 @@ if (!isset($_SESSION['suser'])) {
                                                         <font size="2">รหัสบัณฑิต
                                                     </center>
                                                 </th>
-                                                <th>
+                                                <th id="std">
                                                     <center>
                                                         <font size="2">รหัสนักศึกษา
                                                     </center>
@@ -273,6 +283,11 @@ if (!isset($_SESSION['suser'])) {
                                                         <font size="2">ลำดับในวุฒิ
                                                     </center>
                                                 </th>
+                                                <th>
+                                                    <center>
+                                                        <font size="2">ลำดับในรอบ
+                                                    </center>
+                                                </th>
                                                 <!-- <th>
                                                     <center>
                                                         <font size="2">ลำดับในรอบ
@@ -297,8 +312,7 @@ if (!isset($_SESSION['suser'])) {
                                                     $taw++;
                                                     $cout = 1;
                                                 ?>
-                                                    <tr>
-                                                        <td>-</td>e
+                                                    <!-- <tr>
                                                         <td>-</td>
                                                         <td>-</td>
                                                         <td>-</td>
@@ -309,7 +323,8 @@ if (!isset($_SESSION['suser'])) {
                                                         <td>-</td>
                                                         <td>-</td>
                                                         <td>-</td>
-                                                    </tr>
+                                                        <td>-</td>
+                                                    </tr> -->
                                                 <?php
                                                 //break;
                                                 endif;
@@ -318,7 +333,8 @@ if (!isset($_SESSION['suser'])) {
                                                     <td><?php echo $taw; ?></td>
                                                     <td><?php echo $cout; ?></td>
                                                     <td><?php echo $row1["counteducation"] ?></td>
-                                                    <td><?php echo $row1["std_id"] ?></td>
+                                                    <td class="std_td"><?php echo $row1["std_id"]
+                                                                        ?></td>
                                                     <td><?php echo $row1['pre'] ?></td>
                                                     <td><?php echo $row1['name'] ?></td>
                                                     <td><?php echo $row1['lastname'] ?></td>
@@ -422,61 +438,61 @@ if (!isset($_SESSION['suser'])) {
                                                         <?php
                                                         if ($row1['education'] === 'ครุศาสตรดุษฎีบัณฑิต') {
                                                             $a++;
-                                                            echo "ค.ด." . $a;
+                                                            echo $a;
                                                         } else if ($row1['education'] === 'ครุศาสตรมหาบัณฑิต') {
                                                             $b++;
-                                                            echo "ค.ม." . $b;
+                                                            echo $b;
                                                         } else if ($row1['education'] === 'รัฐประศาสนศาสตรมหาบัณฑิต') {
                                                             $c++;
-                                                            echo "รป.ม." . $c;
+                                                            echo $c;
                                                         } else if ($row1['education'] === 'ศิลปศาสตรมหาบัณฑิต') {
                                                             $d++;
-                                                            echo "ศศ.ม." . $d;
+                                                            echo $d;
                                                         } else if ($row1['education'] === 'วิทยาศาสตรมหาบัณฑิต') {
                                                             $e++;
-                                                            echo "วท.ม." . $e;
+                                                            echo $e;
                                                         } else if ($row1['education'] === 'บริหารธุรกิจมหาบัณฑิต') {
                                                             $f++;
-                                                            echo "บธ.ม." . $f;
+                                                            echo $f;
                                                         } else if ($row1['education'] === 'สาธารณสุขศาสตรมหาบัณฑิต') {
                                                             $g++;
-                                                            echo "ส.ม." . $g;
+                                                            echo $g;
                                                         } else if ($row1['education'] === 'ครุศาสตรบัณฑิต (หลักสูตร 5 ปี)') {
                                                             $h++;
-                                                            echo "ค.บ." . $h;
+                                                            echo $h;
                                                         } else if ($row1['education'] === 'วิทยาศาสตรบัณฑิต') {
                                                             $i++;
-                                                            echo "วท.บ." . $i;
+                                                            echo $i;
                                                         } else if ($row1['education'] === 'นิติศาสตรบัณฑิต') {
                                                             $j++;
-                                                            echo "น.บ." . $j;
+                                                            echo $j;
                                                         } else if ($row1['education'] === 'รัฐประศาสนศาสตรบัณฑิต') {
                                                             $k++;
-                                                            echo "รป.บ." . $k;
+                                                            echo $k;
                                                         } else if ($row1['education'] === 'ศิลปกรรมศาสตรบัณฑิต') {
                                                             $l++;
-                                                            echo "ศป.บ." . $l;
+                                                            echo $l;
                                                         } else if ($row1['education'] === 'ศิลปศาสตรบัณฑิต') {
                                                             $m++;
-                                                            echo "ศศ.บ." . $m;
+                                                            echo $m;
                                                         } else if ($row1['education'] === 'บัญชีบัณฑิต') {
                                                             $n++;
-                                                            echo "บช.บ." . $n;
+                                                            echo $n;
                                                         } else if ($row1['education'] === 'พยาบาลศาสตรบัณฑิต') {
                                                             $o++;
-                                                            echo "พย.บ." . $o;
+                                                            echo $o;
                                                         } else if ($row1['education'] === 'บริหารธุรกิจบัณฑิต') {
                                                             $p++;
-                                                            echo "บธ.บ." . $p;
+                                                            echo $p;
                                                         } else if ($row1['education'] === 'นิเทศศาสตรบัณฑิต') {
                                                             $q++;
-                                                            echo "นศ.บ." . $q;
+                                                            echo $q;
                                                         } else if ($row1['education'] === 'รัฐศาสตรบัณฑิต') {
                                                             $r++;
-                                                            echo "ร.บ." . $r;
+                                                            echo $r;
                                                         } else if ($row1['education'] === 'เศรษฐศาสตรบัณฑิต') {
                                                             $s++;
-                                                            echo "ศ.บ." . $s;
+                                                            echo $s;
                                                         } else {
                                                             echo "N/A";
                                                         }
@@ -522,6 +538,7 @@ if (!isset($_SESSION['suser'])) {
                                                         // }
                                                         ?>
                                                     </td>
+                                                    <td><?= $round ?></td>
                                                     <!-- <td>
                                                         <?php echo $cc; ?>
                                                     </td> -->
@@ -538,6 +555,7 @@ if (!isset($_SESSION['suser'])) {
                                                     </td> -->
                                                 </tr>
                                             <?php
+                                                $round++;
                                                 $cout++;
                                             } //end while
                                             ?>

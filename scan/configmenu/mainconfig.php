@@ -246,9 +246,15 @@ if (!isset($_SESSION['suser'])) {
 												</button>
 											</a>
 											<br /><br />
-											<a href="../configmenu/exportexcel.php">
+											<a href="../configmenu/exportexcel2.php">
 												<button type="button" class="btn btn-info">
-													<span class="glyphicon glyphicon-cog" style="font-family: 'Kanit'"> Export รวม</span>
+													<span class="glyphicon glyphicon-cog" style="font-family: 'Kanit'"> Export รวม(เช้า)</span>
+												</button>
+											</a>
+											<br><br>
+											<a href="../configmenu/exportexcel.php">
+												<button type="button" class="btn btn-warning">
+													<span class="glyphicon glyphicon-cog" style="font-family: 'Kanit'"> Export รวม(บ่าย)</span>
 												</button>
 											</a>
 											<br /><br />
