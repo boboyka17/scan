@@ -1,0 +1,65 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns="http://www.w3.org/TR/REC-html40"><meta http-equiv="content-type" content="application/vnd.ms-excel; charset=UTF-8"><head><!--[if gte mso 9]><xml><x:ExcelWorkbook><x:ExcelWorksheets><x:ExcelWorksheet><x:Name>Sheet0</x:Name><x:WorksheetOptions><x:DisplayGridlines/></x:WorksheetOptions></x:ExcelWorksheet></x:ExcelWorksheets></x:ExcelWorkbook></xml><![endif]--></head><body><table><tr>
+										<th rowspan="2">
+											<center>รหัสบัณฑิต</center>
+										</th>
+										<!-- <th colspan="3">
+											<center>รายงานผล ReMark คณะครุศาสตร์</center>
+										</th> -->
+
+									</tr><tr>
+										<th>
+											<center>รหัสนักศึกษา</center>
+										</th>
+										<th>
+											<center>ชื่อ สกุล</center>
+										</th>
+
+										<th>
+											<center>สถานะ</center>
+										</th>
+										<th rowspan="2">
+											<center>ReMark</center>
+										</th>
+									</tr><tr>
+											<td>111</td>
+											<td>5604581001032</td>
+											<td>นางสาว เจนจิรา สุดจิตร</td>
+											<td>ร่างกายไม่สมบูรณ์</td>
+											<td>พึ่งผ่าคลอด</td>
+										</tr><tr>
+											<td>602</td>
+											<td>5604116001188</td>
+											<td>นางสาว อัญญารัตน์ นวลขาว</td>
+											<td>ร่างกายไม่สมบูรณ์</td>
+											<td>โรคหอบหืด</td>
+										</tr><tr>
+											<td>1042</td>
+											<td>5616072001314</td>
+											<td>นางสาว วิจิตรา นุ่นนวน</td>
+											<td>ร่างกายไม่สมบูรณ์</td>
+											<td>เดินช้า</td>
+										</tr><tr>
+											<td>3542</td>
+											<td>5507509001566</td>
+											<td>นาย ณัฐเกียรติ คงสง</td>
+											<td>ร่างกายไม่สมบูรณ์</td>
+											<td>มีโรคประจำตัว (เดินเร็วไม่ได้ เกร็ง)</td>
+										</tr><tr>
+											<td>3562</td>
+											<td>5607002002063</td>
+											<td>นาย ทนงศักดิ์ วรรณโชติ</td>
+											<td>ร่างกายไม่สมบูรณ์</td>
+											<td>ใส่เหล็กข้อมือขวา</td>
+										</tr><tr>
+											<td>3589</td>
+											<td>5607808001005</td>
+											<td>นางสาว ธารารัตน์ วงศ์กระสินธุ์</td>
+											<td>ร่างกายไม่สมบูรณ์</td>
+											<td>ผ่านการแท้งลูก</td>
+										</tr><tr>
+											<td>3754</td>
+											<td>5607053001049</td>
+											<td>นางสาว รสสุคนธ์ เดชมณี</td>
+											<td>ร่างกายไม่สมบูรณ์</td>
+											<td>ไทรอยเป็นพิษใจสั่น</td>
+										</tr></table></body></html>

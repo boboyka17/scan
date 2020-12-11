@@ -1,0 +1,1005 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns="http://www.w3.org/TR/REC-html40"><meta http-equiv="content-type" content="application/vnd.ms-excel; charset=UTF-8"><head><!--[if gte mso 9]><xml><x:ExcelWorkbook><x:ExcelWorksheets><x:ExcelWorksheet><x:Name>Sheet0</x:Name><x:WorksheetOptions><x:DisplayGridlines/></x:WorksheetOptions></x:ExcelWorksheet></x:ExcelWorksheets></x:ExcelWorkbook></xml><![endif]--></head><body><table><tr>
+											<th rowspan="2" width="40%">
+												<center>
+													หลักสูตร
+												</center>
+											</th>
+											<th rowspan="2">
+												<center>
+													บัณฑิต ทั้งหมด
+												</center>
+											</th>
+
+											<th colspan="4">
+												<center>
+													บัณฑิตหญิง
+												</center>
+											</th>
+											<th colspan="4">
+												<center>
+													บัณฑิตชาย
+												</center>
+											</th>
+											<th rowspan="2">
+												<center>
+													<strong> รวมบัณฑิต (มา)
+
+
+
+
+													</strong>
+												</center>
+											</th>
+											<th rowspan="2">
+												<center>
+													<strong> รวมบัณฑิต (ไม่มา)
+
+
+
+
+													</strong>
+												</center>
+											</th>
+										</tr><tr>
+											<th>
+												<center>
+													ก.1
+												</center>
+											</th>
+											<th>
+												<center>
+													ก.2
+												</center>
+											</th>
+											<th>
+												<center>
+													บัณฑิต
+												</center>
+											</th>
+											<th>
+												<center>
+													รวม
+												</center>
+											</th>
+											<th>
+												<center>
+													ก.1
+												</center>
+											</th>
+											<th>
+												<center>
+													ก.2
+												</center>
+											</th>
+											<th>
+												<center>
+													บัณฑิต
+												</center>
+											</th>
+											<th>
+												<center>
+													<strong> รวม
+													</strong>
+												</center>
+											</th>
+
+										</tr><tr>
+											<td>
+												<div align="left">ดุษฎีบันฑิต</div>
+											</td>
+											<td>
+												<div align="left">
+													12												</div>
+											</td>
+											<td>
+												<div align="left">
+													-												</div>
+											</td>
+											<td>
+												<div align="left">
+													-												</div>
+											</td>
+											<td>
+												<div align="left">
+													6												</div>
+											</td>
+											<td>
+												<div align="left">
+													6												</div>
+											</td>
+											<td>
+												<div align="left">
+													-												</div>
+											</td>
+											<td>
+												<div align="left">
+													-												</div>
+											</td>
+											<td>
+												<div align="left">
+													4												</div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														4													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														10													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														2													</strong></div>
+											</td>
+										</tr><tr>
+											<td>
+												<div align="left">มหาบัณฑิต</div>
+											</td>
+											<td>
+												<div align="left">
+													215												</div>
+											</td>
+
+											<td>
+												<div align="left">
+													-												</div>
+											</td>
+											<td>
+												<div align="left">
+													-												</div>
+											</td>
+											<td>
+												<div align="left">
+													66												</div>
+											</td>
+											<td>
+												<div align="left">
+													66												</div>
+											</td>
+											<td>
+												<div align="left">
+													-												</div>
+											</td>
+											<td>
+												<div align="left">
+													-												</div>
+											</td>
+											<td>
+												<div align="left">
+													24												</div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														24													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														90													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														125													</strong></div>
+											</td>
+										</tr><tr>
+											<td>
+												<div align="left"><strong>รวม บันฑิตมหาวิทยาลัย</strong></div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														227													</strong></div>
+											</td>
+
+											<td>
+												<div align="left">
+													<strong>
+														-													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														-													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														72													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														72													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														-													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														-													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														28													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														28													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														100													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														127													</strong></div>
+											</td>
+										</tr><tr>
+											<td>
+												<div align="left">วิทยาศาสตรบัณฑิต(วท.บ.)</div>
+											</td>
+											<td>
+												<div align="left">
+													630												</div>
+											</td>
+
+											<td>
+												<div align="left">
+													1												</div>
+											</td>
+											<td>
+												<div align="left">
+													3												</div>
+											</td>
+											<td>
+												<div align="left">
+													305												</div>
+											</td>
+											<td>
+												<div align="left">
+													309												</div>
+											</td>
+											<td>
+												<div align="left">
+													2												</div>
+											</td>
+											<td>
+												<div align="left">
+													3												</div>
+											</td>
+											<td>
+												<div align="left">
+													136												</div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														141													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														450													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														180													</strong></div>
+											</td>
+										</tr><tr>
+											<td>
+												<div align="left">นิเทศศาสตรบัณฑิต(นศ.บ.)</div>
+											</td>
+											<td>
+												<div align="left">
+													93												</div>
+											</td>
+
+											<td>
+												<div align="left">
+													-												</div>
+											</td>
+											<td>
+												<div align="left">
+													3												</div>
+											</td>
+											<td>
+												<div align="left">
+													50												</div>
+											</td>
+											<td>
+												<div align="left">
+													53												</div>
+											</td>
+											<td>
+												<div align="left">
+													-												</div>
+											</td>
+											<td>
+												<div align="left">
+													-												</div>
+											</td>
+											<td>
+												<div align="left">
+
+													14												</div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														14													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														67													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														26													</strong></div>
+											</td>
+										</tr><tr>
+											<td>
+												<div align="left">รัฐประศาสนศาสตรบัณฑิต(รป.บ.)</div>
+											</td>
+											<td>
+												<div align="left">
+													460												</div>
+											</td>
+
+											<td>
+												<div align="left">
+													1												</div>
+											</td>
+											<td>
+												<div align="left">
+													7												</div>
+											</td>
+											<td>
+												<div align="left">
+													195												</div>
+											</td>
+											<td>
+												<div align="left">
+													203												</div>
+											</td>
+											<td>
+												<div align="left">
+													-												</div>
+											</td>
+											<td>
+												<div align="left">
+													4												</div>
+											</td>
+											<td>
+												<div align="left">
+													127												</div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														131													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														334													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														126													</strong></div>
+											</td>
+										</tr><tr>
+											<td>
+												<div align="left">รัฐศาสตรบัณฑิต(ร.บ.)</div>
+											</td>
+											<td>
+												<div align="left">
+													125												</div>
+											</td>
+
+											<td>
+												<div align="left">
+													-												</div>
+											</td>
+											<td>
+												<div align="left">
+													3												</div>
+											</td>
+											<td>
+												<div align="left">
+													48												</div>
+											</td>
+											<td>
+												<div align="left">
+													51												</div>
+											</td>
+											<td>
+												<div align="left">
+													-												</div>
+											</td>
+											<td>
+												<div align="left">
+													1												</div>
+											</td>
+											<td>
+												<div align="left">
+													33												</div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														34													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														85													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														40													</strong></div>
+											</td>
+										</tr><tr>
+											<td>
+												<div align="left">ศิลปกรรมศาสตรบัณฑิต(ศป.บ.)</div>
+											</td>
+											<td>
+												<div align="left">
+													25												</div>
+											</td>
+
+											<td>
+												<div align="left">
+													-												</div>
+											</td>
+											<td>
+												<div align="left">
+													-												</div>
+											</td>
+											<td>
+												<div align="left">
+													7												</div>
+											</td>
+											<td>
+												<div align="left">
+													7												</div>
+											</td>
+											<td>
+												<div align="left">
+													-												</div>
+											</td>
+											<td>
+												<div align="left">
+													-												</div>
+											</td>
+											<td>
+												<div align="left">
+													2												</div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														2													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														9													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														16													</strong></div>
+											</td>
+										</tr><tr>
+											<td>
+												<div align="left">บริหารธุรกิจบัณฑิต(บธ.บ.)</div>
+											</td>
+											<td>
+												<div align="left">
+													869												</div>
+											</td>
+
+											<td>
+												<div align="left">
+													12												</div>
+											</td>
+											<td>
+												<div align="left">
+													26												</div>
+											</td>
+											<td>
+												<div align="left">
+													450												</div>
+											</td>
+											<td>
+												<div align="left">
+													488												</div>
+											</td>
+											<td>
+												<div align="left">
+													2												</div>
+											</td>
+											<td>
+												<div align="left">
+													5												</div>
+											</td>
+											<td>
+												<div align="left">
+													94												</div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														101													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														589													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														280													</strong></div>
+											</td>
+										</tr><tr>
+											<td>
+												<div align="left">ครุศาสตรบัณฑิต(ค.บ.)</div>
+											</td>
+											<td>
+												<div align="left">
+													526												</div>
+											</td>
+
+											<td>
+												<div align="left">
+													23												</div>
+											</td>
+											<td>
+												<div align="left">
+													63												</div>
+											</td>
+											<td>
+												<div align="left">
+													241												</div>
+											</td>
+											<td>
+												<div align="left">
+													327												</div>
+											</td>
+											<td>
+												<div align="left">
+													7												</div>
+											</td>
+											<td>
+												<div align="left">
+													9												</div>
+											</td>
+											<td>
+												<div align="left">
+													45												</div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														61													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														388													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														138													</strong></div>
+											</td>
+										</tr><tr>
+											<td>
+												<div align="left">นิติศาสตรบัณฑิต(น.บ.)</div>
+											</td>
+											<td>
+												<div align="left">
+													254												</div>
+											</td>
+
+											<td>
+												<div align="left">
+													3												</div>
+											</td>
+											<td>
+												<div align="left">
+													2												</div>
+											</td>
+											<td>
+												<div align="left">
+													78												</div>
+											</td>
+											<td>
+												<div align="left">
+													83												</div>
+											</td>
+											<td>
+												<div align="left">
+													3												</div>
+											</td>
+											<td>
+												<div align="left">
+													3												</div>
+											</td>
+											<td>
+												<div align="left">
+													81												</div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														87													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														170													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														84													</strong></div>
+											</td>
+										</tr><tr>
+											<td>
+												<div align="left">บัญชีบัณฑิต(บช.บ.)</div>
+											</td>
+											<td>
+												<div align="left">
+													108												</div>
+											</td>
+
+											<td>
+												<div align="left">
+													2												</div>
+											</td>
+											<td>
+												<div align="left">
+													5												</div>
+											</td>
+											<td>
+												<div align="left">
+													73												</div>
+											</td>
+											<td>
+												<div align="left">
+													80												</div>
+											</td>
+											<td>
+												<div align="left">
+													-												</div>
+											</td>
+											<td>
+												<div align="left">
+													-												</div>
+											</td>
+											<td>
+												<div align="left">
+													3												</div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														3													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														83													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														25													</strong></div>
+											</td>
+										</tr><tr>
+											<td>
+												<div align="left">เศรษฐศาสตรบัณฑิต(ศ.บ.)</div>
+											</td>
+											<td>
+												<div align="left">
+													21												</div>
+											</td>
+
+											<td>
+												<div align="left">
+													1												</div>
+											</td>
+											<td>
+												<div align="left">
+													3												</div>
+											</td>
+											<td>
+												<div align="left">
+													8												</div>
+											</td>
+											<td>
+												<div align="left">
+													12												</div>
+											</td>
+											<td>
+												<div align="left">
+													-												</div>
+											</td>
+											<td>
+												<div align="left">
+													-												</div>
+											</td>
+											<td>
+												<div align="left">
+													2												</div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														2													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														14													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														7													</strong></div>
+											</td>
+										</tr><tr>
+											<td>
+												<div align="left">ศิลปศาสตรบัณฑิต(ศศ.บ.)</div>
+											</td>
+											<td>
+												<div align="left">
+													655												</div>
+											</td>
+
+											<td>
+												<div align="left">
+													8												</div>
+											</td>
+											<td>
+												<div align="left">
+
+													17												</div>
+											</td>
+											<td>
+												<div align="left">
+													319												</div>
+											</td>
+											<td>
+												<div align="left">
+													344												</div>
+											</td>
+											<td>
+												<div align="left">
+													1												</div>
+											</td>
+											<td>
+												<div align="left">
+													2												</div>
+											</td>
+											<td>
+												<div align="left">
+													87												</div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														90													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														434													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														221													</strong></div>
+											</td>
+										</tr><tr>
+											<td>
+												<div align="left">พยาบาลศาสตรบัณฑิต(พย.บ.)</div>
+											</td>
+											<td>
+												<div align="left">
+													70												</div>
+											</td>
+
+											<td>
+												<div align="left">
+													-												</div>
+											</td>
+											<td>
+												<div align="left">
+													2												</div>
+											</td>
+											<td>
+												<div align="left">
+													54												</div>
+											</td>
+											<td>
+												<div align="left">
+													56												</div>
+											</td>
+											<td>
+												<div align="left">
+													-												</div>
+											</td>
+											<td>
+												<div align="left">
+													-												</div>
+											</td>
+											<td>
+												<div align="left">
+													-												</div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														-													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														56													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														14													</strong></div>
+											</td>
+										</tr><tr>
+											<td>
+												<div align="left"><strong>รวมปริญญาตรี</strong></div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														3836													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														51													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														134													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														1828													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														2013													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														15													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														27													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														624													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														666												</strong></div><strong>
+											</strong></td>
+											<td>
+												<div align="left">
+													<strong>
+														2679													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+													<strong>
+														1157													</strong></div>
+											</td>
+										</tr><tr>
+											<td class="">
+												<div align="left "><strong>รวมบัณฑิตทั้งหมด
+													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+
+													<strong>
+														4063													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+
+													<strong>
+														51													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+
+													<strong>
+														134													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+
+													<strong>
+														1900													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+
+													<strong>
+														2085													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+
+													<strong>
+														15													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+
+													<strong>
+														27													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+
+													<strong>
+														652													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+
+													<strong>
+														694													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+
+													<strong>
+														2779													</strong></div>
+											</td>
+											<td>
+												<div align="left">
+
+													<strong>
+														1284													</strong></div>
+											</td>
+										</tr></table></body></html>

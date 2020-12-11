@@ -1,0 +1,189 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns="http://www.w3.org/TR/REC-html40"><meta http-equiv="content-type" content="application/vnd.ms-excel; charset=UTF-8"><head><!--[if gte mso 9]><xml><x:ExcelWorkbook><x:ExcelWorksheets><x:ExcelWorksheet><x:Name>Sheet0</x:Name><x:WorksheetOptions><x:DisplayGridlines/></x:WorksheetOptions></x:ExcelWorksheet></x:ExcelWorksheets></x:ExcelWorkbook></xml><![endif]--></head><body><table><tr>
+                  <th rowspan="2"><center>
+                   หลักสูตร
+                  </center></th>
+                  <th rowspan="2"><center>
+                    บัณฑิต
+                  ทั้งหมด
+                  </center></th>
+                  
+                  <th colspan="4"><center>
+                    บัณฑิตหญิง
+                  </center></th>
+                  <th colspan="4"><center>
+                    บัณฑิตชาย
+                  </center></th>
+                  <th rowspan="2"><center>
+                    รวมบัณฑิต
+                  (มา)
+                  </center></th>
+                  <th rowspan="2"><center>
+                    รวมบัณฑิต
+                  (ไม่มา)
+                  </center></th>
+                  <th rowspan="2" class="noPrint"><center>
+                    รายละเอียด
+                  </center></th>
+                </tr><tr>
+                  <th><center>
+                   ก.1
+                  </center></th>
+                  <th><center>
+                    ก.2
+                  </center></th>
+                  <th><center>
+                    บัณฑิต
+                  </center></th>
+                  <th><center>
+                    รวม
+                  </center></th>
+                  <th><center>
+                   ก.1
+                  </center></th>
+                  <th><center>
+                    ก.2
+                  </center></th>
+                  <th><center>
+                    บัณฑิต
+                  </center></th>
+                  <th><center>
+                    รวม
+                  </center></th>
+                  
+                </tr><tr>
+                  <td><div align="left">วิทยาศาสตร์และเทคโนโลยี</div></td>
+                  <td><div align="left">630</div></td>
+                  <td><div align="left">1</div></td>
+                  <td><div align="left">3</div></td>
+                  <td><div align="left">305</div></td>
+                  <td><div align="left">309</div></td>
+                  <td><div align="left">2</div></td>
+                  <td><div align="left">3</div></td>
+                  <td><div align="left">136</div></td>
+                  <td><div align="left">141</div></td>
+                  <td><div align="left">450</div></td>
+                  <td><div align="left">180</div></td>
+                <td class="noPrint"><center><a href="reporsumsakatotal.php?faculty=วิทยาศาสตร์และเทคโนโลยี"><button type="button" class="btn btn-success btn-xs">รายละเอียด&nbsp;<span class="glyphicon glyphicon-new-window"></span></button></a></center></td>
+                </tr><tr>
+                  <td><div align="left">วิทยาการจัดการ</div></td>
+                  <td><div align="left">1092</div></td>
+                  <td><div align="left">15</div></td>
+                  <td><div align="left">36</div></td>
+                  <td><div align="left">582</div></td>
+                  <td><div align="left">633</div></td>
+                  <td><div align="left">2</div></td>
+                  <td><div align="left">5</div></td>
+                  <td><div align="left">114</div></td>
+                  <td><div align="left">121</div></td>
+                  <td><div align="left">754</div></td>
+                  <td><div align="left">338</div></td>
+                <td class="noPrint"><center><a href="reporsumsakatotal.php?faculty=วิทยาการจัดการ"><button type="button" class="btn btn-success btn-xs">รายละเอียด&nbsp;<span class="glyphicon glyphicon-new-window"></span></button></a></center></td>
+                </tr><tr>
+                  <td><div align="left">มนุษยศาสตร์และสังคมศาสตร์</div></td>
+                  <td><div align="left">1048</div></td>
+                  <td><div align="left">7</div></td>
+                  <td><div align="left">15</div></td>
+                  <td><div align="left">450</div></td>
+                  <td><div align="left">472</div></td>
+                  <td><div align="left">-</div></td>
+                  <td><div align="left">7</div></td>
+                  <td><div align="left">236</div></td>
+                  <td><div align="left">243</div></td>
+                  <td><div align="left">715</div></td>
+                  <td><div align="left">333</div></td>
+                <td class="noPrint"><center><a href="reporsumsakatotal.php?faculty=มนุษยศาสตร์และสังคมศาสตร์"><button type="button" class="btn btn-success btn-xs">รายละเอียด&nbsp;<span class="glyphicon glyphicon-new-window"></span></button></a></center></td>
+                </tr><tr>
+                  <td><div align="left">วิทยาลัยนานาชาติการท่องเที่ยว</div></td>
+                  <td><div align="left">216</div></td>
+                  <td><div align="left">2</div></td>
+                  <td><div align="left">13</div></td>
+                  <td><div align="left">118</div></td>
+                  <td><div align="left">133</div></td>
+                  <td><div align="left">1</div></td>
+                  <td><div align="left">-</div></td>
+                  <td><div align="left">12</div></td>
+                  <td><div align="left">13</div></td>
+                  <td><div align="left">146</div></td>
+                  <td><div align="left">70</div></td>
+                <td class="noPrint"><center><a href="reporsumsakatotal.php?faculty=วิทยาลัยนานาชาติการท่องเที่ยว"><button type="button" class="btn btn-success btn-xs">รายละเอียด&nbsp;<span class="glyphicon glyphicon-new-window"></span></button></a></center></td>
+                </tr><tr>
+                  <td><div align="left">บัณฑิตวิทยาลัย</div></td>
+                  <td><div align="left">227</div></td>
+                  <td><div align="left">-</div></td>
+                  <td><div align="left">-</div></td>
+                  <td><div align="left">72</div></td>
+                  <td><div align="left">72</div></td>
+                  <td><div align="left">-</div></td>
+                  <td><div align="left">-</div></td>
+                  <td><div align="left">28</div></td>
+                  <td><div align="left">28</div></td>
+                  <td><div align="left">100</div></td>
+                  <td><div align="left">127</div></td>
+                <td class="noPrint"><center><a href="reporsumsakatotal.php?faculty=บัณฑิตวิทยาลัย"><button type="button" class="btn btn-success btn-xs">รายละเอียด&nbsp;<span class="glyphicon glyphicon-new-window"></span></button></a></center></td>
+                </tr><tr>
+                  <td><div align="left">ครุศาสตร์</div></td>
+                  <td><div align="left">526</div></td>
+                  <td><div align="left">23</div></td>
+                  <td><div align="left">63</div></td>
+                  <td><div align="left">241</div></td>
+                  <td><div align="left">327</div></td>
+                  <td><div align="left">7</div></td>
+                  <td><div align="left">9</div></td>
+                  <td><div align="left">45</div></td>
+                  <td><div align="left">61</div></td>
+                  <td><div align="left">388</div></td>
+                  <td><div align="left">138</div></td>
+                <td class="noPrint"><center><a href="reporsumsakatotal.php?faculty=ครุศาสตร์"><button type="button" class="btn btn-success btn-xs">รายละเอียด&nbsp;<span class="glyphicon glyphicon-new-window"></span></button></a></center></td>
+                </tr><tr>
+                  <td><div align="left">นิติศาสตร์</div></td>
+                  <td><div align="left">254</div></td>
+                  <td><div align="left">3</div></td>
+                  <td><div align="left">2</div></td>
+                  <td><div align="left">78</div></td>
+                  <td><div align="left">83</div></td>
+                  <td><div align="left">3</div></td>
+                  <td><div align="left">3</div></td>
+                  <td><div align="left">81</div></td>
+                  <td><div align="left">87</div></td>
+                  <td><div align="left">170</div></td>
+                  <td><div align="left">84</div></td>
+                <td class="noPrint"><center><a href="reporsumsakatotal.php?faculty=นิติศาสตร์"><button type="button" class="btn btn-success btn-xs">รายละเอียด&nbsp;<span class="glyphicon glyphicon-new-window"></span></button></a></center></td>
+                </tr><tr>
+                  <td><div align="left">พยาบาลศาสตร์</div></td>
+                  <td><div align="left">70</div></td>
+                  <td><div align="left">-</div></td>
+                  <td><div align="left">2</div></td>
+                  <td><div align="left">54</div></td>
+                  <td><div align="left">56</div></td>
+                  <td><div align="left">-</div></td>
+                  <td><div align="left">-</div></td>
+                  <td><div align="left">-</div></td>
+                  <td><div align="left">-</div></td>
+                  <td><div align="left">56</div></td>
+                  <td><div align="left">14</div></td>
+                <td class="noPrint"><center><a href="reporsumsakatotal.php?faculty=พยาบาลศาสตร์"><button type="button" class="btn btn-success btn-xs">รายละเอียด&nbsp;<span class="glyphicon glyphicon-new-window"></span></button></a></center></td>
+                </tr><tr>
+                  <td><div align="left">รวม</div></td>
+                  <td><div align="left">
+                    4063                  </div></td>
+                  <td><div align="left">
+                    51                  </div></td>
+                  <td><div align="left">
+                    134                  </div></td>
+                  <td><div align="left">
+                    1900                  </div></td>
+                  <td><div align="left">
+                    2085                  </div></td>
+                  <td><div align="left">
+                    15                  </div></td>
+                  <td><div align="left">
+                    27                  </div></td>
+                  <td><div align="left">
+                    652                  </div></td>
+                  <td><div align="left">
+                    694                  </div></td>
+                  <td><div align="left">
+                    2779                  </div></td>
+                  <td><div align="left">
+                    1284                  </div></td>
+                </tr></table></body></html>

@@ -1,0 +1,149 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns="http://www.w3.org/TR/REC-html40"><meta http-equiv="content-type" content="application/vnd.ms-excel; charset=UTF-8"><head><!--[if gte mso 9]><xml><x:ExcelWorkbook><x:ExcelWorksheets><x:ExcelWorksheet><x:Name>Sheet0</x:Name><x:WorksheetOptions><x:DisplayGridlines/></x:WorksheetOptions></x:ExcelWorksheet></x:ExcelWorksheets></x:ExcelWorkbook></xml><![endif]--></head><body><table><tr>
+										<th rowspan="2">
+											<center>รหัสบัณฑิต</center>
+										</th>
+										<!-- <th colspan="3">
+											<center>รายงานผล ReMark คณะครุศาสตร์</center>
+										</th> -->
+
+									</tr><tr>
+										<th>
+											<center>รหัสนักศึกษา</center>
+										</th>
+										<th>
+											<center>ชื่อ สกุล</center>
+										</th>
+
+										<th>
+											<center>สถานะ</center>
+										</th>
+										<th rowspan="2">
+											<center>ReMark</center>
+										</th>
+									</tr><tr>
+											<td>289</td>
+											<td>5504166001121</td>
+											<td>นางสาว ประภาศรี เพชรทอง</td>
+											<td>ตั้งครรภ์</td>
+											<td>9 สัปดาห์</td>
+										</tr><tr>
+											<td>416</td>
+											<td>5604581001007</td>
+											<td>นางสาว วันวิสาข์ คงประดับ</td>
+											<td>ตั้งครรภ์</td>
+											<td>5เดือน</td>
+										</tr><tr>
+											<td>565</td>
+											<td>5704106002009</td>
+											<td>นางสาว อนงนาฏ บุญรัตนเมธี</td>
+											<td>ตั้งครรภ์</td>
+											<td>5 เดือน</td>
+										</tr><tr>
+											<td>780</td>
+											<td>5616072001383</td>
+											<td>นางสาว ขวัญฤดี แซ่ภู่</td>
+											<td>ตั้งครรภ์</td>
+											<td>4 เดือน</td>
+										</tr><tr>
+											<td>811</td>
+											<td>5616072001306</td>
+											<td>นางสาว จิราวรรณ มากเกลี้ยง</td>
+											<td>ตั้งครรภ์</td>
+											<td>5 เดือน</td>
+										</tr><tr>
+											<td>870</td>
+											<td>5616072001120</td>
+											<td>นางสาว ทิพวรรณ ทองรุ้ง</td>
+											<td>ตั้งครรภ์</td>
+											<td>5 เดือน</td>
+										</tr><tr>
+											<td>920</td>
+											<td>5616072001113</td>
+											<td>นางสาว นูรูฮูดา ดาโอ๊ะ</td>
+											<td>ตั้งครรภ์</td>
+											<td>6 เดือน</td>
+										</tr><tr>
+											<td>1011</td>
+											<td>5616072001514</td>
+											<td>นางสาว รำไพ เมืองจันทร์</td>
+											<td>ตั้งครรภ์</td>
+											<td>ุ6เดือน</td>
+										</tr><tr>
+											<td>1025</td>
+											<td>5616072001141</td>
+											<td>นางสาว วนิดาภรณ์ คำนวล</td>
+											<td>ตั้งครรภ์</td>
+											<td>1เดือน</td>
+										</tr><tr>
+											<td>1619</td>
+											<td>5709099002032</td>
+											<td>นางสาว ณัฐิยา แก้วพิชัย</td>
+											<td>ตั้งครรภ์</td>
+											<td>6 เดือน</td>
+										</tr><tr>
+											<td>1740</td>
+											<td>5512099002018</td>
+											<td>นางสาว ปรียาภรณ์ อนุกูล</td>
+											<td>ตั้งครรภ์</td>
+											<td>4 เดือน</td>
+										</tr><tr>
+											<td>1866</td>
+											<td>5612103001005</td>
+											<td>นางสาว รัตน์ศิญาวษา โลกมิตร</td>
+											<td>ตั้งครรภ์</td>
+											<td>4 เดือน</td>
+										</tr><tr>
+											<td>1998</td>
+											<td>5612108001040</td>
+											<td>นางสาว ศิริมณี เกตุณรายณ์</td>
+											<td>ตั้งครรภ์</td>
+											<td>2 เดือน</td>
+										</tr><tr>
+											<td>2082</td>
+											<td>5612091001033</td>
+											<td>นางสาว สุพรรษา ยืนนาน</td>
+											<td>ตั้งครรภ์</td>
+											<td>6เดือน</td>
+										</tr><tr>
+											<td>2090</td>
+											<td>5612092001092</td>
+											<td>นางสาว สุภาวดี แปะทุ่งแร่</td>
+											<td>ตั้งครรภ์</td>
+											<td>3 เดือน</td>
+										</tr><tr>
+											<td>2093</td>
+											<td>5612108001082</td>
+											<td>นางสาว สุภิตา พัฒนเจริญ</td>
+											<td>ตั้งครรภ์</td>
+											<td>7 เดือน</td>
+										</tr><tr>
+											<td>2291</td>
+											<td>55052506006</td>
+											<td>นางสาว สวนีย์ ศรเกษตริน</td>
+											<td>ตั้งครรภ์</td>
+											<td>4 เดือน</td>
+										</tr><tr>
+											<td>2485</td>
+											<td>5515066001118</td>
+											<td>นางสาว นิลาวัลย์ ทิพย์รวย</td>
+											<td>ตั้งครรภ์</td>
+											<td>6เดือน</td>
+										</tr><tr>
+											<td>2492</td>
+											<td>5515016001232</td>
+											<td>นางสาว สุชาดา เหมนแก้ว</td>
+											<td>ตั้งครรภ์</td>
+											<td>ไม่ระบุ</td>
+										</tr><tr>
+											<td>3616</td>
+											<td>5607551001010</td>
+											<td>นางสาว นันท์นภัส ธนะกรณ์</td>
+											<td>ตั้งครรภ์</td>
+											<td>6 เดือน</td>
+										</tr><tr>
+											<td>3978</td>
+											<td>5607053001007</td>
+											<td>นางสาว อาภาภรณ์ วะโรรส</td>
+											<td>ตั้งครรภ์</td>
+											<td>8 เดือน 1week</td>
+										</tr></table></body></html>

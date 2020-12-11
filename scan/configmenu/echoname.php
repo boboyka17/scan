@@ -204,7 +204,7 @@ if (!isset($_SESSION['suser'])) {
 										<tr class="success">
 											<th rowspan="2">
 												<center>
-													<font size="2">จำนวนในแถว
+													<font size="2">ลำดับในแถว
 												</center>
 											</th>
 											<th rowspan="2">
@@ -234,12 +234,12 @@ if (!isset($_SESSION['suser'])) {
 											</th>
 											<th>
 												<center>
-													<font size="2">A/B
+													<font size="2">ลำดับในวุฒิ
 												</center>
 											</th>
 											<th>
 												<center>
-													<font size="5">หมายเหตุ
+													<font size="5">เช็คชื่อ
 												</center>
 											</th>
 										</tr>
@@ -257,48 +257,64 @@ if (!isset($_SESSION['suser'])) {
 											<td><?php echo $row1['pre'] . $row1['name'] . ' ' . $row1['lastname']; ?></td>
 											<td><?php
 												if ($row1['education'] === 'ครุศาสตรดุษฎีบัณฑิต') {
+													$sumtt13++;
 													echo "ค.ด.";
 												}else if($row1['education'] === 'ครุศาสตรมหาบัณฑิต'){
-													echo "ค.ม.";													
+													echo "ค.ม.";
 												}else if($row1['education'] === 'รัฐประศาสนศาสตรมหาบัณฑิต'){
+													$sumtt14++;
 													echo "รป.ม.";													
 												}else if ($row1['education'] === 'ศิลปศาสตรมหาบัณฑิต') {
+													$sumtt15++;
 													echo "ศศ.ม.";
-												}else if($row1['education'] === 'วิทยาศาตรมหาบัณฑิต'){
+												}else if($row1['education'] === 'วิทยาศาสตรมหาบัณฑิต'){
+													$sumtt16++;
 													echo "วท.ม.";													
 												}else if ($row1['education'] === 'บริหารธุรกิจมหาบัณฑิต') {
+													$sumtt17++;
 													echo "บธ.ม.";
-												}else if($row1['education'] === 'สาธารณสุขศาตรมหาบัณฑิต'){
-													echo "ส.ม.";													
+												}else if($row1['education'] === 'สาธารณสุขศาสตรมหาบัณฑิต'){
+													$sumtt18++;
+													echo "ส.ม.";
 												}else if ($row1['education'] === 'ครุศาสตรบัณฑิต (หลักสูตร 5 ปี)') {
-													echo "ค.บ.";
-												} else if ($row1['education'] === 'วิทยาศาสตรบัณฑิต') {
-													echo "วท.บ.";
-												} else if ($row1['education'] === 'นิติศาสตรบัณฑิต') {
-													echo "น.บ.";
-												} else if ($row1['education'] === 'รัฐประศาสนศาสตรบัณฑิต') {
-													echo "รป.บ.";
-												} else if ($row1['education'] === 'ศิลปกรรมศาสตรบัณฑิต') {
-													echo "ศป.บ.";
-												} else if ($row1['education'] === 'ศิลปศาสตรบัณฑิต') {
-													echo "ศศ.บ.";
-												} else if ($row1['education'] === 'บัญชีบัณฑิต') {
-													echo "บช.บ.";
-												} else if ($row1['education'] === 'พยาบาลศาสตรบัณฑิต') {
-													echo "พย.บ.";
-												} else if ($row1['education'] === 'บริหารธุรกิจบัณฑิต') {
-													echo "บธ.บ.";
-												} else if ($row1['education'] === 'นิเทศศาสตรบัณฑิต') {
-													echo "นศ.บ.";
-												} else if ($row1['education'] === 'รัฐศาสตรบัณฑิต') {
-													echo "ร.บ.";
-												} else if ($row1['education'] === 'ครุศาสตรบัณฑิต') {
-													echo "ค.บ.";
-												} else if ($row1['education'] === 'เศรษฐศาสตรบัณฑิต') {
-													echo "ศ.บ.";
-												}else{
-													echo "N/A";
-												}
+														$sumtt1++;
+														echo "ค.บ.";
+													} else if ($row1['education'] === 'วิทยาศาสตรบัณฑิต') {
+														$sumtt2++;
+														echo "วท.บ.";
+													} else if ($row1['education'] === 'นิติศาสตรบัณฑิต') {
+														$sumtt3++;
+														echo "น.บ.";
+													} else if ($row1['education'] === 'รัฐประศาสนศาสตรบัณฑิต') {
+														$sumtt4++;
+														echo "รป.บ.";
+													} else if ($row1['education'] === 'ศิลปกรรมศาสตรบัณฑิต') {
+														$sumtt5++;
+														echo "ศป.บ.";
+													} else if ($row1['education'] === 'ศิลปศาสตรบัณฑิต') {
+														$sumtt6++;
+														echo "ศศ.บ.";
+													} else if ($row1['education'] === 'บัญชีบัณฑิต') {
+														$sumtt7++;
+														echo "บช.บ.";
+													} else if ($row1['education'] === 'พยาบาลศาสตรบัณฑิต') {
+														$sumtt8++;
+														echo "พย.บ.";
+													} else if ($row1['education'] === 'บริหารธุรกิจบัณฑิต') {
+														$sumtt9++;
+														echo "บธ.บ.";
+													} else if ($row1['education'] === 'นิเทศศาสตรบัณฑิต') {
+														$sumtt10++;
+														echo "นศ.บ.";
+													} else if ($row1['education'] === 'รัฐศาสตรบัณฑิต') {
+														$sumtt11++;
+														echo "ร.บ.";
+													} else if ($row1['education'] === 'เศรษฐศาสตรบัณฑิต') {
+														$sumtt12++;
+														echo "ศ.บ.";
+													}else{
+														echo "N/A";
+													}
 												?></td>
 											<td><?php if ($row1['degree'] === '1') {
 													echo "1";
@@ -308,61 +324,7 @@ if (!isset($_SESSION['suser'])) {
 												} ?></td>
 											<td><?php echo @$cout; ?></td>
 											<td><?php 
-											if ($row1['education'] === 'ครุศาสตรดุษฎีบัณฑิต') {
-												$sumtt13++;
-												echo "ค.ม.";
-											}else if($row1['education'] === 'รัฐประศาสนศาสตรมหาบัณฑิต'){
-												$sumtt14++;
-												echo "รป.ม.";													
-											}else if ($row1['education'] === 'ศิลปศาสตรมหาบัณฑิต') {
-												$sumtt15++;
-												echo "ศศ.ม.";
-											}else if($row1['education'] === 'วิทยาศาตรมหาบัณฑิต'){
-												$sumtt16++;
-												echo "วท.ม.";													
-											}else if ($row1['education'] === 'บริหารธุรกิจมหาบัณฑิต') {
-												$sumtt17++;
-												echo "บธ.ม.";
-											}else if($row1['education'] === 'สาธารณสุขศาตรมหาบัณฑิต'){
-												$sumtt18++;
-												echo "ส.ม.";
-											}else if ($row1['education'] === 'ครุศาสตรบัณฑิต (หลักสูตร 5 ปี)') {
-													$sumtt1++;
-													echo "ค.บ.";
-												} else if ($row1['education'] === 'วิทยาศาสตรบัณฑิต') {
-													$sumtt2++;
-													echo "วท.บ.";
-												} else if ($row1['education'] === 'นิติศาสตรบัณฑิต') {
-													$sumtt3++;
-													echo "น.บ.";
-												} else if ($row1['education'] === 'รัฐประศาสนศาสตรบัณฑิต') {
-													$sumtt4++;
-													echo "รป.บ.";
-												} else if ($row1['education'] === 'ศิลปกรรมศาสตรบัณฑิต') {
-													$sumtt5++;
-													echo "ศป.บ.";
-												} else if ($row1['education'] === 'ศิลปศาสตรบัณฑิต') {
-													$sumtt6++;
-													echo "ศศ.บ.";
-												} else if ($row1['education'] === 'บัญชีบัณฑิต') {
-													$sumtt7++;
-													echo "บช.บ.";
-												} else if ($row1['education'] === 'พยาบาลศาสตรบัณฑิต') {
-													$sumtt8++;
-													echo "พย.บ.";
-												} else if ($row1['education'] === 'บริหารธุรกิจบัณฑิต') {
-													$sumtt9++;
-													echo "บธ.บ.";
-												} else if ($row1['education'] === 'นิเทศศาสตรบัณฑิต') {
-													$sumtt10++;
-													echo "นศ.บ.";
-												} else if ($row1['education'] === 'รัฐศาสตรบัณฑิต') {
-													$sumtt11++;
-													echo "ร.บ.";
-												} else if ($row1['education'] === 'เศรษฐศาสตรบัณฑิต') {
-													$sumtt12++;
-													echo "ศ.บ.";
-												}
+												// echo $sumtt1;
 												?></td>
 											<td><?php if ($row1['statustext'] = 'NORMAL') {
 													echo "";
@@ -421,12 +383,12 @@ if (!isset($_SESSION['suser'])) {
 											</th>
 											<th>
 												<center>
-													<font size="2">A/B
+													<font size="2">ลำดับในวุฒิ
 												</center>
 											</th>
 											<th>
 												<center>
-													<font size="5">หมายเหตุ
+													<font size="5">เช็คชื่อ
 												</center>
 											</th>
 										</tr>

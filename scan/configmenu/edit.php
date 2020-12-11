@@ -225,6 +225,7 @@ if (!isset($_SESSION['suser'])) {
           },
           success: function(result) {
             alert('บันทึกข้อมูลสำเร็จ')
+            location.href = "search.php"
           }
         })
       })

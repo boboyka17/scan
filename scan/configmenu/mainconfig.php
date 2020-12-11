@@ -100,7 +100,7 @@ if (!isset($_SESSION['suser'])) {
 							<center>
 								<img src="admin.png" width="120" height="120">
 								<br /><br />
-								<button type="button" class="btn btn-danger" onclick="cf()">เครียข้อมูล</button>
+								<!-- <button type="button" class="btn btn-danger" onclick="cf()">เครียข้อมูล</button> -->
 								<script>
 									function cf() {
 										var r = confirm("แน่ใจไหมที่จะเครียข้อมูล!");
@@ -156,6 +156,12 @@ if (!isset($_SESSION['suser'])) {
 											</button>
 										</a>
 										<br /><br />
+										<a href="../configmenu/editteacher.php">
+											<button type="button" class="btn btn-success">
+												<span class="glyphicon glyphicon-cog" style="font-family: 'Kanit'"> จัดการอาจารย์คุมแถว(รอบแรก)</span>
+											</button>
+										</a>
+										<br />
 									</div>
 
 									<div class="col-xs-4">
@@ -199,6 +205,12 @@ if (!isset($_SESSION['suser'])) {
 											</button>
 										</a>
 										<br /><br />
+										<a href="../configmenu/editteacher2.php">
+											<button type="button" class="btn btn-warning">
+												<span class="glyphicon glyphicon-cog" style="font-family: 'Kanit'"> จัดการอาจารย์คุมแถว(รอบสอง)</span>
+											</button>
+										</a>
+
 									</div>
 
 									<div class="col-xs-4">

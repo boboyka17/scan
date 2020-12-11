@@ -26,7 +26,7 @@ if (!isset($_SESSION['suser'])) {
     <![endif]-->
 	</head>
 
-	<body style="font-family: 'Kanit'">
+	<body>
 		<style media="print">
 			.noPrint {
 				display: none;
@@ -132,7 +132,7 @@ if (!isset($_SESSION['suser'])) {
 						<div class="panel panel-primary">
 							<div class="panel-heading noPrint">
 								<h3 class="panel-title">
-									<center>&nbsp; <span class="glyphicon glyphicon-user "></span>&nbsp;สรุปยอดบัณฑิตผู้มีสิทธิ์รับพระราชทานปริญญาบัตร 2560 </center>
+									<center>&nbsp; <span class="glyphicon glyphicon-user "></span>&nbsp;สรุปยอดบัณฑิตผู้มีสิทธิ์รับพระราชทานปริญญาบัตร 2563 </center>
 								</h3>
 							</div>
 							<div class="panel-body">
@@ -149,20 +149,23 @@ if (!isset($_SESSION['suser'])) {
 										</div>
 										<div class="col-sm-5 col-md-6">
 											<input class="noPrint btn btn-success btn-md " style="float: right;" type="button" value="Print" onClick="window.print()">
-											<a href="policeb.php"><input type="button" name="v" value="Police" class="btn btn-info" style="float: right;margin-right: 10px"></a>
+											<a href="police.php"><input type="button" name="v" value="สำหรับตำรวจ" class="btn btn-info" style="float: right;margin-right: 10px"></a>
+											<a href="sumtaw.php"><input type="button" name="result" value="สรุปแถว" class="btn btn-warning" style="float: right;margin-right: 10px"></a>
 										</div>
 									</div>
+
 
 								</form>
 								<style>
 									#myBtn {
+										display: none;
 										position: fixed;
 										bottom: 20px;
 										right: 30px;
 										z-index: 99;
 									}
 								</style>
-								<button onclick="topFunction()" id="myBtn" class="btn btn-info" title="Go to top">กลับไปบนสุด</button>
+								<button onclick="topFunction()" id="myBtn" class="btn btn-info" title="Go to top">กลับไปข้างบนสุด</button>
 								<script>
 									//Get the button
 									var mybutton = document.getElementById("myBtn");
@@ -194,10 +197,18 @@ if (!isset($_SESSION['suser'])) {
 								?>
 								<?php $cc = 0;
 								$taw = 1;
+								//$query =  "SELECT * FROM scan2557 WHERE level LIKE '%ตรี%' and ( education LIKE '%ศิลปกรรม%' or education LIKE '%รัฐป%' or education LIKE '%วิท%' or education LIKE '%นิเทศ%' or education LIKE '%รัฐศ%' or education LIKE '%บริหาร%')and (`chdate1`!='' or `chdate12`!='' or `chdate2`!='' or `chdate22`!='' or `chdate3`!='' or `chdate32`!='' or `chdate4`!='' or `chdate42`!='') ORDER BY `scan2557`.`count` ASC;";
 								$query =  "SELECT * FROM scan2557 WHERE (level LIKE '%ตรี%' or level LIKE '%โท%' or level LIKE '%เอก%') and ( education LIKE '%ครุ%' or education LIKE '%นิติ%' or education LIKE '%บัญชี%' or education LIKE '%เศรษฐ%' or education LIKE '%ศิลปศาส%' or education LIKE '%พยาบาล%' or education LIKE '%มหา%' or education LIKE '%ดุษฎี%')and (`chdate32`!='' or `chdate1`!='' or `chdate2`!='' or `chdate3`!='' or `chdate12`!='' or `chdate22`!='' ) and type123!='1'ORDER BY `scan2557`.`count` ASC;";
+								// $query = "SELECT * FROM scan2557 WHERE level LIKE '%ตรี%' and ( education LIKE '%ศิลปกรรม%' or education LIKE '%รัฐป%' or education LIKE '%วิท%' or education LIKE '%นิเทศ%' or education LIKE '%รัฐศ%' or education LIKE '%บริหาร%') and ((`chdate32`!='' or 'chdate1'!='' or 'chdate2'!='' or `chdate3`!='' or `chdate12`!='' or `chdate22`!='' ) or (`chdate32` is not null or 'chdate1'is not null or 'chdate2'is not null or `chdate3`is not null or `chdate12`is not null or `chdate22`is not null )) and type123!='1'ORDER BY `scan2557`.`count` ASC;";
 								$result = $conn->query($query) or die($conn->error);
-								$tall = ceil($result->num_rows / $n);
-								echo "แถว " . $taw . "/" . $tall . " (บ่าย) อาจารย์คุมแถว....................................................................................................................";  ?>
+								if ($taw == 1) {
+									$aj = sprintf("SELECT * FROM teacher2 WHERE tcid='1'",);
+									$ajq = $conn->query($aj);
+									$result_aj = $ajq->fetch_assoc();
+								}
+								$tall = ceil($result->num_rows / $n); ?>
+								<h4><?php
+									echo "แถว " . $taw . "/" . $tall . " (รอบสอง) อาจารย์คุมแถว " . $result_aj['tcname'] . " Tel............................................................................."; ?></h4>
 								<table class="table table-bordered">
 									<thead>
 
@@ -248,6 +259,16 @@ if (!isset($_SESSION['suser'])) {
 									$cout = 1;
 									//ก่อนจะ import ให้เรียงคณะก่อน
 									while ($row1 = $result->fetch_assoc()) {
+										$result_aj['tcname'] = '';
+										if ($taw > 1) {
+											$aj = sprintf("SELECT * FROM teacher2 WHERE tcid='%d'", $taw + 1);
+											$ajq = $conn->query($aj);
+											$result_aj = $ajq->fetch_assoc();
+										} elseif ($taw == 1) {
+											$aj = sprintf("SELECT * FROM teacher2 WHERE tcid='2'");
+											$ajq = $conn->query($aj);
+											$result_aj = $ajq->fetch_assoc();
+										}
 										$cc++;
 									?>
 										<tr>
@@ -257,76 +278,27 @@ if (!isset($_SESSION['suser'])) {
 											<td><?php echo $row1['pre'] . $row1['name'] . ' ' . $row1['lastname']; ?></td>
 											<td><?php
 												if ($row1['education'] === 'ครุศาสตรดุษฎีบัณฑิต') {
+													$sumtt13++;
 													echo "ค.ด.";
-												}else if($row1['education'] === 'ครุศาสตรมหาบัณฑิต'){
-													echo "ค.ม.";													
-												}else if($row1['education'] === 'รัฐประศาสนศาสตรมหาบัณฑิต'){
-													echo "รป.ม.";													
-												}else if ($row1['education'] === 'ศิลปศาสตรมหาบัณฑิต') {
+												} else if ($row1['education'] === 'ครุศาสตรมหาบัณฑิต') {
+													$sumtt19++;
+													echo "ค.ม.";
+												} else if ($row1['education'] === 'รัฐประศาสนศาสตรมหาบัณฑิต') {
+													$sumtt14++;
+													echo "รป.ม.";
+												} else if ($row1['education'] === 'ศิลปศาสตรมหาบัณฑิต') {
+													$sumtt15++;
 													echo "ศศ.ม.";
-												}else if($row1['education'] === 'วิทยาศาตรมหาบัณฑิต'){
-													echo "วท.ม.";													
-												}else if ($row1['education'] === 'บริหารธุรกิจมหาบัณฑิต') {
+												} else if ($row1['education'] === 'วิทยาศาสตรมหาบัณฑิต') {
+													$sumtt16++;
+													echo "วท.ม.";
+												} else if ($row1['education'] === 'บริหารธุรกิจมหาบัณฑิต') {
+													$sumtt17++;
 													echo "บธ.ม.";
-												}else if($row1['education'] === 'สาธารณสุขศาตรมหาบัณฑิต'){
-													echo "ส.ม.";													
-												}else if ($row1['education'] === 'ครุศาสตรบัณฑิต (หลักสูตร 5 ปี)') {
-													echo "ค.บ.";
-												} else if ($row1['education'] === 'วิทยาศาสตรบัณฑิต') {
-													echo "วท.บ.";
-												} else if ($row1['education'] === 'นิติศาสตรบัณฑิต') {
-													echo "น.บ.";
-												} else if ($row1['education'] === 'รัฐประศาสนศาสตรบัณฑิต') {
-													echo "รป.บ.";
-												} else if ($row1['education'] === 'ศิลปกรรมศาสตรบัณฑิต') {
-													echo "ศป.บ.";
-												} else if ($row1['education'] === 'ศิลปศาสตรบัณฑิต') {
-													echo "ศศ.บ.";
-												} else if ($row1['education'] === 'บัญชีบัณฑิต') {
-													echo "บช.บ.";
-												} else if ($row1['education'] === 'พยาบาลศาสตรบัณฑิต') {
-													echo "พย.บ.";
-												} else if ($row1['education'] === 'บริหารธุรกิจบัณฑิต') {
-													echo "บธ.บ.";
-												} else if ($row1['education'] === 'นิเทศศาสตรบัณฑิต') {
-													echo "นศ.บ.";
-												} else if ($row1['education'] === 'รัฐศาสตรบัณฑิต') {
-													echo "ร.บ.";
-												} else if ($row1['education'] === 'ครุศาสตรบัณฑิต') {
-													echo "ค.บ.";
-												} else if ($row1['education'] === 'เศรษฐศาสตรบัณฑิต') {
-													echo "ศ.บ.";
-												}else{
-													echo "N/A";
-												}
-												?></td>
-											<td><?php if ($row1['degree'] === '1') {
-													echo "1";
-												} else if ($row1['degree'] === '2') {
-													echo "2";
-												} else {
-												} ?></td>
-											<td><?php echo @$cout; ?></td>
-											<td><?php 
-											if ($row1['education'] === 'ครุศาสตรดุษฎีบัณฑิต') {
-												$sumtt13++;
-												echo "ค.ม.";
-											}else if($row1['education'] === 'รัฐประศาสนศาสตรมหาบัณฑิต'){
-												$sumtt14++;
-												echo "รป.ม.";													
-											}else if ($row1['education'] === 'ศิลปศาสตรมหาบัณฑิต') {
-												$sumtt15++;
-												echo "ศศ.ม.";
-											}else if($row1['education'] === 'วิทยาศาตรมหาบัณฑิต'){
-												$sumtt16++;
-												echo "วท.ม.";													
-											}else if ($row1['education'] === 'บริหารธุรกิจมหาบัณฑิต') {
-												$sumtt17++;
-												echo "บธ.ม.";
-											}else if($row1['education'] === 'สาธารณสุขศาตรมหาบัณฑิต'){
-												$sumtt18++;
-												echo "ส.ม.";
-											}else if ($row1['education'] === 'ครุศาสตรบัณฑิต (หลักสูตร 5 ปี)') {
+												} else if ($row1['education'] === 'สาธารณสุขศาสตรมหาบัณฑิต') {
+													$sumtt18++;
+													echo "ส.ม.";
+												} else if ($row1['education'] === 'ครุศาสตรบัณฑิต (หลักสูตร 5 ปี)') {
 													$sumtt1++;
 													echo "ค.บ.";
 												} else if ($row1['education'] === 'วิทยาศาสตรบัณฑิต') {
@@ -362,11 +334,35 @@ if (!isset($_SESSION['suser'])) {
 												} else if ($row1['education'] === 'เศรษฐศาสตรบัณฑิต') {
 													$sumtt12++;
 													echo "ศ.บ.";
+												} else {
+													echo "N/A";
 												}
 												?></td>
-											<td><?php if ($row1['statustext'] = 'NORMAL') {
-													echo "";
-												} else echo $row1['statustext'] ?></td>
+											<td><?php if ($row1['degree'] === '1') {
+													echo "1";
+												} else if ($row1['degree'] === '2') {
+													echo "2";
+												} else {
+												} ?></td>
+											<td><?php echo @$cout; ?></td>
+											<td>
+												<?php
+												$nub = ($n / 2);
+												$co = $cout;
+												$char = 'A';
+												if ($co > $nub) {
+													$co = $co - $nub;
+													$char++;
+												}
+												if ($co <= $nub) {
+													echo $co . $char;
+												}
+												?>
+											</td>
+											<!-- รอแก้ไขไฟล์ -->
+											<td><?php if ($row1['statustext'] != '') {
+													echo $row1['statustext'];
+												}  ?></td>
 										</tr> <?php //echo "<P CLASS='breakhere'>";
 												?>
 
@@ -380,10 +376,11 @@ if (!isset($_SESSION['suser'])) {
 												$taw++; ?>
 								</table>
 								<?php
-												echo "<p class='breakhere'>";
-												echo "แถว " . $taw . "/" . $tall . " (บ่าย) อาจารย์คุมแถว....................................................................................................................";
+												echo "<p class='breakhere'>"; ?>
+								<h4><?php
+												echo "แถว " . $taw . "/" . $tall . " (รอบสอง) อาจารย์คุมแถว " . $result_aj['tcname'] . " Tel.............................................................................";
 
-								?>
+									?></h4>
 
 								<table class="table table-bordered ">
 									<thead>
@@ -439,59 +436,247 @@ if (!isset($_SESSION['suser'])) {
 
 							<!------end table1------->
 
-							<table width="100%" class="table table-bordered" style="text-align: center;">
-								<th><center>ป.เอก</th>
-								<th><center>ป.โท</th>
-								<th><center>ค.บ.</th>
-								<th><center>น.บ.</th>
-								<th><center>บช.บ.</th>
-								<th><center>ศ.บ.</th>
-								<th><center>ศศ.บ.</th>
-								<th><center>พย.บ.</th>
-								<th><center>รวม</th>
-								<tr>
-									<td><?php 
-										echo $sumtt13; 
-										
-									?></td>
-									<td><?php 
-										echo ($sumtt14+$sumtt15+$sumtt16+$sumtt17+$sumtt18); 
-										
-									?></td>
-									<td><?php
-										echo $sumtt1; 
-										
-									?></td>
-									<td><?php 
-										echo $sumtt3;
-							
-									?></td>
-									<td><?php 
-										echo $sumtt7; 
-										
-									?></td>
-									<td><?php 
-										echo $sumtt12; 
-										
-									?></td>
-									<td><?php 
-										echo $sumtt6; 
-										
-									?></td>
-									<td><?php 
-										echo $sumtt8; 
-										
-									?></td>
-									<td><?php 
-										echo $cc; 
-									?></td>
-								</tr>
-							</table>
+								</table>
+
 								</font>
 							</div>
 						</div>
 						<?php
+						$tok = $conn->query("SELECT * FROM scan2557 WHERE (level LIKE '%ตรี%' or level LIKE '%โท%' or level LIKE '%เอก%')  and( education LIKE '%ครุ%' or education LIKE '%นิติ%' or education LIKE '%บัญชี%' or education LIKE '%เศรษฐ%' or education LIKE '%ศิลปศาส%' or education LIKE '%พยาบาล%' or education LIKE '%มหา%' or education LIKE '%ดุษฎี%')and (`chdate1`!='' or `chdate12`!='' or `chdate2`!='' or `chdate22`!='' or `chdate3`!='' or `chdate32`!='' or `chdate4`!='' or `chdate42`!='') and type123='1' ORDER BY `scan2557`.`status` ASC;");
+						$nubbb = $tok->num_rows;
+						//echo $nubbb;
+						?>
+						<table class="table table-bordered ">
+							<thead>
+								<tr>
+									<thead>
 
+										<tr class="success">
+											<th rowspan="2">
+												<center>
+													<font size="2">จำนวนในแถว
+												</center>
+											</th>
+											<th rowspan="2">
+												<center>
+													<font size="2">รหัสบัณฑิต
+												</center>
+											</th>
+											</center>
+										<tr class="success">
+											<th>
+												<center>
+													<font size="5">ชื่อ-สกุล
+												</center>
+											</th>
+											<th>
+												<center>
+													<font size="2">วุฒิปริญญา
+												</center>
+											</th>
+											<th>
+												<center>
+													<font size="5">ก
+												</center>
+											</th>
+											<th>
+												<center><?php echo "<h3><span class='glyphicon glyphicon-ok'></span></h3>"; ?></center>
+											</th>
+											<th>
+												<center>
+													<font size="2">A/B
+												</center>
+											</th>
+											<th>
+												<center>
+													<font size="5">หมายเหตุ
+												</center>
+											</th>
+										</tr>
+									</thead>
+								</tr>
+							</thead>
+							<tbody>
+								<?php
+								while ($row2 = $tok->fetch_assoc()) :
+									if ($cout > $n) {
+
+										$cout = 1;
+										$taw++;
+									}
+								?>
+
+									<tr>
+										<td><?= $cout ?></td>
+										<td><?= $row2["counteducation"] ?></td>
+										<td><?= $row2['pre'] . $row2['name'] . " " . $row2['lastname'] ?></td>
+										<td>
+											<?php
+											if ($row2['education'] === 'ครุศาสตรดุษฎีบัณฑิต') {
+												$sumtt++;
+												echo "ค.ด.";
+											} else if ($row2['education'] === 'ครุศาสตรมหาบัณฑิต') {
+												$sumtt++;
+												echo "ค.ม.";
+											} else if ($row2['education'] === 'รัฐประศาสนศาสตรมหาบัณฑิต') {
+												$sumtt++;
+												echo "รป.ม.";
+											} else if ($row2['education'] === 'ศิลปศาสตรมหาบัณฑิต') {
+												$sumtt++;
+												echo "ศศ.ม.";
+											} else if ($row2['education'] === 'วิทยาศาตรมหาบัณฑิต') {
+												$sumtt++;
+												echo "วท.ม.";
+											} else if ($row2['education'] === 'บริหารธุรกิจมหาบัณฑิต') {
+												$sumtt++;
+												echo "บธ.ม.";
+											} else if ($row2['education'] === 'สาธารณสุขศาสตรมหาบัณฑิต') {
+												$sumtt++;
+												echo "ส.ม.";
+											} else if ($row2['education'] === 'ครุศาสตรบัณฑิต (หลักสูตร 5 ปี)') {
+												$sumtt++;
+												echo "ค.บ.";
+											} else if ($row2['education'] === 'วิทยาศาสตรบัณฑิต') {
+												$sumtt++;
+												echo "วท.บ.";
+											} else if ($row2['education'] === 'นิติศาสตรบัณฑิต') {
+												$sumtt++;
+												echo "น.บ.";
+											} else if ($row2['education'] === 'รัฐประศาสนศาสตรบัณฑิต') {
+												$sumtt++;
+												echo "รป.บ.";
+											} else if ($row2['education'] === 'ศิลปกรรมศาสตรบัณฑิต') {
+												$sumtt++;
+												echo "ศป.บ.";
+											} else if ($row2['education'] === 'ศิลปศาสตรบัณฑิต') {
+												$sumtt++;
+												echo "ศศ.บ.";
+											} else if ($row2['education'] === 'บัญชีบัณฑิต') {
+												$sumtt++;
+												echo "บช.บ.";
+											} else if ($row2['education'] === 'พยาบาลศาสตรบัณฑิต') {
+												$sumtt++;
+												echo "พย.บ.";
+											} else if ($row2['education'] === 'บริหารธุรกิจบัณฑิต') {
+												$sumtt++;
+												echo "บธ.บ.";
+											} else if ($row2['education'] === 'นิเทศศาสตรบัณฑิต') {
+												$sumtt++;
+												echo "นศ.บ.";
+											} else if ($row2['education'] === 'รัฐศาสตรบัณฑิต') {
+												$sumtt++;
+												echo "ร.บ.";
+											} else if ($row2['education'] === 'เศรษฐศาสตรบัณฑิต') {
+												$sumtt++;
+												echo "ศ.บ.";
+											} else {
+												echo "N/A";
+											}
+											?>
+										</td>
+										<td>
+											<?php if ($row2['degree'] === '1') {
+												echo "1";
+											} else if ($row2['degree'] === '2') {
+												echo "2";
+											} else {
+											} ?>
+										</td>
+										<td><?php echo @$cout; ?></td>
+										<td><?php
+											$nub = ($n / 2);
+											$co = $cout;
+											$char = 'A';
+											if ($co > $nub) {
+												$co = $co - $nub;
+												$char++;
+											}
+											if ($co <= $nub) {
+												echo $co . $char;
+											}
+											?></td>
+										<td><?= $row2["statustext"] ?></td>
+									</tr>
+								<?php
+									$cout++;
+								endwhile;
+								?>
+							</tbody>
+						</table>
+						<table width="100%" class="table table-bordered" style="text-align: center;">
+							<th>
+								<center>ป.เอก
+							</th>
+							<th>
+								<center>ป.โท
+							</th>
+							<th>
+								<center>ค.บ.
+							</th>
+							<th>
+								<center>น.บ.
+							</th>
+							<th>
+								<center>บช.บ.
+							</th>
+							<th>
+								<center>ศ.บ.
+							</th>
+							<th>
+								<center>ศศ.บ.
+							</th>
+							<th>
+								<center>พย.บ.
+							</th>
+							<th>
+								<center>พิเศษ
+							</th>
+							<th>
+								<center>รวม
+							</th>
+							<tr>
+								<td><?php
+									echo $sumtt13;
+
+									?></td>
+								<td><?php
+									echo ($sumtt14 + $sumtt15 + $sumtt16 + $sumtt17 + $sumtt18 + $sumtt19);
+
+									?></td>
+								<td><?php
+									echo $sumtt1;
+
+									?></td>
+								<td><?php
+									echo $sumtt3;
+
+									?></td>
+								<td><?php
+									echo $sumtt7;
+
+									?></td>
+								<td><?php
+									echo $sumtt12;
+
+									?></td>
+								<td><?php
+									echo $sumtt6;
+
+									?></td>
+								<td><?php
+									echo $sumtt8;
+
+									?></td>
+								<td><?php
+									echo $sumtt;
+
+									?></td>
+								<td><?php
+									echo ($cc + $sumtt);
+									?></td>
+							</tr>
+						</table>
+						<?php
 						include('../sphp/cconn.php');
 						?>
 						<!-- +++++++++++++++++++++ END OF MAIN ++++++++++++++++++++++++-->

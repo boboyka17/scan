@@ -22,7 +22,7 @@
 	
 	//$date=sprint('date'.$i);
 	$e = explode("-", $_POST['date1']);
-	echo $e;
+	// echo $e;
 	$Year=$e[0];
 	settype ($Year,"integer");
 	$Year=$Year+543;
